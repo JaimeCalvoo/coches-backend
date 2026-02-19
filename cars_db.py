@@ -1,1554 +1,1625 @@
-cars_database = {
-"Toyota - Camry": {"price_min_eur": 30000, "price_max_eur": 36000, "units_produced": 21000000},
-"Honda - Accord": {"price_min_eur": 31000, "price_max_eur": 37000, "units_produced": 18000000},
-"Volkswagen - Jetta": {"price_min_eur": 24000, "price_max_eur": 29000, "units_produced": 20000000},
-"Hyundai - Elantra": {"price_min_eur": 22000, "price_max_eur": 27000, "units_produced": 14000000},
-"Kia - Rio": {"price_min_eur": 15000, "price_max_eur": 18500, "units_produced": 4000000},
-"Ford - Mustang": {"price_min_eur": 45000, "price_max_eur": 60000, "units_produced": 10000000},
-"Chevrolet - Camaro": {"price_min_eur": 42000, "price_max_eur": 58000, "units_produced": 5000000},
-"Dodge - Charger": {"price_min_eur": 48000, "price_max_eur": 65000, "units_produced": 3000000},
-"Dodge - Challenger": {"price_min_eur": 47000, "price_max_eur": 64000, "units_produced": 2000000},
-"BMW - X5": {"price_min_eur": 65000, "price_max_eur": 80000, "units_produced": 3000000},
-"BMW - X3": {"price_min_eur": 55000, "price_max_eur": 68000, "units_produced": 2500000},
-"Audi - Q5": {"price_min_eur": 55000, "price_max_eur": 70000, "units_produced": 2000000},
-"Audi - Q7": {"price_min_eur": 70000, "price_max_eur": 85000, "units_produced": 1000000},
-"Mercedes - GLC": {"price_min_eur": 55000, "price_max_eur": 70000, "units_produced": 2000000},
-"Mercedes - GLE": {"price_min_eur": 75000, "price_max_eur": 90000, "units_produced": 1000000},
-"Volvo - XC90": {"price_min_eur": 70000, "price_max_eur": 85000, "units_produced": 1000000},
-"Peugeot - 2008": {"price_min_eur": 22000, "price_max_eur": 27000, "units_produced": 2000000},
-"Peugeot - 5008": {"price_min_eur": 32000, "price_max_eur": 38000, "units_produced": 1000000},
-"Renault - Kadjar": {"price_min_eur": 25000, "price_max_eur": 30000, "units_produced": 500000},
-"Renault - Koleos": {"price_min_eur": 33000, "price_max_eur": 39000, "units_produced": 300000},
-"Opel - Astra": {"price_min_eur": 22000, "price_max_eur": 27000, "units_produced": 15000000},
-"Opel - Insignia": {"price_min_eur": 30000, "price_max_eur": 36000, "units_produced": 1500000},
-"Seat - Ateca": {"price_min_eur": 25000, "price_max_eur": 30000, "units_produced": 1000000},
-"Seat - Arona": {"price_min_eur": 20000, "price_max_eur": 24000, "units_produced": 1000000},
-"Skoda - Kamiq": {"price_min_eur": 21000, "price_max_eur": 25000, "units_produced": 800000},
-"Skoda - Scala": {"price_min_eur": 20000, "price_max_eur": 24000, "units_produced": 500000},
-"Fiat - Tipo": {"price_min_eur": 18000, "price_max_eur": 22000, "units_produced": 2000000},
-"Fiat - 500X": {"price_min_eur": 22000, "price_max_eur": 27000, "units_produced": 1000000},
-"Citroën - C5 Aircross": {"price_min_eur": 30000, "price_max_eur": 36000, "units_produced": 500000},
-"Citroën - Berlingo": {"price_min_eur": 23000, "price_max_eur": 28000, "units_produced": 2000000},
-"Toyota - C-HR": {"price_min_eur": 28000, "price_max_eur": 33000, "units_produced": 2000000},
-"Toyota - Hilux": {"price_min_eur": 35000, "price_max_eur": 42000, "units_produced": 18000000},
-"Nissan - X-Trail": {"price_min_eur": 32000, "price_max_eur": 38000, "units_produced": 7000000},
-"Nissan - Juke": {"price_min_eur": 21000, "price_max_eur": 26000, "units_produced": 1500000},
-"Honda - HR-V": {"price_min_eur": 26000, "price_max_eur": 31000, "units_produced": 3000000},
-"Honda - Jazz": {"price_min_eur": 20000, "price_max_eur": 24000, "units_produced": 8000000},
-"Mazda - CX-30": {"price_min_eur": 26000, "price_max_eur": 31000, "units_produced": 500000},
-"Mazda - CX-60": {"price_min_eur": 48000, "price_max_eur": 55000, "units_produced": 100000},
-"Subaru - XV": {"price_min_eur": 28000, "price_max_eur": 33000, "units_produced": 1000000},
-"Mitsubishi - ASX": {"price_min_eur": 22000, "price_max_eur": 26000, "units_produced": 1300000},
-"Chevrolet - Silverado": {"price_min_eur": 45000, "price_max_eur": 60000, "units_produced": 12000000},
-"Ford - F-150": {"price_min_eur": 50000, "price_max_eur": 65000, "units_produced": 40000000},
-"Ram - 1500": {"price_min_eur": 52000, "price_max_eur": 68000, "units_produced": 5000000},
-"Jeep - Grand Cherokee": {"price_min_eur": 60000, "price_max_eur": 75000, "units_produced": 7000000},
-"Tesla - Model S": {"price_min_eur": 90000, "price_max_eur": 110000, "units_produced": 500000},
-"Tesla - Model X": {"price_min_eur": 95000, "price_max_eur": 115000, "units_produced": 400000},
-"Tesla - Model 2": {"price_min_eur": 25000, "price_max_eur": 30000, "units_produced": 0},
-"Volkswagen - ID.3": {"price_min_eur": 30000, "price_max_eur": 36000, "units_produced": 600000},
-"Volkswagen - ID.4": {"price_min_eur": 35000, "price_max_eur": 42000, "units_produced": 800000},
-"Hyundai - Kona": {"price_min_eur": 23000, "price_max_eur": 28000, "units_produced": 1000000}
-"Kia - Niro": {"price_min_eur": 29000, "price_max_eur": 34000, "units_produced": 1000000},
-"Volvo - S60": {"price_min_eur": 42000, "price_max_eur": 50000, "units_produced": 2000000},
-"Volvo - V60": {"price_min_eur": 44000, "price_max_eur": 52000, "units_produced": 1000000},
-"Alfa Romeo - Tonale": {"price_min_eur": 38000, "price_max_eur": 45000, "units_produced": 100000},
-"Mini - Clubman": {"price_min_eur": 30000, "price_max_eur": 36000, "units_produced": 500000},
-"Mini - Paceman": {"price_min_eur": 28000, "price_max_eur": 33000, "units_produced": 200000},
-"Jaguar - XF": {"price_min_eur": 55000, "price_max_eur": 65000, "units_produced": 500000},
-"Jaguar - F-Pace": {"price_min_eur": 60000, "price_max_eur": 75000, "units_produced": 400000},
-"Land Rover - Discovery": {"price_min_eur": 75000, "price_max_eur": 90000, "units_produced": 1200000},
-"Land Rover - Defender": {"price_min_eur": 65000, "price_max_eur": 85000, "units_produced": 2000000},
-"Toyota - Supra": {"price_min_eur": 55000, "price_max_eur": 65000, "units_produced": 200000},
-"Nissan - 370Z": {"price_min_eur": 40000, "price_max_eur": 50000, "units_produced": 160000},
-"Mazda - MX-5": {"price_min_eur": 30000, "price_max_eur": 36000, "units_produced": 1100000},
-"Subaru - BRZ": {"price_min_eur": 32000, "price_max_eur": 38000, "units_produced": 200000},
-"Toyota - GT86": {"price_min_eur": 30000, "price_max_eur": 36000, "units_produced": 200000},
-"BMW - Z4": {"price_min_eur": 52000, "price_max_eur": 62000, "units_produced": 150000},
-"Audi - TT": {"price_min_eur": 45000, "price_max_eur": 55000, "units_produced": 650000},
-"Mercedes - SLK": {"price_min_eur": 50000, "price_max_eur": 60000, "units_produced": 700000},
-"Porsche - Macan": {"price_min_eur": 65000, "price_max_eur": 80000, "units_produced": 800000},
-"Porsche - Cayenne": {"price_min_eur": 85000, "price_max_eur": 110000, "units_produced": 1000000},
-"Lexus - IS": {"price_min_eur": 42000, "price_max_eur": 50000, "units_produced": 1300000},
-"Lexus - RX": {"price_min_eur": 65000, "price_max_eur": 80000, "units_produced": 3000000},
-"Infiniti - Q50": {"price_min_eur": 40000, "price_max_eur": 48000, "units_produced": 500000},
-"Genesis - G70": {"price_min_eur": 42000, "price_max_eur": 50000, "units_produced": 100000},
-"Genesis - GV70": {"price_min_eur": 50000, "price_max_eur": 60000, "units_produced": 150000},
-"Chevrolet - Tahoe": {"price_min_eur": 65000, "price_max_eur": 80000, "units_produced": 2000000},
-"Ford - Explorer": {"price_min_eur": 55000, "price_max_eur": 65000, "units_produced": 8000000},
-"Honda - Pilot": {"price_min_eur": 50000, "price_max_eur": 60000, "units_produced": 2000000},
-"Toyota - Highlander": {"price_min_eur": 52000, "price_max_eur": 62000, "units_produced": 3000000},
-"Mitsubishi - Pajero": {"price_min_eur": 40000, "price_max_eur": 50000, "units_produced": 3000000}
-"Ferrari - 488 GTB": {"price_min_eur": 220000, "price_max_eur": 260000, "units_produced": 3500},
-"Ferrari - F8 Tributo": {"price_min_eur": 280000, "price_max_eur": 330000, "units_produced": 2500},
-"Ferrari - 458 Italia": {"price_min_eur": 200000, "price_max_eur": 240000, "units_produced": 15000},
-"Ferrari - 296 GTB": {"price_min_eur": 320000, "price_max_eur": 370000, "units_produced": 3000},
-"Ferrari - Roma": {"price_min_eur": 240000, "price_max_eur": 290000, "units_produced": 5000},
-"Lamborghini - Huracan": {"price_min_eur": 230000, "price_max_eur": 300000, "units_produced": 20000},
-"Lamborghini - Aventador": {"price_min_eur": 350000, "price_max_eur": 450000, "units_produced": 11000},
-"Lamborghini - Gallardo": {"price_min_eur": 140000, "price_max_eur": 180000, "units_produced": 14000},
-"Lamborghini - Revuelto": {"price_min_eur": 500000, "price_max_eur": 600000, "units_produced": 1000},
-"Lamborghini - Murcielago": {"price_min_eur": 300000, "price_max_eur": 380000, "units_produced": 4099}
-"Porsche - 911 Carrera": {"price_min_eur": 120000, "price_max_eur": 150000, "units_produced": 1200000},
-"Porsche - 911 Turbo": {"price_min_eur": 190000, "price_max_eur": 230000, "units_produced": 200000},
-"Porsche - 718 Cayman": {"price_min_eur": 70000, "price_max_eur": 90000, "units_produced": 300000},
-"Porsche - 718 Boxster": {"price_min_eur": 68000, "price_max_eur": 85000, "units_produced": 250000},
-"Porsche - 918 Spyder": {"price_min_eur": 1500000, "price_max_eur": 1800000, "units_produced": 918},
-"McLaren - 570S": {"price_min_eur": 160000, "price_max_eur": 200000, "units_produced": 3500},
-"McLaren - 720S": {"price_min_eur": 240000, "price_max_eur": 290000, "units_produced": 4000},
-"McLaren - 765LT": {"price_min_eur": 350000, "price_max_eur": 420000, "units_produced": 765},
-"McLaren - P1": {"price_min_eur": 1800000, "price_max_eur": 2200000, "units_produced": 375},
-"McLaren - Artura": {"price_min_eur": 230000, "price_max_eur": 270000, "units_produced": 2000},
-"Aston Martin - Vantage": {"price_min_eur": 150000, "price_max_eur": 180000, "units_produced": 10000},
-"Aston Martin - DB11": {"price_min_eur": 170000, "price_max_eur": 210000, "units_produced": 5000},
-"Aston Martin - DBS Superleggera": {"price_min_eur": 250000, "price_max_eur": 300000, "units_produced": 2500},
-"Aston Martin - One-77": {"price_min_eur": 2500000, "price_max_eur": 3200000, "units_produced": 77},
-"Aston Martin - Valkyrie": {"price_min_eur": 3000000, "price_max_eur": 3500000, "units_produced": 150},
-"Bugatti - Veyron": {"price_min_eur": 1500000, "price_max_eur": 2000000, "units_produced": 450},
-"Bugatti - Chiron": {"price_min_eur": 2500000, "price_max_eur": 3500000, "units_produced": 500},
-"Bugatti - Divo": {"price_min_eur": 6000000, "price_max_eur": 7000000, "units_produced": 40},
-"Bugatti - Mistral": {"price_min_eur": 5000000, "price_max_eur": 6000000, "units_produced": 99},
-"Bugatti - Centodieci": {"price_min_eur": 8000000, "price_max_eur": 9000000, "units_produced": 10},
-"Koenigsegg - Agera RS": {"price_min_eur": 3000000, "price_max_eur": 3500000, "units_produced": 25},
-"Koenigsegg - Jesko": {"price_min_eur": 3500.000, "price_max_eur": 4000000, "units_produced": 125},
-"Koenigsegg - Regera": {"price_min_eur": 3000000, "price_max_eur": 3500000, "units_produced": 80},
-"Pagani - Zonda": {"price_min_eur": 5000000, "price_max_eur": 7000000, "units_produced": 140},
-"Pagani - Huayra": {"price_min_eur": 2500000, "price_max_eur": 3500000, "units_produced": 280},
-"Nissan - GT-R R35": {"price_min_eur": 100000, "price_max_eur": 130000, "units_produced": 40000},
-"Toyota - GR Supra": {"price_min_eur": 55000, "price_max_eur": 65000, "units_produced": 50000},
-"Ford - GT (2017)": {"price_min_eur": 600000, "price_max_eur": 800000, "units_produced": 1350},
-"Chevrolet - Corvette C8": {"price_min_eur": 90000, "price_max_eur": 120000, "units_produced": 80000},
-"Dodge - Viper": {"price_min_eur": 120000, "price_max_eur": 180000, "units_produced": 31000},
-"BMW - M3": {"price_min_eur": 85000, "price_max_eur": 100000, "units_produced": 300000},
-"BMW - M4": {"price_min_eur": 90000, "price_max_eur": 110000, "units_produced": 200000},
-"Audi - R8": {"price_min_eur": 150000, "price_max_eur": 190000, "units_produced": 45000},
-"Mercedes - AMG GT": {"price_min_eur": 140000, "price_max_eur": 180000, "units_produced": 30000},
-"Mercedes - SLS AMG": {"price_min_eur": 200000, "price_max_eur": 250000, "units_produced": 10000},
-"Alpine - A110": {"price_min_eur": 65000, "price_max_eur": 80000, "units_produced": 15000},
-"Lotus - Elise": {"price_min_eur": 45000, "price_max_eur": 60000, "units_produced": 35000},
-"Lotus - Exige": {"price_min_eur": 60000, "price_max_eur": 75000, "units_produced": 10000},
-"Lotus - Evora": {"price_min_eur": 70000, "price_max_eur": 85000, "units_produced": 6000},
-"Lotus - Emira": {"price_min_eur": 85000, "price_max_eur": 100000, "units_produced": 5000},
-"Maserati - MC20": {"price_min_eur": 250000, "price_max_eur": 300000, "units_produced": 3000},
-"Maserati - GranTurismo": {"price_min_eur": 120000, "price_max_eur": 150000, "units_produced": 40000},
-"Jaguar - F-Type": {"price_min_eur": 85000, "price_max_eur": 110000, "units_produced": 70000},
-"Chevrolet - Corvette C7": {"price_min_eur": 70000, "price_max_eur": 95000, "units_produced": 190000},
-"Ford - Shelby GT500": {"price_min_eur": 95000, "price_max_eur": 120000, "units_produced": 5000}
-"Ferrari - 488 GTB": {"price_min_eur": 220000, "price_max_eur": 260000, "units_produced": 3500},
-"Ferrari - F8 Tributo": {"price_min_eur": 280000, "price_max_eur": 330000, "units_produced": 2500},
-"Ferrari - 458 Italia": {"price_min_eur": 200000, "price_max_eur": 240000, "units_produced": 15000},
-"Ferrari - 296 GTB": {"price_min_eur": 320000, "price_max_eur": 370000, "units_produced": 3000},
-"Ferrari - Roma": {"price_min_eur": 240000, "price_max_eur": 290000, "units_produced": 5000},
-"Lamborghini - Huracan": {"price_min_eur": 230000, "price_max_eur": 300000, "units_produced": 20000},
-"Lamborghini - Aventador": {"price_min_eur": 350000, "price_max_eur": 450000, "units_produced": 11000},
-"Lamborghini - Gallardo": {"price_min_eur": 140000, "price_max_eur": 180000, "units_produced": 14000},
-"Lamborghini - Revuelto": {"price_min_eur": 500000, "price_max_eur": 600000, "units_produced": 1000},
-"Lamborghini - Murcielago": {"price_min_eur": 300000, "price_max_eur": 380000, "units_produced": 4099},
-"Porsche - 911 Carrera": {"price_min_eur": 120000, "price_max_eur": 150000, "units_produced": 1200000},
-"Porsche - 911 Turbo": {"price_min_eur": 190000, "price_max_eur": 230000, "units_produced": 200000},
-"Porsche - 718 Cayman": {"price_min_eur": 70000, "price_max_eur": 90000, "units_produced": 300000},
-"Porsche - 718 Boxster": {"price_min_eur": 68000, "price_max_eur": 85000, "units_produced": 250000},
-"Porsche - 918 Spyder": {"price_min_eur": 1500000, "price_max_eur": 1800000, "units_produced": 918},
-"McLaren - 570S": {"price_min_eur": 160000, "price_max_eur": 200000, "units_produced": 3500},
-"McLaren - 720S": {"price_min_eur": 240000, "price_max_eur": 290000, "units_produced": 4000},
-"McLaren - 765LT": {"price_min_eur": 350000, "price_max_eur": 420000, "units_produced": 765},
-"McLaren - P1": {"price_min_eur": 1800000, "price_max_eur": 2200000, "units_produced": 375},
-"McLaren - Artura": {"price_min_eur": 230000, "price_max_eur": 270000, "units_produced": 2000},
-"Aston Martin - Vantage": {"price_min_eur": 150000, "price_max_eur": 180000, "units_produced": 10000},
-"Aston Martin - DB11": {"price_min_eur": 170000, "price_max_eur": 210000, "units_produced": 5000},
-"Aston Martin - DBS Superleggera": {"price_min_eur": 250000, "price_max_eur": 300000, "units_produced": 2500},
-"Aston Martin - One-77": {"price_min_eur": 2500000, "price_max_eur": 3200000, "units_produced": 77},
-"Aston Martin - Valkyrie": {"price_min_eur": 3000000, "price_max_eur": 3500000, "units_produced": 150},
-"Bugatti - Veyron": {"price_min_eur": 1500000, "price_max_eur": 2000000, "units_produced": 450},
-"Bugatti - Chiron": {"price_min_eur": 2500000, "price_max_eur": 3500000, "units_produced": 500},
-"Bugatti - Divo": {"price_min_eur": 6000000, "price_max_eur": 7000000, "units_produced": 40},
-"Bugatti - Mistral": {"price_min_eur": 5000000, "price_max_eur": 6000000, "units_produced": 99},
-"Bugatti - Centodieci": {"price_min_eur": 8000000, "price_max_eur": 9000000, "units_produced": 10},
-"Koenigsegg - Agera RS": {"price_min_eur": 3000000, "price_max_eur": 3500000, "units_produced": 25},
-"Koenigsegg - Jesko": {"price_min_eur": 3500000, "price_max_eur": 4000000, "units_produced": 125},
-"Koenigsegg - Regera": {"price_min_eur": 3000000, "price_max_eur": 3500000, "units_produced": 80},
-"Pagani - Zonda": {"price_min_eur": 5000000, "price_max_eur": 7000000, "units_produced": 140},
-"Pagani - Huayra": {"price_min_eur": 2500000, "price_max_eur": 3500000, "units_produced": 280},
-"Nissan - GT-R R35": {"price_min_eur": 100000, "price_max_eur": 130000, "units_produced": 40000},
-"Toyota - GR Supra": {"price_min_eur": 55000, "price_max_eur": 65000, "units_produced": 50000},
-"Ford - GT (2017)": {"price_min_eur": 600000, "price_max_eur": 800000, "units_produced": 1350},
-"Chevrolet - Corvette C8": {"price_min_eur": 90000, "price_max_eur": 120000, "units_produced": 80000},
-"Dodge - Viper": {"price_min_eur": 120000, "price_max_eur": 180000, "units_produced": 31000},
-"BMW - M3": {"price_min_eur": 85000, "price_max_eur": 100000, "units_produced": 300000},
-"BMW - M4": {"price_min_eur": 90000, "price_max_eur": 110000, "units_produced": 200000},
-"Audi - R8": {"price_min_eur": 150000, "price_max_eur": 190000, "units_produced": 45000},
-"Mercedes - AMG GT": {"price_min_eur": 140000, "price_max_eur": 180000, "units_produced": 30000},
-"Mercedes - SLS AMG": {"price_min_eur": 200000, "price_max_eur": 250000, "units_produced": 10000},
-"Alpine - A110": {"price_min_eur": 65000, "price_max_eur": 80000, "units_produced": 15000},
-"Lotus - Elise": {"price_min_eur": 45000, "price_max_eur": 60000, "units_produced": 35000},
-"Lotus - Exige": {"price_min_eur": 60000, "price_max_eur": 75000, "units_produced": 10000},
-"Lotus - Evora": {"price_min_eur": 70000, "price_max_eur": 85000, "units_produced": 6000},
-"Lotus - Emira": {"price_min_eur": 85000, "price_max_eur": 100000, "units_produced": 5000},
-"Maserati - MC20": {"price_min_eur": 250000, "price_max_eur": 300000, "units_produced": 3000},
-"Maserati - GranTurismo": {"price_min_eur": 120000, "price_max_eur": 150000, "units_produced": 40000},
-"Jaguar - F-Type": {"price_min_eur": 85000, "price_max_eur": 110000, "units_produced": 70000},
-"Chevrolet - Corvette C7": {"price_min_eur": 70000, "price_max_eur": 95000, "units_produced": 190000},
-"Ford - Shelby GT500": {"price_min_eur": 95000, "price_max_eur": 120000, "units_produced": 5000}
+cars = [
 
-"Ferrari - Monza SP2": {"price_min_eur": 1.800.000, "price_max_eur": 2.200.000, "units_produced": 499},
-"Ferrari - 296 GTB": {"price_min_eur": 320.000, "price_max_eur": 370.000, "units_produced": 3000},
-"Ferrari - 488 Pista": {"price_min_eur": 350.000, "price_max_eur": 400.000, "units_produced": 3000},
-"Ferrari - SF90 Stradale": {"price_min_eur": 450.000, "price_max_eur": 500.000, "units_produced": 500},
-"Ferrari - LaFerrari Aperta": {"price_min_eur": 2.200.000, "price_max_eur": 2.500.000, "units_produced": 210},
-"Lamborghini - Aventador SVJ": {"price_min_eur": 500.000, "price_max_eur": 600.000, "units_produced": 900},
-"Lamborghini - Sian FKP 37": {"price_min_eur": 3.000.000, "price_max_eur": 3.500.000, "units_produced": 63},
-"Lamborghini - Countach LPI 800-4": {"price_min_eur": 2.000.000, "price_max_eur": 2.500.000, "units_produced": 112},
-"Lamborghini - Veneno": {"price_min_eur": 3.500.000, "price_max_eur": 4.500.000, "units_produced": 14},
-"Lamborghini - Centenario": {"price_min_eur": 1.800.000, "price_max_eur": 2.000.000, "units_produced": 40},
-"Bugatti - Chiron Pur Sport": {"price_min_eur": 3.000.000, "price_max_eur": 3.500.000, "units_produced": 60},
-"Bugatti - Chiron Sport": {"price_min_eur": 2.800.000, "price_max_eur": 3.300.000, "units_produced": 200},
-"Bugatti - La Voiture Noire": {"price_min_eur": 16.000.000, "price_max_eur": 18.000.000, "units_produced": 1},
-"Bugatti - Bolide": {"price_min_eur": 4.000.000, "price_max_eur": 5.000.000, "units_produced": 40},
-"Bugatti - Centodieci": {"price_min_eur": 9.000.000, "price_max_eur": 10.000.000, "units_produced": 10},
-"Koenigsegg - Jesko Absolut": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 125},
-"Koenigsegg - Regera": {"price_min_eur": 2.000.000, "price_max_eur": 2.500.000, "units_produced": 80},
-"Koenigsegg - One:1": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 7},
-"Koenigsegg - CCX": {"price_min_eur": 1.000.000, "price_max_eur": 1.500.000, "units_produced": 50},
-"Koenigsegg - Gemera": {"price_min_eur": 1.500.000, "price_max_eur": 2.000.000, "units_produced": 300},
-"Pagani - Huayra BC": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 20},
-"Pagani - Huayra Roadster": {"price_min_eur": 2.800.000, "price_max_eur": 3.300.000, "units_produced": 100},
-"Pagani - Zonda Cinque": {"price_min_eur": 1.500.000, "price_max_eur": 2.000.000, "units_produced": 5},
-"Pagani - Zonda F": {"price_min_eur": 1.200.000, "price_max_eur": 1.500.000, "units_produced": 25},
-"Pagani - Zonda HP Barchetta": {"price_min_eur": 17.000.000, "price_max_eur": 19.000.000, "units_produced": 3},
-"Aston Martin - Valkyrie": {"price_min_eur": 3.000.000, "price_max_eur": 3.500.000, "units_produced": 150},
-"Aston Martin - Vulcan": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 24},
-"Aston Martin - One-77": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 77},
-"Aston Martin - AM-RB 003": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 500},
-"Aston Martin - DBS GT Zagato": {"price_min_eur": 2.000.000, "price_max_eur": 2.500.000, "units_produced": 19},
-"McLaren - P1": {"price_min_eur": 1.800.000, "price_max_eur": 2.200.000, "units_produced": 375},
-"McLaren - Speedtail": {"price_min_eur": 2.000.000, "price_max_eur": 2.500.000, "units_produced": 106},
-"McLaren - 765LT": {"price_min_eur": 350.000, "price_max_eur": 420.000, "units_produced": 765},
-"McLaren - 720S Spider": {"price_min_eur": 300.000, "price_max_eur": 350.000, "units_produced": 2000},
-"McLaren - Elva": {"price_min_eur": 1.700.000, "price_max_eur": 2.000.000, "units_produced": 149},
-"Porsche - 918 Spyder": {"price_min_eur": 1.500.000, "price_max_eur": 1.800.000, "units_produced": 918},
-"Porsche - 911 GT2 RS": {"price_min_eur": 400.000, "price_max_eur": 450.000, "units_produced": 500},
-"Porsche - 911 GT3 RS": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 1000},
-"Porsche - 911 Speedster": {"price_min_eur": 300.000, "price_max_eur": 350.000, "units_produced": 1250},
-"Porsche - 911 Turbo S Exclusive": {"price_min_eur": 220.000, "price_max_eur": 260.000, "units_produced": 500},
-"Ford - Mustang GT": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 250.000},
-"Chevrolet - Camaro SS": {"price_min_eur": 50.000, "price_max_eur": 60.000, "units_produced": 200.000},
-"Dodge - Challenger R/T": {"price_min_eur": 48.000, "price_max_eur": 58.000, "units_produced": 180.000},
-"Nissan - 370Z": {"price_min_eur": 38.000, "price_max_eur": 45.000, "units_produced": 150.000},
-"Toyota - Supra GR": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 20.000},
-"Mazda - MX-5": {"price_min_eur": 30.000, "price_max_eur": 35.000, "units_produced": 100.000},
-"BMW - Z4": {"price_min_eur": 45.000, "price_max_eur": 55.000, "units_produced": 50.000},
-"Audi - TT": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 60.000},
-"Porsche - 718 Cayman": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 20.000},
-"Porsche - 718 Boxster": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 18.000},
-"Mercedes - AMG A 45": {"price_min_eur": 60.000, "price_max_eur": 70.000, "units_produced": 25.000},
-"Mercedes - AMG CLA 45": {"price_min_eur": 63.000, "price_max_eur": 73.000, "units_produced": 22.000},
-"Audi - RS3": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 30.000},
-"Audi - RS4 Avant": {"price_min_eur": 70.000, "price_max_eur": 80.000, "units_produced": 12.000},
-"BMW - M2": {"price_min_eur": 60.000, "price_max_eur": 70.000, "units_produced": 18.000},
-"BMW - M3": {"price_min_eur": 75.000, "price_max_eur": 85.000, "units_produced": 25.000},
-"BMW - M4": {"price_min_eur": 80.000, "price_max_eur": 90.000, "units_produced": 20.000},
-"Chevrolet - Corvette C8": {"price_min_eur": 70.000, "price_max_eur": 80.000, "units_produced": 15.000},
-"Jaguar - F-Type": {"price_min_eur": 65.000, "price_max_eur": 75.000, "units_produced": 12.000},
-"Nissan - GT-R": {"price_min_eur": 120.000, "price_max_eur": 150.000, "units_produced": 10.000},
-"Alfa Romeo - 4C": {"price_min_eur": 65.000, "price_max_eur": 75.000, "units_produced": 3.500},
-"Aston Martin - Vantage": {"price_min_eur": 120.000, "price_max_eur": 140.000, "units_produced": 4.000},
-"Lotus - Elise": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 5.000},
-"Lotus - Evora": {"price_min_eur": 70.000, "price_max_eur": 80.000, "units_produced": 3.500},
-"Toyota - GT86": {"price_min_eur": 35.000, "price_max_eur": 40.000, "units_produced": 50.000},
-"Hyundai - i30 N": {"price_min_eur": 35.000, "price_max_eur": 40.000, "units_produced": 15.000},
-"Kia - Stinger": {"price_min_eur": 45.000, "price_max_eur": 55.000, "units_produced": 8.000},
-"Ford - Focus ST": {"price_min_eur": 40.000, "price_max_eur": 45.000, "units_produced": 12.000},
-"Volkswagen - Golf R": {"price_min_eur": 45.000, "price_max_eur": 55.000, "units_produced": 20.000},
-"Renault - Megane RS": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 12.000},
-"Seat - Leon Cupra": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 10.000},
-"Peugeot - 308 GTi": {"price_min_eur": 38.000, "price_max_eur": 45.000, "units_produced": 8.000},
-"Mini - John Cooper Works": {"price_min_eur": 35.000, "price_max_eur": 42.000, "units_produced": 15.000},
-"Subaru - WRX STI": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 7.000},
-"Mitsubishi - Lancer Evolution": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 6.000}
-"Ford - Mustang GT": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 250.000},
-"Chevrolet - Camaro SS": {"price_min_eur": 50.000, "price_max_eur": 60.000, "units_produced": 200.000},
-"Dodge - Challenger R/T": {"price_min_eur": 48.000, "price_max_eur": 58.000, "units_produced": 180.000},
-"Nissan - 370Z": {"price_min_eur": 38.000, "price_max_eur": 45.000, "units_produced": 150.000},
-"Toyota - Supra GR": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 20.000},
-"Mazda - MX-5": {"price_min_eur": 30.000, "price_max_eur": 35.000, "units_produced": 100.000},
-"BMW - Z4": {"price_min_eur": 45.000, "price_max_eur": 55.000, "units_produced": 50.000},
-"Audi - TT": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 60.000},
-"Porsche - 718 Cayman": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 20.000},
-"Porsche - 718 Boxster": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 18.000},
-"Mercedes - AMG A 45": {"price_min_eur": 60.000, "price_max_eur": 70.000, "units_produced": 25.000},
-"Mercedes - AMG CLA 45": {"price_min_eur": 63.000, "price_max_eur": 73.000, "units_produced": 22.000},
-"Audi - RS3": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 30.000},
-"Audi - RS4 Avant": {"price_min_eur": 70.000, "price_max_eur": 80.000, "units_produced": 12.000},
-"BMW - M2": {"price_min_eur": 60.000, "price_max_eur": 70.000, "units_produced": 18.000},
-"BMW - M3": {"price_min_eur": 75.000, "price_max_eur": 85.000, "units_produced": 25.000},
-"BMW - M4": {"price_min_eur": 80.000, "price_max_eur": 90.000, "units_produced": 20.000},
-"Chevrolet - Corvette C8": {"price_min_eur": 70.000, "price_max_eur": 80.000, "units_produced": 15.000},
-"Jaguar - F-Type": {"price_min_eur": 65.000, "price_max_eur": 75.000, "units_produced": 12.000},
-"Nissan - GT-R": {"price_min_eur": 120.000, "price_max_eur": 150.000, "units_produced": 10.000},
-"Alfa Romeo - 4C": {"price_min_eur": 65.000, "price_max_eur": 75.000, "units_produced": 3.500},
-"Aston Martin - Vantage": {"price_min_eur": 120.000, "price_max_eur": 140.000, "units_produced": 4.000},
-"Lotus - Elise": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 5.000},
-"Lotus - Evora": {"price_min_eur": 70.000, "price_max_eur": 80.000, "units_produced": 3.500},
-"Toyota - GT86": {"price_min_eur": 35.000, "price_max_eur": 40.000, "units_produced": 50.000},
-"Hyundai - i30 N": {"price_min_eur": 35.000, "price_max_eur": 40.000, "units_produced": 15.000},
-"Kia - Stinger": {"price_min_eur": 45.000, "price_max_eur": 55.000, "units_produced": 8.000},
-"Ford - Focus ST": {"price_min_eur": 40.000, "price_max_eur": 45.000, "units_produced": 12.000},
-"Volkswagen - Golf R": {"price_min_eur": 45.000, "price_max_eur": 55.000, "units_produced": 20.000},
-"Renault - Megane RS": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 12.000},
-"Seat - Leon Cupra": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 10.000},
-"Peugeot - 308 GTi": {"price_min_eur": 38.000, "price_max_eur": 45.000, "units_produced": 8.000},
-"Mini - John Cooper Works": {"price_min_eur": 35.000, "price_max_eur": 42.000, "units_produced": 15.000},
-"Subaru - WRX STI": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 7.000},
-"Mitsubishi - Lancer Evolution": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 6.000},
-"Hyundai - Veloster N": {"price_min_eur": 35.000, "price_max_eur": 40.000, "units_produced": 7.000},
-"Alfa Romeo - Giulia Quadrifoglio": {"price_min_eur": 85.000, "price_max_eur": 95.000, "units_produced": 8.000},
-"Audi - S5": {"price_min_eur": 65.000, "price_max_eur": 75.000, "units_produced": 12.000},
-"BMW - Z4 M40i": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 10.000},
-"Ford - Mustang EcoBoost": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 80.000},
-"Chevrolet - Camaro LT": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 50.000},
-"Dodge - Challenger SXT": {"price_min_eur": 35.000, "price_max_eur": 45.000, "units_produced": 40.000},
-"Nissan - 350Z": {"price_min_eur": 35.000, "price_max_eur": 40.000, "units_produced": 60.000},
-"Jaguar - XE SV Project 8": {"price_min_eur": 150.000, "price_max_eur": 180.000, "units_produced": 300},
-"Audi - TTS": {"price_min_eur": 50.000, "price_max_eur": 60.000, "units_produced": 8.000},
-"Nissan - Juke Nismo RS": {"price_min_eur": 38.000, "price_max_eur": 45.000, "units_produced": 12.000},
-"Volkswagen - Scirocco R": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 10.000},
-"Hyundai - i20 N": {"price_min_eur": 30.000, "price_max_eur": 35.000, "units_produced": 18.000},
-"Kia - ProCeed GT": {"price_min_eur": 38.000, "price_max_eur": 45.000, "units_produced": 12.000},
-"Ford - Fiesta ST": {"price_min_eur": 30.000, "price_max_eur": 35.000, "units_produced": 25.000},
-"Peugeot - 208 GTi": {"price_min_eur": 30.000, "price_max_eur": 35.000, "units_produced": 15.000},
-"Renault - Clio RS": {"price_min_eur": 32.000, "price_max_eur": 38.000, "units_produced": 14.000},
-"Seat - Ibiza Cupra": {"price_min_eur": 28.000, "price_max_eur": 33.000, "units_produced": 12.000},
-"Mini - Cooper S": {"price_min_eur": 30.000, "price_max_eur": 36.000, "units_produced": 20.000},
-"Alfa Romeo - MiTo Quadrifoglio Verde": {"price_min_eur": 32.000, "price_max_eur": 38.000, "units_produced": 6.000},
-"Toyota - Yaris GR": {"price_min_eur": 36.000, "price_max_eur": 42.000, "units_produced": 20.000},
-"Volkswagen - Golf GTI": {"price_min_eur": 42.000, "price_max_eur": 50.000, "units_produced": 35.000},
-"Subaru - BRZ": {"price_min_eur": 34.000, "price_max_eur": 40.000, "units_produced": 15.000},
-"Mitsubishi - Eclipse Cross Sport": {"price_min_eur": 40.000, "price_max_eur": 45.000, "units_produced": 5.000},
-"BMW - M240i": {"price_min_eur": 50.000, "price_max_eur": 60.000, "units_produced": 12.000},
-"Mercedes - AMG GT 43": {"price_min_eur": 60.000, "price_max_eur": 70.000, "units_produced": 8.000},
-"Mercedes - AMG GT 53": {"price_min_eur": 70.000, "price_max_eur": 80.000, "units_produced": 6.000},
-"Audi - S4": {"price_min_eur": 65.000, "price_max_eur": 75.000, "units_produced": 10.000},
-"Audi - S5 Cabrio": {"price_min_eur": 70.000, "price_max_eur": 80.000, "units_produced": 6.000},
-"BMW - M440i": {"price_min_eur": 65.000, "price_max_eur": 75.000, "units_produced": 7.000},
-"Ford - Mustang Mach1": {"price_min_eur": 60.000, "price_max_eur": 70.000, "units_produced": 4.000},
-"Chevrolet - Camaro ZL1": {"price_min_eur": 65.000, "price_max_eur": 75.000, "units_produced": 5.000},
-"Dodge - Challenger Hellcat Redeye": {"price_min_eur": 75.000, "price_max_eur": 85.000, "units_produced": 3.500},
-"Nissan - GT-R Nismo": {"price_min_eur": 175.000, "price_max_eur": 200.000, "units_produced": 3.000},
-"Jaguar - F-Type R": {"price_min_eur": 85.000, "price_max_eur": 95.000, "units_produced": 4.000},
-"Alfa Romeo - Giulia Veloce": {"price_min_eur": 55.000, "price_max_eur": 65.000, "units_produced": 5.000},
-"Lotus - Exige Sport 350": {"price_min_eur": 75.000, "price_max_eur": 85.000, "units_produced": 3.000},
-"Lotus - Evora GT": {"price_min_eur": 90.000, "price_max_eur": 100.000, "units_produced": 2.500},
-"Hyundai - i30 Fastback N": {"price_min_eur": 35.000, "price_max_eur": 40.000, "units_produced": 12.000},
-"Kia - Ceed GT": {"price_min_eur": 38.000, "price_max_eur": 45.000, "units_produced": 10.000},
-"Renault - Talisman RS": {"price_min_eur": 45.000, "price_max_eur": 55.000, "units_produced": 5.000},
-"Seat - Leon FR": {"price_min_eur": 35.000, "price_max_eur": 45.000, "units_produced": 15.000},
-"Peugeot - 508 PSE": {"price_min_eur": 60.000, "price_max_eur": 70.000, "units_produced": 2.500},
-"Mini - Clubman JCW": {"price_min_eur": 42.000, "price_max_eur": 50.000, "units_produced": 8.000},
-"Subaru - Legacy 3.6R": {"price_min_eur": 40.000, "price_max_eur": 50.000, "units_produced": 3.000},
-"Mercedes - A 35 AMG": {"price_min_eur": 45.000, "price_max_eur": 55.000, "units_produced": 10.000},
-"Mercedes - CLA 35 AMG": {"price_min_eur": 50.000, "price_max_eur": 60.000, "units_produced": 8.000},
-"Audi - S1": {"price_min_eur": 35.000, "price_max_eur": 42.000, "units_produced": 6.000},
-"BMW - M135i": {"price_min_eur": 45.000, "price_max_eur": 55.000, "units_produced": 10.000},
-"Ford - Puma ST": {"price_min_eur": 28.000, "price_max_eur": 35.000, "units_produced": 12.000}
-"Lamborghini - Aventador SVJ": {"price_min_eur": 500.000, "price_max_eur": 580.000, "units_produced": 900},
-"Lamborghini - Huracán EVO": {"price_min_eur": 230.000, "price_max_eur": 270.000, "units_produced": 1500},
-"Lamborghini - Huracán Performante": {"price_min_eur": 250.000, "price_max_eur": 290.000, "units_produced": 1.000},
-"Lamborghini - Sian FKP 37": {"price_min_eur": 3.300.000, "price_max_eur": 3.600.000, "units_produced": 63},
-"Lamborghini - Centenario": {"price_min_eur": 1.800.000, "price_max_eur": 2.000.000, "units_produced": 40},
-"Lamborghini - Veneno": {"price_min_eur": 3.000.000, "price_max_eur": 3.300.000, "units_produced": 13},
-"Lamborghini - Reventón": {"price_min_eur": 1.500.000, "price_max_eur": 1.700.000, "units_produced": 20},
-"Lamborghini - Murciélago LP 670-4 SV": {"price_min_eur": 400.000, "price_max_eur": 450.000, "units_produced": 350},
-"Lamborghini - Diablo SV": {"price_min_eur": 300.000, "price_max_eur": 350.000, "units_produced": 200},
-"Lamborghini - Gallardo LP 570-4 Superleggera": {"price_min_eur": 200.000, "price_max_eur": 250.000, "units_produced": 600},
-"Ferrari - LaFerrari": {"price_min_eur": 2.200.000, "price_max_eur": 2.500.000, "units_produced": 499},
-"Ferrari - F8 Tributo": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 1.200},
-"Ferrari - 488 Pista": {"price_min_eur": 330.000, "price_max_eur": 380.000, "units_produced": 1.200},
-"Ferrari - SF90 Stradale": {"price_min_eur": 430.000, "price_max_eur": 500.000, "units_produced": 1.000},
-"Ferrari - 812 Superfast": {"price_min_eur": 330.000, "price_max_eur": 380.000, "units_produced": 1.100},
-"Ferrari - 599 GTO": {"price_min_eur": 400.000, "price_max_eur": 450.000, "units_produced": 599},
-"Ferrari - Enzo": {"price_min_eur": 2.000.000, "price_max_eur": 2.200.000, "units_produced": 400},
-"Ferrari - F12tdf": {"price_min_eur": 500.000, "price_max_eur": 550.000, "units_produced": 799},
-"Ferrari - 458 Speciale": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 1.000},
-"Ferrari - California T": {"price_min_eur": 180.000, "price_max_eur": 220.000, "units_produced": 3.000},
-"McLaren - P1": {"price_min_eur": 1.100.000, "price_max_eur": 1.300.000, "units_produced": 375},
-"McLaren - 720S": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 1.000},
-"McLaren - 765LT": {"price_min_eur": 350.000, "price_max_eur": 400.000, "units_produced": 765},
-"McLaren - Senna": {"price_min_eur": 1.000.000, "price_max_eur": 1.200.000, "units_produced": 500},
-"McLaren - Elva": {"price_min_eur": 1.500.000, "price_max_eur": 1.700.000, "units_produced": 399},
-"McLaren - Artura": {"price_min_eur": 230.000, "price_max_eur": 270.000, "units_produced": 1.000},
-"McLaren - 600LT": {"price_min_eur": 200.000, "price_max_eur": 250.000, "units_produced": 500},
-"McLaren - 570S": {"price_min_eur": 180.000, "price_max_eur": 220.000, "units_produced": 600},
-"McLaren - 650S": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 500},
-"McLaren - 675LT": {"price_min_eur": 300.000, "price_max_eur": 350.000, "units_produced": 500},
-"Aston Martin - DBS Superleggera": {"price_min_eur": 280.000, "price_max_eur": 330.000, "units_produced": 800},
-"Aston Martin - V12 Vantage S": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 400},
-"Aston Martin - Vulcan": {"price_min_eur": 2.300.000, "price_max_eur": 2.500.000, "units_produced": 24},
-"Aston Martin - One-77": {"price_min_eur": 1.700.000, "price_max_eur": 2.000.000, "units_produced": 77},
-"Aston Martin - DBS GT Zagato": {"price_min_eur": 6.500.000, "price_max_eur": 7.000.000, "units_produced": 19},
-"Aston Martin - AMR Pro": {"price_min_eur": 3.000.000, "price_max_eur": 3.500.000, "units_produced": 7},
-"Aston Martin - Rapide AMR": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 210},
-"Aston Martin - DB11 AMR": {"price_min_eur": 230.000, "price_max_eur": 280.000, "units_produced": 500},
-"Aston Martin - Vantage AMR": {"price_min_eur": 140.000, "price_max_eur": 180.000, "units_produced": 600},
-"Aston Martin - V8 Vantage": {"price_min_eur": 120.000, "price_max_eur": 150.000, "units_produced": 700},
-"Pagani - Huayra": {"price_min_eur": 2.300.000, "price_max_eur": 2.500.000, "units_produced": 100},
-"Pagani - Zonda F": {"price_min_eur": 1.500.000, "price_max_eur": 2.000.000, "units_produced": 50},
-"Pagani - Zonda R": {"price_min_eur": 5.000.000, "price_max_eur": 5.500.000, "units_produced": 15},
-"Pagani - Huayra BC": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 20},
-"Pagani - Zonda Cinque": {"price_min_eur": 2.000.000, "price_max_eur": 2.500.000, "units_produced": 5},
-"Pagani - Zonda Tricolore": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 3},
-"Pagani - Huayra Roadster": {"price_min_eur": 2.800.000, "price_max_eur": 3.200.000, "units_produced": 100},
-"Pagani - Huayra Roadster BC": {"price_min_eur": 3.000.000, "price_max_eur": 3.500.000, "units_produced": 40},
-"Pagani - Zonda HP Barchetta": {"price_min_eur": 17.500.000, "price_max_eur": 18.000.000, "units_produced": 3},
-"Pagani - Huayra Imola": {"price_min_eur": 5.000.000, "price_max_eur": 5.500.000, "units_produced": 5},
-"Ferrari - Monza SP1": {"price_min_eur": 1.700.000, "price_max_eur": 1.900.000, "units_produced": 499},
-"Ferrari - Monza SP2": {"price_min_eur": 1.750.000, "price_max_eur": 1.950.000, "units_produced": 499},
-"Ferrari - 296 GTB": {"price_min_eur": 280.000, "price_max_eur": 330.000, "units_produced": 1.200},
-"Ferrari - F430 Scuderia": {"price_min_eur": 200.000, "price_max_eur": 250.000, "units_produced": 3.500},
-"Ferrari - 599XX": {"price_min_eur": 1.100.000, "price_max_eur": 1.200.000, "units_produced": 30},
-"Ferrari - F50": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 349},
-"Ferrari - 512 BB LM": {"price_min_eur": 1.200.000, "price_max_eur": 1.400.000, "units_produced": 150},
-"Ferrari - 288 GTO": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 272},
-"Ferrari - 250 GTO": {"price_min_eur": 70.000.000, "price_max_eur": 75.000.000, "units_produced": 36},
-"Ferrari - 250 Testa Rossa": {"price_min_eur": 25.000.000, "price_max_eur": 30.000.000, "units_produced": 34},
-"Lamborghini - Diablo GT": {"price_min_eur": 700.000, "price_max_eur": 800.000, "units_produced": 80},
-"Lamborghini - Murciélago LP 640": {"price_min_eur": 350.000, "price_max_eur": 400.000, "units_produced": 500},
-"Lamborghini - Gallardo LP 570-4 Spyder Performante": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 200},
-"Lamborghini - Aventador LP 700-4": {"price_min_eur": 350.000, "price_max_eur": 400.000, "units_produced": 4.000},
-"Lamborghini - Huracán LP 610-4": {"price_min_eur": 200.000, "price_max_eur": 250.000, "units_produced": 5.000},
-"Lamborghini - Aventador Roadster": {"price_min_eur": 400.000, "price_max_eur": 450.000, "units_produced": 1.500},
-"Lamborghini - Centenario Roadster": {"price_min_eur": 2.000.000, "price_max_eur": 2.300.000, "units_produced": 20},
-"Lamborghini - Sián Roadster": {"price_min_eur": 3.500.000, "price_max_eur": 3.800.000, "units_produced": 19},
-"Lamborghini - Reventón Roadster": {"price_min_eur": 1.900.000, "price_max_eur": 2.100.000, "units_produced": 15},
-"Lamborghini - Veneno Roadster": {"price_min_eur": 4.500.000, "price_max_eur": 5.000.000, "units_produced": 9},
-"McLaren - Speedtail": {"price_min_eur": 2.000.000, "price_max_eur": 2.500.000, "units_produced": 106},
-"McLaren - P1 GTR": {"price_min_eur": 3.500.000, "price_max_eur": 4.000.000, "units_produced": 45},
-"McLaren - 720S Spider": {"price_min_eur": 280.000, "price_max_eur": 330.000, "units_produced": 1.000},
-"McLaren - 765LT Spider": {"price_min_eur": 400.000, "price_max_eur": 450.000, "units_produced": 765},
-"McLaren - Senna GTR": {"price_min_eur": 1.400.000, "price_max_eur": 1.700.000, "units_produced": 75},
-"McLaren - Elva Mclaren Ultimate": {"price_min_eur": 1.700.000, "price_max_eur": 2.000.000, "units_produced": 149},
-"McLaren - 600LT Spider": {"price_min_eur": 210.000, "price_max_eur": 260.000, "units_produced": 350},
-"McLaren - 570S Spider": {"price_min_eur": 180.000, "price_max_eur": 220.000, "units_produced": 600},
-"McLaren - 650S Spider": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 450},
-"McLaren - 675LT Spider": {"price_min_eur": 310.000, "price_max_eur": 360.000, "units_produced": 500},
-"Aston Martin - Vantage AMR Pro": {"price_min_eur": 3.500.000, "price_max_eur": 4.000.000, "units_produced": 7},
-"Aston Martin - Valkyrie": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 150},
-"Aston Martin - Valhalla": {"price_min_eur": 1.300.000, "price_max_eur": 1.600.000, "units_produced": 500},
-"Aston Martin - DBS GT Zagato Roadster": {"price_min_eur": 7.000.000, "price_max_eur": 7.500.000, "units_produced": 19},
-"Aston Martin - CC100 Speedster": {"price_min_eur": 8.000.000, "price_max_eur": 8.500.000, "units_produced": 2},
-"Aston Martin - One-77 Roadster": {"price_min_eur": 2.000.000, "price_max_eur": 2.500.000, "units_produced": 77},
-"Aston Martin - DB10": {"price_min_eur": 1.000.000, "price_max_eur": 1.200.000, "units_produced": 10},
-"Aston Martin - Lagonda Taraf": {"price_min_eur": 400.000, "price_max_eur": 450.000, "units_produced": 200},
-"Aston Martin - DBS Superleggera Volante": {"price_min_eur": 350.000, "price_max_eur": 400.000, "units_produced": 300},
-"Aston Martin - AM-RB 003": {"price_min_eur": 1.500.000, "price_max_eur": 1.800.000, "units_produced": 500},
-"Pagani - Zonda Roadster F": {"price_min_eur": 2.000.000, "price_max_eur": 2.500.000, "units_produced": 5},
-"Pagani - Zonda Roadster BC": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 10},
-"Pagani - Huayra Roadster BC Final Edition": {"price_min_eur": 3.500.000, "price_max_eur": 4.000.000, "units_produced": 20},
-"Pagani - Huayra Tricolore": {"price_min_eur": 5.000.000, "price_max_eur": 5.500.000, "units_produced": 3},
-"Pagani - Zonda HP Barchetta Roadster": {"price_min_eur": 17.500.000, "price_max_eur": 18.000.000, "units_produced": 3},
-"Pagani - Huayra BC Roadster": {"price_min_eur": 3.000.000, "price_max_eur": 3.500.000, "units_produced": 40},
-"Pagani - Zonda R Evoluzione": {"price_min_eur": 4.000.000, "price_max_eur": 4.500.000, "units_produced": 15},
-"Pagani - Huayra Imola Roadster": {"price_min_eur": 5.500.000, "price_max_eur": 6.000.000, "units_produced": 5},
-"Pagani - Zonda Tricolore Roadster": {"price_min_eur": 3.500.000, "price_max_eur": 4.000.000, "units_produced": 3},
-"Pagani - Huayra BC Roadster Final Edition": {"price_min_eur": 4.000.000, "price_max_eur": 4.500.000, "units_produced": 10}
-"Bugatti - Veyron 16.4": {"price_min_eur": 1.500.000, "price_max_eur": 2.000.000, "units_produced": 450},
-"Bugatti - Veyron Super Sport": {"price_min_eur": 2.100.000, "price_max_eur": 2.500.000, "units_produced": 30},
-"Bugatti - Chiron": {"price_min_eur": 2.400.000, "price_max_eur": 3.000.000, "units_produced": 500},
-"Bugatti - Chiron Sport": {"price_min_eur": 2.700.000, "price_max_eur": 3.200.000, "units_produced": 200},
-"Bugatti - Chiron Pur Sport": {"price_min_eur": 3.000.000, "price_max_eur": 3.500.000, "units_produced": 60},
-"Bugatti - Divo": {"price_min_eur": 5.500.000, "price_max_eur": 6.000.000, "units_produced": 40},
-"Bugatti - Centodieci": {"price_min_eur": 8.500.000, "price_max_eur": 9.000.000, "units_produced": 10},
-"Bugatti - Bolide": {"price_min_eur": 5.000.000, "price_max_eur": 5.500.000, "units_produced": 40},
-"Bugatti - La Voiture Noire": {"price_min_eur": 16.700.000, "price_max_eur": 17.000.000, "units_produced": 1},
-"Bugatti - Veyron Grand Sport Vitesse": {"price_min_eur": 2.200.000, "price_max_eur": 2.500.000, "units_produced": 150},
-"Lamborghini - Aventador SV Roadster": {"price_min_eur": 450.000, "price_max_eur": 500.000, "units_produced": 500},
-"Lamborghini - Huracán STO": {"price_min_eur": 330.000, "price_max_eur": 380.000, "units_produced": 1.000},
-"Lamborghini - Aventador LP 780-4 Ultimae": {"price_min_eur": 500.000, "price_max_eur": 550.000, "units_produced": 600},
-"Lamborghini - Murciélago LP 670-4 SV Roadster": {"price_min_eur": 400.000, "price_max_eur": 450.000, "units_produced": 350},
-"Lamborghini - Diablo SE30 Jota": {"price_min_eur": 700.000, "price_max_eur": 750.000, "units_produced": 150},
-"Lamborghini - Veneno Roadster": {"price_min_eur": 4.500.000, "price_max_eur": 5.000.000, "units_produced": 9},
-"Lamborghini - Sián FKP 37 Roadster": {"price_min_eur": 3.500.000, "price_max_eur": 3.800.000, "units_produced": 19},
-"Lamborghini - Centenario LP 770-4 Roadster": {"price_min_eur": 2.000.000, "price_max_eur": 2.300.000, "units_produced": 20},
-"Lamborghini - Aventador LP 750-4 SV Roadster": {"price_min_eur": 450.000, "price_max_eur": 500.000, "units_produced": 500},
-"Lamborghini - Gallardo LP 570-4 Super Trofeo Stradale": {"price_min_eur": 220.000, "price_max_eur": 260.000, "units_produced": 150},
-"Ferrari - FXX K": {"price_min_eur": 2.800.000, "price_max_eur": 3.200.000, "units_produced": 32},
-"Ferrari - 812 Competizione": {"price_min_eur": 400.000, "price_max_eur": 450.000, "units_produced": 999},
-"Ferrari - 488 Pista Spider": {"price_min_eur": 350.000, "price_max_eur": 400.000, "units_produced": 1.200},
-"Ferrari - 458 Speciale A": {"price_min_eur": 280.000, "price_max_eur": 330.000, "units_produced": 499},
-"Ferrari - F50 GT": {"price_min_eur": 3.000.000, "price_max_eur": 3.500.000, "units_produced": 20},
-"Ferrari - 599 GTO Spider": {"price_min_eur": 450.000, "price_max_eur": 500.000, "units_produced": 599},
-"Ferrari - Monza SP1 Roadster": {"price_min_eur": 1.800.000, "price_max_eur": 2.000.000, "units_produced": 499},
-"Ferrari - Monza SP2 Roadster": {"price_min_eur": 1.850.000, "price_max_eur": 2.050.000, "units_produced": 499},
-"Ferrari - F12tdf Roadster": {"price_min_eur": 550.000, "price_max_eur": 600.000, "units_produced": 799},
-"Ferrari - Enzo Roadster": {"price_min_eur": 2.100.000, "price_max_eur": 2.400.000, "units_produced": 400},
-"McLaren - 720S GT3": {"price_min_eur": 400.000, "price_max_eur": 450.000, "units_produced": 50},
-"McLaren - 600LT Spider MSO": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 350},
-"McLaren - 765LT Spider MSO": {"price_min_eur": 400.000, "price_max_eur": 450.000, "units_produced": 765},
-"McLaren - Senna GTR MSO": {"price_min_eur": 1.450.000, "price_max_eur": 1.700.000, "units_produced": 75},
-"McLaren - Speedtail Ultimate Series": {"price_min_eur": 2.100.000, "price_max_eur": 2.500.000, "units_produced": 106},
-"McLaren - P1 GTR MSO": {"price_min_eur": 3.600.000, "price_max_eur": 4.000.000, "units_produced": 45},
-"McLaren - Elva MSO": {"price_min_eur": 1.800.000, "price_max_eur": 2.000.000, "units_produced": 149},
-"McLaren - 650S Spider MSO": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 450},
-"McLaren - 675LT Spider MSO": {"price_min_eur": 320.000, "price_max_eur": 370.000, "units_produced": 500},
-"McLaren - 570S Spider MSO": {"price_min_eur": 180.000, "price_max_eur": 220.000, "units_produced": 600},
-"Aston Martin - Valkyrie AMR Pro": {"price_min_eur": 3.000.000, "price_max_eur": 3.500.000, "units_produced": 150},
-"Aston Martin - Valhalla AMR": {"price_min_eur": 1.350.000, "price_max_eur": 1.650.000, "units_produced": 500},
-"Aston Martin - DBS GT Zagato AMR": {"price_min_eur": 7.500.000, "price_max_eur": 8.000.000, "units_produced": 19},
-"Aston Martin - CC100 Speedster AMR": {"price_min_eur": 8.500.000, "price_max_eur": 9.000.000, "units_produced": 2},
-"Aston Martin - DB10 AMR": {"price_min_eur": 1.050.000, "price_max_eur": 1.250.000, "units_produced": 10},
-"Aston Martin - AM-RB 003 Roadster": {"price_min_eur": 1.600.000, "price_max_eur": 1.800.000, "units_produced": 500},
-"Aston Martin - Vantage AMR Pro Roadster": {"price_min_eur": 3.600.000, "price_max_eur": 4.000.000, "units_produced": 7},
-"Aston Martin - One-77 AMR Roadster": {"price_min_eur": 2.100.000, "price_max_eur": 2.500.000, "units_produced": 77},
-"Aston Martin - Vulcan AMR": {"price_min_eur": 2.400.000, "price_max_eur": 2.600.000, "units_produced": 24},
-"Aston Martin - DBS Superleggera AMR": {"price_min_eur": 360.000, "price_max_eur": 400.000, "units_produced": 300},
-"Pagani - Huayra Imola Roadster Final Edition": {"price_min_eur": 5.500.000, "price_max_eur": 6.000.000, "units_produced": 5},
-"Pagani - Huayra BC Final Edition": {"price_min_eur": 4.000.000, "price_max_eur": 4.500.000, "units_produced": 10},
-"Pagani - Zonda HP Barchetta Roadster": {"price_min_eur": 17.500.000, "price_max_eur": 18.000.000, "units_produced": 3},
-"Pagani - Huayra Roadster BC Final Edition": {"price_min_eur": 4.000.000, "price_max_eur": 4.500.000, "units_produced": 40},
-"Pagani - Zonda R Evoluzione Roadster": {"price_min_eur": 4.000.000, "price_max_eur": 4.500.000, "units_produced": 15},
-"Pagani - Huayra Tricolore Roadster": {"price_min_eur": 5.000.000, "price_max_eur": 5.500.000, "units_produced": 3},
-"Pagani - Zonda Roadster F Final Edition": {"price_min_eur": 2.000.000, "price_max_eur": 2.500.000, "units_produced": 5},
-"Pagani - Zonda Roadster BC Final Edition": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 10},
-"Pagani - Huayra BC Roadster Ultimate": {"price_min_eur": 4.500.000, "price_max_eur": 5.000.000, "units_produced": 20},
-"Pagani - Huayra Imola Roadster Ultimate": {"price_min_eur": 5.500.000, "price_max_eur": 6.000.000, "units_produced": 5}
-"Ford - Mustang GT": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 50.000},
-"Chevrolet - Camaro SS": {"price_min_eur": 42.000, "price_max_eur": 48.000, "units_produced": 40.000},
-"Dodge - Challenger R/T": {"price_min_eur": 43.000, "price_max_eur": 49.000, "units_produced": 35.000},
-"Nissan - 370Z": {"price_min_eur": 35.000, "price_max_eur": 40.000, "units_produced": 25.000},
-"Toyota - GR Supra": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 15.000},
-"Mazda - MX-5": {"price_min_eur": 32.000, "price_max_eur": 36.000, "units_produced": 70.000},
-"Subaru - BRZ": {"price_min_eur": 30.000, "price_max_eur": 35.000, "units_produced": 40.000},
-"Hyundai - i30 N": {"price_min_eur": 38.000, "price_max_eur": 42.000, "units_produced": 25.000},
-"Kia - Stinger GT": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 15.000},
-"Volkswagen - Golf GTI": {"price_min_eur": 37.000, "price_max_eur": 42.000, "units_produced": 60.000},
-"Volkswagen - Golf R": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 30.000},
-"BMW - M2": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 20.000},
-"BMW - M240i": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 25.000},
-"BMW - Z4 M40i": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 15.000},
-"Audi - S3": {"price_min_eur": 42.000, "price_max_eur": 46.000, "units_produced": 35.000},
-"Audi - TT RS": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 15.000},
-"Audi - TTS": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 20.000},
-"Mercedes - A45 AMG": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 20.000},
-"Mercedes - CLA 45 AMG": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 15.000},
-"Mercedes - C43 AMG": {"price_min_eur": 58.000, "price_max_eur": 63.000, "units_produced": 18.000},
-"Alfa Romeo - Giulia Veloce": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 15.000},
-"Alfa Romeo - Stelvio Quadrifoglio": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 10.000},
-"Jaguar - F-Type": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 20.000},
-"Lotus - Elise": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 12.000},
-"Lotus - Evora": {"price_min_eur": 65.000, "price_max_eur": 70.000, "units_produced": 10.000},
-"Toyota - GT86": {"price_min_eur": 32.000, "price_max_eur": 36.000, "units_produced": 25.000},
-"Nissan - Z Proto": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 10.000},
-"Honda - Civic Type R": {"price_min_eur": 42.000, "price_max_eur": 46.000, "units_produced": 40.000},
-"Ford - Focus ST": {"price_min_eur": 38.000, "price_max_eur": 42.000, "units_produced": 35.000},
-"Ford - Mustang Mach 1": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 12.000},
-"Chevrolet - Corvette C8": {"price_min_eur": 65.000, "price_max_eur": 70.000, "units_produced": 20.000},
-"Chevrolet - Camaro ZL1": {"price_min_eur": 65.000, "price_max_eur": 70.000, "units_produced": 10.000},
-"Dodge - Charger Scat Pack": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 15.000},
-"Dodge - Challenger Hellcat": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 12.000},
-"BMW - M3": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 20.000},
-"BMW - M4": {"price_min_eur": 75.000, "price_max_eur": 80.000, "units_produced": 18.000},
-"Mercedes - E53 AMG": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 15.000},
-"Mercedes - GLC 43 AMG": {"price_min_eur": 65.000, "price_max_eur": 70.000, "units_produced": 10.000},
-"Mercedes - AMG GT": {"price_min_eur": 120.000, "price_max_eur": 130.000, "units_produced": 8.000},
-"Audi - RS5": {"price_min_eur": 75.000, "price_max_eur": 80.000, "units_produced": 12.000},
-"Audi - RS3": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 15.000},
-"Alfa Romeo - 4C": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 5.000},
-"Jaguar - F-Type R": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 7.000},
-"Jaguar - F-Type SVR": {"price_min_eur": 120.000, "price_max_eur": 130.000, "units_produced": 2.000},
-"Lotus - Exige": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 4.000},
-"Lotus - Emira": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 5.000},
-"Hyundai - Veloster N": {"price_min_eur": 35.000, "price_max_eur": 40.000, "units_produced": 20.000},
-"Kia - Stinger GT Limited": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 10.000},
-"Subaru - WRX STI": {"price_min_eur": 40.000, "price_max_eur": 45.000, "units_produced": 25.000},
-"Nissan - GT-R": {"price_min_eur": 110.000, "price_max_eur": 120.000, "units_produced": 5.000},
-"Renault - Megane RS": {"price_min_eur": 40.000, "price_max_eur": 45.000, "units_produced": 15.000},
-"Peugeot - 308 GTi": {"price_min_eur": 38.000, "price_max_eur": 42.000, "units_produced": 12.000},
-"Peugeot - RCZ R": {"price_min_eur": 36.000, "price_max_eur": 40.000, "units_produced": 8.000},
-"Fiat - 124 Spider Abarth": {"price_min_eur": 35.000, "price_max_eur": 38.000, "units_produced": 10.000},
-"Alfa Romeo - Stelvio Ti": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 15.000},
-"Alfa Romeo - Giulia Quadrifoglio": {"price_min_eur": 75.000, "price_max_eur": 80.000, "units_produced": 7.000},
-"BMW - Z4 sDrive30i": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 10.000},
-"BMW - Z4 M40i Roadster": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 7.000},
-"Ford - Mustang Mach 1": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 12.000},
-"Chevrolet - Corvette Stingray": {"price_min_eur": 65.000, "price_max_eur": 70.000, "units_produced": 15.000},
-"Dodge - Challenger R/T Scat Pack": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 10.000},
-"Dodge - Charger R/T": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 12.000},
-"Nissan - 350Z": {"price_min_eur": 32.000, "price_max_eur": 36.000, "units_produced": 20.000},
-"Nissan - 370Z Nismo": {"price_min_eur": 42.000, "price_max_eur": 46.000, "units_produced": 8.000},
-"Toyota - GR Yaris": {"price_min_eur": 38.000, "price_max_eur": 42.000, "units_produced": 15.000},
-"Toyota - GT86 TRD": {"price_min_eur": 35.000, "price_max_eur": 40.000, "units_produced": 12.000},
-"Mazda - MX-5 RF": {"price_min_eur": 34.000, "price_max_eur": 38.000, "units_produced": 18.000},
-"Subaru - BRZ tS": {"price_min_eur": 32.000, "price_max_eur": 36.000, "units_produced": 10.000},
-"Hyundai - i20 N Project C": {"price_min_eur": 36.000, "price_max_eur": 40.000, "units_produced": 5.000},
-"Kia - Stinger GT Limited Edition": {"price_min_eur": 52.000, "price_max_eur": 57.000, "units_produced": 3.000},
-"BMW - M2 Competition": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 15.000},
-"BMW - M3 Competition": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 12.000},
-"BMW - M4 Competition": {"price_min_eur": 75.000, "price_max_eur": 80.000, "units_produced": 10.000},
-"Audi - S5": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 15.000},
-"Audi - RS5 Coupe": {"price_min_eur": 75.000, "price_max_eur": 80.000, "units_produced": 8.000},
-"Audi - TT RS Coupe": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 7.000},
-"Mercedes - AMG A35": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 12.000},
-"Mercedes - AMG CLA35": {"price_min_eur": 48.000, "price_max_eur": 53.000, "units_produced": 10.000},
-"Mercedes - AMG GLA35": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 8.000},
-"Mercedes - AMG C43 Coupe": {"price_min_eur": 58.000, "price_max_eur": 63.000, "units_produced": 5.000},
-"Mercedes - AMG E53 Coupe": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 3.000},
-"Alfa Romeo - Giulia Veloce Ti": {"price_min_eur": 52.000, "price_max_eur": 57.000, "units_produced": 5.000},
-"Alfa Romeo - Stelvio Veloce Ti": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 4.000},
-"Jaguar - F-Type P300": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 3.000},
-"Jaguar - F-Type P450": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 2.500},
-"Jaguar - F-Type P575": {"price_min_eur": 120.000, "price_max_eur": 130.000, "units_produced": 1.500},
-"Lotus - Emira V6": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 2.000},
-"Lotus - Evora GT": {"price_min_eur": 90.000, "price_max_eur": 95.000, "units_produced": 1.500},
-"Lotus - Exige Sport 410": {"price_min_eur": 85.000, "price_max_eur": 90.000, "units_produced": 1.200},
-"Honda - Civic Type R Limited Edition": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 3.500},
-"Hyundai - Veloster N Performance Pack": {"price_min_eur": 38.000, "price_max_eur": 42.000, "units_produced": 2.500},
-"Renault - Megane RS Trophy": {"price_min_eur": 42.000, "price_max_eur": 46.000, "units_produced": 3.000},
-"Peugeot - 308 GTi Sport": {"price_min_eur": 38.000, "price_max_eur": 42.000, "units_produced": 2.500},
-"Peugeot - RCZ R Limited": {"price_min_eur": 36.000, "price_max_eur": 40.000, "units_produced": 1.800},
-"Fiat - 124 Spider Abarth Lusso": {"price_min_eur": 36.000, "price_max_eur": 40.000, "units_produced": 2.000},
-"Fiat - 500 Abarth 595": {"price_min_eur": 22.000, "price_max_eur": 25.000, "units_produced": 5.000},
-"Fiat - 500 Abarth 695 Rivale": {"price_min_eur": 28.000, "price_max_eur": 32.000, "units_produced": 1.500},
-"BMW - M2 CS": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 1.500},
-"BMW - M4 CS": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 1.200},
-"BMW - M240i xDrive Coupe": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 1.500},
-"Audi - S4 Avant": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 2.000},
-"Audi - S5 Cabriolet": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 1.500},
-"Audi - RS3 Sportback": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 1.000},
-"Audi - RS Q3": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 1.200},
-"Mercedes - AMG GLA35 4MATIC": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 1.500},
-"Mercedes - AMG CLA35 Shooting Brake": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 1.200},
-"Mercedes - AMG C43 Cabrio": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 1.000},
-"Mercedes - AMG GT Roadster": {"price_min_eur": 120.000, "price_max_eur": 130.000, "units_produced": 800},
-"Mercedes - AMG GT R": {"price_min_eur": 150.000, "price_max_eur": 160.000, "units_produced": 500},
-"Jaguar - F-Type P380 Coupe": {"price_min_eur": 75.000, "price_max_eur": 80.000, "units_produced": 700},
-"Jaguar - F-Type P380 Convertible": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 500},
-"Lotus - Elise Cup 250": {"price_min_eur": 65.000, "price_max_eur": 70.000, "units_produced": 400},
-"Lotus - Evora GT410": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 350},
-"Lotus - Emira First Edition": {"price_min_eur": 90.000, "price_max_eur": 95.000, "units_produced": 250},
-"Subaru - WRX STI S209": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 250},
-"Nissan - GT-R Nismo": {"price_min_eur": 170.000, "price_max_eur": 180.000, "units_produced": 300},
-"Nissan - 370Z Nismo Special Edition": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 200},
-"Honda - NSX": {"price_min_eur": 180.000, "price_max_eur": 200.000, "units_produced": 500},
-"Honda - Civic Type R GT": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 400},
-"Ford - Mustang EcoBoost": {"price_min_eur": 40.000, "price_max_eur": 45.000, "units_produced": 18.000},
-"Chevrolet - Camaro LT": {"price_min_eur": 38.000, "price_max_eur": 42.000, "units_produced": 15.000},
-"Dodge - Challenger R/T Plus": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 12.000},
-"Dodge - Charger R/T Scat Pack": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 10.000},
-"Nissan - 350Z Track Edition": {"price_min_eur": 34.000, "price_max_eur": 38.000, "units_produced": 8.000},
-"Nissan - 370Z Sport": {"price_min_eur": 38.000, "price_max_eur": 42.000, "units_produced": 10.000},
-"Toyota - GR Yaris Circuit": {"price_min_eur": 40.000, "price_max_eur": 45.000, "units_produced": 6.000},
-"Toyota - GT86 Limited": {"price_min_eur": 36.000, "price_max_eur": 40.000, "units_produced": 5.000},
-"Mazda - MX-5 Icon": {"price_min_eur": 32.000, "price_max_eur": 36.000, "units_produced": 12.000},
-"Subaru - BRZ tS Limited": {"price_min_eur": 34.000, "price_max_eur": 38.000, "units_produced": 7.000},
-"Hyundai - i30 N Performance": {"price_min_eur": 40.000, "price_max_eur": 45.000, "units_produced": 5.000},
-"Kia - Stinger GT Premium": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 4.000},
-"BMW - M2 Coupe": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 6.000},
-"BMW - M3 Sedan": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 5.000},
-"BMW - M4 Coupe": {"price_min_eur": 75.000, "price_max_eur": 80.000, "units_produced": 4.500},
-"Audi - S3 Sedan": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 8.000},
-"Audi - S5 Sportback": {"price_min_eur": 65.000, "price_max_eur": 70.000, "units_produced": 4.000},
-"Audi - TT RS Roadster": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 3.000},
-"Mercedes - AMG A35 Sedan": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 6.000},
-"Mercedes - AMG CLA35 Coupe": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 4.500},
-"Mercedes - AMG GLA35 SUV": {"price_min_eur": 52.000, "price_max_eur": 57.000, "units_produced": 4.000},
-"Mercedes - AMG C43 Coupe": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 3.500},
-"Mercedes - AMG E53 Coupe": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 3.000},
-"Alfa Romeo - Giulia Veloce Q4": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 4.000},
-"Alfa Romeo - Stelvio Veloce Q4": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 3.000},
-"Jaguar - F-Type P300 Convertible": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 3.500},
-"Jaguar - F-Type P450 Coupe": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 2.500},
-"Jaguar - F-Type P575 SVR": {"price_min_eur": 120.000, "price_max_eur": 130.000, "units_produced": 1.500},
-"Lotus - Emira V6 Sport": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 2.000},
-"Lotus - Evora GT430": {"price_min_eur": 90.000, "price_max_eur": 95.000, "units_produced": 1.500},
-"Lotus - Exige Sport 380": {"price_min_eur": 85.000, "price_max_eur": 90.000, "units_produced": 1.200},
-"Honda - Civic Type R Limited": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 3.500},
-"Hyundai - Veloster N Turbo": {"price_min_eur": 38.000, "price_max_eur": 42.000, "units_produced": 2.500},
-"Renault - Megane RS Trophy-R": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 2.000},
-"Peugeot - 308 GTi Cup": {"price_min_eur": 38.000, "price_max_eur": 42.000, "units_produced": 2.000},
-"Peugeot - RCZ R Performance": {"price_min_eur": 36.000, "price_max_eur": 40.000, "units_produced": 1.500},
-"Fiat - 124 Spider Abarth GT": {"price_min_eur": 36.000, "price_max_eur": 40.000, "units_produced": 1.800},
-"Fiat - 500 Abarth 595 Competizione": {"price_min_eur": 25.000, "price_max_eur": 28.000, "units_produced": 2.500},
-"Fiat - 500 Abarth 695 Biposto": {"price_min_eur": 28.000, "price_max_eur": 32.000, "units_produced": 1.200},
-"BMW - M2 CS Racing": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 1.500},
-"BMW - M4 CS Coupe": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 1.200},
-"BMW - M240i Coupe Sport": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 1.500},
-"Audi - S4 Avant Limited": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 1.800},
-"Audi - S5 Cabriolet Edition": {"price_min_eur": 70.000, "price_max_eur": 75.000, "units_produced": 1.200},
-"Audi - RS3 Sportback Special": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 1.000},
-"Audi - RS Q3 Limited": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 1.200},
-"Mercedes - AMG GLA35 4MATIC Edition": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 1.500},
-"Mercedes - AMG CLA35 Shooting Brake Special": {"price_min_eur": 55.000, "price_max_eur": 60.000, "units_produced": 1.200},
-"Mercedes - AMG C43 Cabrio Limited": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 1.000},
-"Mercedes - AMG GT Roadster Edition": {"price_min_eur": 120.000, "price_max_eur": 130.000, "units_produced": 800},
-"Mercedes - AMG GT R Pro": {"price_min_eur": 160.000, "price_max_eur": 170.000, "units_produced": 500},
-"Jaguar - F-Type P380 Coupe Special": {"price_min_eur": 75.000, "price_max_eur": 80.000, "units_produced": 700},
-"Jaguar - F-Type P380 Convertible Edition": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 500},
-"Lotus - Elise Cup 250 Limited": {"price_min_eur": 65.000, "price_max_eur": 70.000, "units_produced": 400},
-"Lotus - Evora GT410 Sport": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 350},
-"Lotus - Emira First Edition Limited": {"price_min_eur": 90.000, "price_max_eur": 95.000, "units_produced": 250},
-"Subaru - WRX STI S209 Limited": {"price_min_eur": 50.000, "price_max_eur": 55.000, "units_produced": 250},
-"Nissan - GT-R Nismo Special": {"price_min_eur": 170.000, "price_max_eur": 180.000, "units_produced": 300},
-"Nissan - 370Z Nismo Special Edition": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 200},
-"Honda - NSX Type R": {"price_min_eur": 180.000, "price_max_eur": 200.000, "units_produced": 500},
-"Honda - Civic Type R GT Limited": {"price_min_eur": 45.000, "price_max_eur": 50.000, "units_produced": 400},
-"Toyota - Corolla": {"price_min_eur": 24.000, "price_max_eur": 26.000, "units_produced": 50000000},
-"Volkswagen - Golf": {"price_min_eur": 27.000, "price_max_eur": 29.000, "units_produced": 37000000},
-"Ford - Fiesta": {"price_min_eur": 19.000, "price_max_eur": 21.000, "units_produced": 22000000},
-"Renault - Clio": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 16000000},
-"Peugeot - 208": {"price_min_eur": 17.500, "price_max_eur": 19.500, "units_produced": 12000000},
-"Seat - Ibiza": {"price_min_eur": 17.000, "price_max_eur": 18.500, "units_produced": 6000000},
-"Opel - Corsa": {"price_min_eur": 17.500, "price_max_eur": 18.500, "units_produced": 14000000},
-"Hyundai - i30": {"price_min_eur": 21.000, "price_max_eur": 23.000, "units_produced": 7000000},
-"Kia - Ceed": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 5000000},
-"Honda - Civic": {"price_min_eur": 26.000, "price_max_eur": 28.000, "units_produced": 27000000},
-"Nissan - Micra": {"price_min_eur": 16.500, "price_max_eur": 17.500, "units_produced": 6000000},
-"Nissan - Qashqai": {"price_min_eur": 29.000, "price_max_eur": 31.000, "units_produced": 5000000},
-"Dacia - Sandero": {"price_min_eur": 13.500, "price_max_eur": 14.500, "units_produced": 3500000},
-"Dacia - Duster": {"price_min_eur": 18.500, "price_max_eur": 19.500, "units_produced": 2500000},
-"Skoda - Octavia": {"price_min_eur": 26.500, "price_max_eur": 27.500, "units_produced": 7000000},
-"Skoda - Fabia": {"price_min_eur": 17.500, "price_max_eur": 18.500, "units_produced": 4500000},
-"Volkswagen - Polo": {"price_min_eur": 19.500, "price_max_eur": 20.500, "units_produced": 18000000},
-"Volkswagen - Passat": {"price_min_eur": 34.000, "price_max_eur": 36.000, "units_produced": 30000000},
-"Ford - Focus": {"price_min_eur": 24.500, "price_max_eur": 25.500, "units_produced": 16000000},
-"Ford - Mondeo": {"price_min_eur": 29.000, "price_max_eur": 31.000, "units_produced": 5000000},
-"Toyota - Yaris": {"price_min_eur": 17.500, "price_max_eur": 18.500, "units_produced": 10000000},
-"Toyota - RAV4": {"price_min_eur": 34.500, "price_max_eur": 35.500, "units_produced": 15000000},
-"Toyota - Prius": {"price_min_eur": 27.500, "price_max_eur": 28.500, "units_produced": 6000000},
-"BMW - Serie 3": {"price_min_eur": 44.000, "price_max_eur": 46.000, "units_produced": 16000000},
-"BMW - Serie 1": {"price_min_eur": 31.000, "price_max_eur": 33.000, "units_produced": 3000000},
-"Audi - A3": {"price_min_eur": 34.500, "price_max_eur": 35.500, "units_produced": 5000000},
-"Audi - A4": {"price_min_eur": 41.500, "price_max_eur": 42.500, "units_produced": 7000000},
-"Audi - Q3": {"price_min_eur": 39.000, "price_max_eur": 41.000, "units_produced": 2000000},
-"Mercedes - Clase A": {"price_min_eur": 33.000, "price_max_eur": 35.000, "units_produced": 3000000},
-"Mercedes - Clase C": {"price_min_eur": 47.500, "price_max_eur": 48.500, "units_produced": 10000000},
-"Hyundai - Tucson": {"price_min_eur": 31.500, "price_max_eur": 32.500, "units_produced": 7000000},
-"Kia - Sportage": {"price_min_eur": 30.500, "price_max_eur": 31.500, "units_produced": 6000000},
-"Mazda - 3": {"price_min_eur": 23.500, "price_max_eur": 24.500, "units_produced": 6000000},
-"Mazda - CX-5": {"price_min_eur": 32.500, "price_max_eur": 33.500, "units_produced": 4000000},
-"Subaru - Impreza": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 3000000},
-"Subaru - Forester": {"price_min_eur": 31.500, "price_max_eur": 32.500, "units_produced": 3500000},
-"Chevrolet - Cruze": {"price_min_eur": 21.500, "price_max_eur": 22.500, "units_produced": 3000000},
-"Chevrolet - Malibu": {"price_min_eur": 26.500, "price_max_eur": 27.500, "units_produced": 10000000},
-"Tesla - Model 3": {"price_min_eur": 39.500, "price_max_eur": 40.500, "units_produced": 2000000},
-"Tesla - Model Y": {"price_min_eur": 44.500, "price_max_eur": 45.500, "units_produced": 2500000},
-"Renault - Megane": {"price_min_eur": 23.500, "price_max_eur": 24.500, "units_produced": 10000000},
-"Renault - Captur": {"price_min_eur": 22.500, "price_max_eur": 23.500, "units_produced": 2000000},
-"Peugeot - 308": {"price_min_eur": 23.500, "price_max_eur": 24.500, "units_produced": 7000000},
-"Peugeot - 3008": {"price_min_eur": 31.500, "price_max_eur": 32.500, "units_produced": 2000000},
-"Citroën - C3": {"price_min_eur": 16.500, "price_max_eur": 17.500, "units_produced": 5000000},
-"Citroën - C4": {"price_min_eur": 22.500, "price_max_eur": 23.500, "units_produced": 3000000},
-"Fiat - 500": {"price_min_eur": 15.500, "price_max_eur": 16.500, "units_produced": 6000000},
-"Fiat - Panda": {"price_min_eur": 14.500, "price_max_eur": 15.500, "units_produced": 8000000},
-"Jeep - Wrangler": {"price_min_eur": 44.500, "price_max_eur": 45.500, "units_produced": 2000000},
-"Jeep - Compass": {"price_min_eur": 29.500, "price_max_eur": 30.500, "units_produced": 1500000},
-"Volvo - XC60": {"price_min_eur": 49.500, "price_max_eur": 50.500, "units_produced": 2500000},
-"Volvo - XC40": {"price_min_eur": 39.500, "price_max_eur": 40.500, "units_produced": 1000000},
-"Mitsubishi - Outlander": {"price_min_eur": 32.500, "price_max_eur": 33.500, "units_produced": 2500000},
-"Suzuki - Swift": {"price_min_eur": 16.500, "price_max_eur": 17.500, "units_produced": 6000000},
-"Suzuki - Vitara": {"price_min_eur": 21.500, "price_max_eur": 22.500, "units_produced": 3000000},
-"Seat - Leon": {"price_min_eur": 22.500, "price_max_eur": 23.500, "units_produced": 2300000},
-"Cupra - Formentor": {"price_min_eur": 34.500, "price_max_eur": 35.500, "units_produced": 300000},
-"Alfa Romeo - Giulia": {"price_min_eur": 41.000, "price_max_eur": 42.000, "units_produced": 200000},
-"Alfa Romeo - Stelvio": {"price_min_eur": 47.500, "price_max_eur": 48.500, "units_produced": 150000},
-"Mini - Cooper": {"price_min_eur": 27.500, "price_max_eur": 28.500, "units_produced": 5000000},
-"Mini - Countryman": {"price_min_eur": 34.500, "price_max_eur": 35.500, "units_produced": 800000},
-"Honda - CR-V": {"price_min_eur": 33.500, "price_max_eur": 34.500, "units_produced": 10000000},
-"Toyota - Land Cruiser": {"price_min_eur": 59.500, "price_max_eur": 60.500, "units_produced": 10000000},
-"Ford - Kuga": {"price_min_eur": 31.500, "price_max_eur": 32.500, "units_produced": 1500000},
-"Ford - Puma": {"price_min_eur": 23.500, "price_max_eur": 24.500, "units_produced": 500000},
-"Volkswagen - Tiguan": {"price_min_eur": 33.500, "price_max_eur": 34.500, "units_produced": 6000000},
-"Volkswagen - T-Roc": {"price_min_eur": 26.500, "price_max_eur": 27.500, "units_produced": 2000000},
-"Hyundai - i20": {"price_min_eur": 16.500, "price_max_eur": 17.500, "units_produced": 4000000},
-"Kia - Picanto": {"price_min_eur": 14.500, "price_max_eur": 15.500, "units_produced": 3000000},
-"Dacia - Jogger": {"price_min_eur": 17.500, "price_max_eur": 18.500, "units_produced": 200000},
-"Skoda - Kodiaq": {"price_min_eur": 35.500, "price_max_eur": 36.500, "units_produced": 800000},
-"Skoda - Superb": {"price_min_eur": 37.500, "price_max_eur": 38.500, "units_produced": 1500000}
-"Toyota - Auris": {"price_min_eur": 20.500, "price_max_eur": 21.500, "units_produced": 6000000},
-"Toyota - C-HR": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 4000000},
-"Volkswagen - Arteon": {"price_min_eur": 41.500, "price_max_eur": 42.500, "units_produced": 800000},
-"Volkswagen - Sharan": {"price_min_eur": 39.500, "price_max_eur": 40.500, "units_produced": 600000},
-"Volkswagen - Touran": {"price_min_eur": 31.500, "price_max_eur": 32.500, "units_produced": 1200000},
-"Ford - EcoSport": {"price_min_eur": 22.500, "price_max_eur": 23.500, "units_produced": 2500000},
-"Ford - Edge": {"price_min_eur": 45.500, "price_max_eur": 46.500, "units_produced": 500000},
-"Renault - Kadjar": {"price_min_eur": 27.500, "price_max_eur": 28.500, "units_produced": 1500000},
-"Renault - Talisman": {"price_min_eur": 32.500, "price_max_eur": 33.500, "units_produced": 700000},
-"Peugeot - 2008": {"price_min_eur": 22.500, "price_max_eur": 23.500, "units_produced": 3000000},
-"Peugeot - 5008": {"price_min_eur": 33.500, "price_max_eur": 34.500, "units_produced": 1200000},
-"Citroën - C1": {"price_min_eur": 12.500, "price_max_eur": 13.500, "units_produced": 2500000},
-"Citroën - C5 Aircross": {"price_min_eur": 30.500, "price_max_eur": 31.500, "units_produced": 800000},
-"Fiat - Tipo": {"price_min_eur": 16.500, "price_max_eur": 17.500, "units_produced": 1800000},
-"Fiat - 500X": {"price_min_eur": 21.500, "price_max_eur": 22.500, "units_produced": 900000},
-"Jeep - Renegade": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 700000},
-"Volvo - V60": {"price_min_eur": 41.500, "price_max_eur": 42.500, "units_produced": 500000},
-"Volvo - S60": {"price_min_eur": 39.500, "price_max_eur": 40.500, "units_produced": 600000},
-"Mitsubishi - ASX": {"price_min_eur": 22.500, "price_max_eur": 23.500, "units_produced": 900000},
-"Mitsubishi - Eclipse Cross": {"price_min_eur": 28.500, "price_max_eur": 29.500, "units_produced": 600000},
-"Suzuki - Ignis": {"price_min_eur": 14.500, "price_max_eur": 15.500, "units_produced": 1200000},
-"Suzuki - S-Cross": {"price_min_eur": 21.500, "price_max_eur": 22.500, "units_produced": 600000},
-"Seat - Arona": {"price_min_eur": 20.500, "price_max_eur": 21.500, "units_produced": 1400000},
-"Seat - Tarraco": {"price_min_eur": 34.500, "price_max_eur": 35.500, "units_produced": 400000},
-"Cupra - Leon": {"price_min_eur": 28.500, "price_max_eur": 29.500, "units_produced": 350000},
-"Alfa Romeo - Giulietta": {"price_min_eur": 22.500, "price_max_eur": 23.500, "units_produced": 400000},
-"Alfa Romeo - MiTo": {"price_min_eur": 18.500, "price_max_eur": 19.500, "units_produced": 350000},
-"Mini - One": {"price_min_eur": 18.500, "price_max_eur": 19.500, "units_produced": 1200000},
-"Mini - Clubman": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 600000},
-"Honda - HR-V": {"price_min_eur": 23.500, "price_max_eur": 24.500, "units_produced": 1400000},
-"Honda - Jazz": {"price_min_eur": 18.500, "price_max_eur": 19.500, "units_produced": 1300000},
-"Toyota - Proace City": {"price_min_eur": 19.500, "price_max_eur": 20.500, "units_produced": 400000},
-"Toyota - Verso": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 350000},
-"Volkswagen - Caddy": {"price_min_eur": 23.500, "price_max_eur": 24.500, "units_produced": 800000},
-"Volkswagen - T-Cross": {"price_min_eur": 21.500, "price_max_eur": 22.500, "units_produced": 1000000},
-"Ford - Tourneo Connect": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 400000},
-"Ford - Transit Connect": {"price_min_eur": 27.500, "price_max_eur": 28.500, "units_produced": 350000},
-"Renault - Kangoo": {"price_min_eur": 19.500, "price_max_eur": 20.500, "units_produced": 1200000},
-"Peugeot - Rifter": {"price_min_eur": 20.500, "price_max_eur": 21.500, "units_produced": 800000},
-"Citroën - Berlingo": {"price_min_eur": 20.500, "price_max_eur": 21.500, "units_produced": 900000},
-"Fiat - Doblò": {"price_min_eur": 19.500, "price_max_eur": 20.500, "units_produced": 400000},
-"Hyundai - Kona": {"price_min_eur": 22.500, "price_max_eur": 23.500, "units_produced": 700000},
-"Hyundai - i10": {"price_min_eur": 12.500, "price_max_eur": 13.500, "units_produced": 900000},
-"Kia - Rio": {"price_min_eur": 15.500, "price_max_eur": 16.500, "units_produced": 1000000},
-"Kia - Soul": {"price_min_eur": 20.500, "price_max_eur": 21.500, "units_produced": 600000},
-"Nissan - Juke": {"price_min_eur": 19.500, "price_max_eur": 20.500, "units_produced": 700000},
-"Nissan - Leaf": {"price_min_eur": 28.500, "price_max_eur": 29.500, "units_produced": 500000},
-"Dacia - Lodgy": {"price_min_eur": 15.500, "price_max_eur": 16.500, "units_produced": 400000},
-"Skoda - Kamiq": {"price_min_eur": 20.500, "price_max_eur": 21.500, "units_produced": 400000},
-"Skoda - Scala": {"price_min_eur": 19.500, "price_max_eur": 20.500, "units_produced": 500000},
-"Peugeot - 208 GT Line": {"price_min_eur": 18.500, "price_max_eur": 19.500, "units_produced": 400000},
-"Peugeot - 2008 GT Line": {"price_min_eur": 22.500, "price_max_eur": 23.500, "units_produced": 400000},
-"Toyota - Aygo": {"price_min_eur": 12.500, "price_max_eur": 13.500, "units_produced": 1200000},
-"Toyota - Corolla Touring Sports": {"price_min_eur": 24.500, "price_max_eur": 25.500, "units_produced": 2500000},
-"Volkswagen - e-Golf": {"price_min_eur": 33.500, "price_max_eur": 34.500, "units_produced": 600000},
-"Volkswagen - e-Up!": {"price_min_eur": 21.500, "price_max_eur": 22.500, "units_produced": 400000},
-"Ford - Ka+": {"price_min_eur": 11.500, "price_max_eur": 12.500, "units_produced": 800000},
-"Ford - S-Max": {"price_min_eur": 34.500, "price_max_eur": 35.500, "units_produced": 400000},
-"Renault - Zoe": {"price_min_eur": 23.500, "price_max_eur": 24.500, "units_produced": 600000},
-"Renault - Grand Scenic": {"price_min_eur": 28.500, "price_max_eur": 29.500, "units_produced": 300000},
-"Peugeot - 107": {"price_min_eur": 10.500, "price_max_eur": 11.500, "units_produced": 1000000},
-"Peugeot - 108": {"price_min_eur": 11.500, "price_max_eur": 12.500, "units_produced": 800000},
-"Citroën - C-Elysée": {"price_min_eur": 14.500, "price_max_eur": 15.500, "units_produced": 400000},
-"Citroën - C2": {"price_min_eur": 11.500, "price_max_eur": 12.500, "units_produced": 350000},
-"Fiat - Tipo Station Wagon": {"price_min_eur": 16.500, "price_max_eur": 17.500, "units_produced": 300000},
-"Fiat - 500L": {"price_min_eur": 18.500, "price_max_eur": 19.500, "units_produced": 500000},
-"Jeep - Patriot": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 250000},
-"Volvo - V40": {"price_min_eur": 28.500, "price_max_eur": 29.500, "units_produced": 700000},
-"Volvo - XC90": {"price_min_eur": 55.500, "price_max_eur": 56.500, "units_produced": 600000},
-"Mitsubishi - L200": {"price_min_eur": 27.500, "price_max_eur": 28.500, "units_produced": 500000},
-"Mitsubishi - Space Star": {"price_min_eur": 13.500, "price_max_eur": 14.500, "units_produced": 600000},
-"Suzuki - Baleno": {"price_min_eur": 14.500, "price_max_eur": 15.500, "units_produced": 700000},
-"Suzuki - SX4 S-Cross": {"price_min_eur": 21.500, "price_max_eur": 22.500, "units_produced": 500000},
-"Seat - Mii": {"price_min_eur": 10.500, "price_max_eur": 11.500, "units_produced": 900000},
-"Seat - Alhambra": {"price_min_eur": 38.500, "price_max_eur": 39.500, "units_produced": 200000},
-"Cupra - Ateca": {"price_min_eur": 32.500, "price_max_eur": 33.500, "units_produced": 300000},
-"Alfa Romeo - Tonale": {"price_min_eur": 38.500, "price_max_eur": 39.500, "units_produced": 250000},
-"Alfa Romeo - 33 Stradale": {"price_min_eur": 1.500.000, "price_max_eur": 1.600.000, "units_produced": 18},
-"Mini - Electric": {"price_min_eur": 29.500, "price_max_eur": 30.500, "units_produced": 50000},
-"Honda - Accord": {"price_min_eur": 30.500, "price_max_eur": 31.500, "units_produced": 2000000},
-"Honda - Insight": {"price_min_eur": 28.500, "price_max_eur": 29.500, "units_produced": 500000},
-"Toyota - Hilux": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 4000000},
-"Toyota - Avensis": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 800000},
-"Volkswagen - ID.3": {"price_min_eur": 32.500, "price_max_eur": 33.500, "units_produced": 500000},
-"Volkswagen - ID.4": {"price_min_eur": 38.500, "price_max_eur": 39.500, "units_produced": 400000},
-"Ford - Mustang Mach-E": {"price_min_eur": 44.500, "price_max_eur": 45.500, "units_produced": 100000},
-"Ford - Bronco": {"price_min_eur": 36.500, "price_max_eur": 37.500, "units_produced": 50000},
-"Renault - Zoe E-Tech": {"price_min_eur": 24.500, "price_max_eur": 25.500, "units_produced": 400000},
-"Peugeot - e-208": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 350000},
-"Citroën - e-C4": {"price_min_eur": 29.500, "price_max_eur": 30.500, "units_produced": 250000},
-"Fiat - 500e": {"price_min_eur": 23.500, "price_max_eur": 24.500, "units_produced": 150000},
-"Hyundai - Ioniq": {"price_min_eur": 32.500, "price_max_eur": 33.500, "units_produced": 200000},
-"Hyundai - Bayon": {"price_min_eur": 19.500, "price_max_eur": 20.500, "units_produced": 200000},
-"Kia - Stonic": {"price_min_eur": 19.500, "price_max_eur": 20.500, "units_produced": 250000},
-"Nissan - Note": {"price_min_eur": 14.500, "price_max_eur": 15.500, "units_produced": 300000},
-"Nissan - Juke Hybrid": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 100000},
-"Dacia - Dokker": {"price_min_eur": 14.500, "price_max_eur": 15.500, "units_produced": 200000},
-"Skoda - Enyaq": {"price_min_eur": 37.500, "price_max_eur": 38.500, "units_produced": 200000},
-"Skoda - Slavia": {"price_min_eur": 18.500, "price_max_eur": 19.500, "units_produced": 150000},
-"Peugeot - e-2008": {"price_min_eur": 30.500, "price_max_eur": 31.500, "units_produced": 100000},
-"Peugeot - e-3008": {"price_min_eur": 37.500, "price_max_eur": 38.500, "units_produced": 50000},
-"Toyota - Corolla Cross": {"price_min_eur": 27.500, "price_max_eur": 28.500, "units_produced": 500000},
-"Toyota - Sienna": {"price_min_eur": 45.500, "price_max_eur": 46.500, "units_produced": 300000},
-"Volkswagen - ID. Buzz": {"price_min_eur": 55.500, "price_max_eur": 56.500, "units_produced": 50000},
-"Volkswagen - Passat Alltrack": {"price_min_eur": 40.500, "price_max_eur": 41.500, "units_produced": 200000},
-"Ford - Edge ST": {"price_min_eur": 52.500, "price_max_eur": 53.500, "units_produced": 50000},
-"Ford - Explorer": {"price_min_eur": 55.500, "price_max_eur": 56.500, "units_produced": 100000},
-"Renault - Austral": {"price_min_eur": 30.500, "price_max_eur": 31.500, "units_produced": 150000},
-"Renault - Koleos": {"price_min_eur": 35.500, "price_max_eur": 36.500, "units_produced": 120000},
-"Peugeot - 4008": {"price_min_eur": 32.500, "price_max_eur": 33.500, "units_produced": 100000},
-"Peugeot - 5008 GT": {"price_min_eur": 38.500, "price_max_eur": 39.500, "units_produced": 80000},
-"Citroën - C5 X": {"price_min_eur": 34.500, "price_max_eur": 35.500, "units_produced": 70000},
-"Citroën - C3 Aircross": {"price_min_eur": 21.500, "price_max_eur": 22.500, "units_produced": 150000},
-"Fiat - 500X Cross": {"price_min_eur": 22.500, "price_max_eur": 23.500, "units_produced": 120000},
-"Fiat - Tipo Hatchback": {"price_min_eur": 16.500, "price_max_eur": 17.500, "units_produced": 180000},
-"Jeep - Cherokee": {"price_min_eur": 37.500, "price_max_eur": 38.500, "units_produced": 100000},
-"Volvo - XC90 Recharge": {"price_min_eur": 65.500, "price_max_eur": 66.500, "units_produced": 50000},
-"Volvo - V90": {"price_min_eur": 55.500, "price_max_eur": 56.500, "units_produced": 50000},
-"Mitsubishi - Outlander PHEV": {"price_min_eur": 42.500, "price_max_eur": 43.500, "units_produced": 80000},
-"Mitsubishi - Space Wagon": {"price_min_eur": 28.500, "price_max_eur": 29.500, "units_produced": 60000},
-"Suzuki - Across": {"price_min_eur": 40.500, "price_max_eur": 41.500, "units_produced": 50000},
-"Suzuki - Jimny": {"price_min_eur": 24.500, "price_max_eur": 25.500, "units_produced": 120000},
-"Seat - Ateca FR": {"price_min_eur": 32.500, "price_max_eur": 33.500, "units_produced": 120000},
-"Seat - Mii Electric": {"price_min_eur": 17.500, "price_max_eur": 18.500, "units_produced": 80000},
-"Cupra - Born": {"price_min_eur": 37.500, "price_max_eur": 38.500, "units_produced": 50000},
-"Alfa Romeo - Tonale Veloce": {"price_min_eur": 42.500, "price_max_eur": 43.500, "units_produced": 50000},
-"Mini - Electric Clubman": {"price_min_eur": 33.500, "price_max_eur": 34.500, "units_produced": 30000},
-"Honda - e:Ny1": {"price_min_eur": 29.500, "price_max_eur": 30.500, "units_produced": 40000},
-"Honda - CR-V Hybrid": {"price_min_eur": 35.500, "price_max_eur": 36.500, "units_produced": 100000},
-"Toyota - Proace Verso": {"price_min_eur": 28.500, "price_max_eur": 29.500, "units_produced": 60000},
-"Toyota - Hilux Invincible": {"price_min_eur": 30.500, "price_max_eur": 31.500, "units_produced": 120000},
-"Volkswagen - Tiguan Allspace": {"price_min_eur": 36.500, "price_max_eur": 37.500, "units_produced": 150000},
-"Volkswagen - T-Cross R-Line": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 120000},
-"Ford - Puma ST": {"price_min_eur": 28.500, "price_max_eur": 29.500, "units_produced": 80000},
-"Ford - Kuga PHEV": {"price_min_eur": 41.500, "price_max_eur": 42.500, "units_produced": 50000},
-"Renault - Scenic": {"price_min_eur": 26.500, "price_max_eur": 27.500, "units_produced": 100000},
-"Renault - Koleos Intens": {"price_min_eur": 37.500, "price_max_eur": 38.500, "units_produced": 50000},
-"Peugeot - 308 SW": {"price_min_eur": 27.500, "price_max_eur": 28.500, "units_produced": 70000},
-"Peugeot - 3008 Hybrid": {"price_min_eur": 39.500, "price_max_eur": 40.500, "units_produced": 50000},
-"Citroën - ë-SpaceTourer": {"price_min_eur": 42.500, "price_max_eur": 43.500, "units_produced": 30000},
-"Citroën - C4 X": {"price_min_eur": 29.500, "price_max_eur": 30.500, "units_produced": 40000},
-"Fiat - 500X Sport": {"price_min_eur": 23.500, "price_max_eur": 24.500, "units_produced": 80000},
-"Fiat - Tipo Cross": {"price_min_eur": 17.500, "price_max_eur": 18.500, "units_produced": 60000},
-"Jeep - Compass Limited": {"price_min_eur": 33.500, "price_max_eur": 34.500, "units_produced": 50000},
-"Volvo - XC60 Recharge": {"price_min_eur": 58.500, "price_max_eur": 59.500, "units_produced": 40000},
-"Volvo - S90": {"price_min_eur": 52.500, "price_max_eur": 53.500, "units_produced": 50000},
-"Mitsubishi - Eclipse Cross PHEV": {"price_min_eur": 42.500, "price_max_eur": 43.500, "units_produced": 40000},
-"Mitsubishi - Lancer": {"price_min_eur": 21.500, "price_max_eur": 22.500, "units_produced": 100000},
-"Suzuki - Across PHEV": {"price_min_eur": 44.500, "price_max_eur": 45.500, "units_produced": 30000},
-"Suzuki - Vitara S": {"price_min_eur": 24.500, "price_max_eur": 25.500, "units_produced": 60000},
-"Seat - Leon e-Hybrid": {"price_min_eur": 30.500, "price_max_eur": 31.500, "units_produced": 40000},
-"Seat - Tarraco FR": {"price_min_eur": 37.500, "price_max_eur": 38.500, "units_produced": 50000},
-"Cupra - Formentor VZ": {"price_min_eur": 41.500, "price_max_eur": 42.500, "units_produced": 30000},
-"Alfa Romeo - Stelvio Quadrifoglio": {"price_min_eur": 82.500, "price_max_eur": 83.500, "units_produced": 15000},
-"Alfa Romeo - Giulia Quadrifoglio": {"price_min_eur": 80.500, "price_max_eur": 81.500, "units_produced": 20000},
-"Mini - Cooper SE": {"price_min_eur": 29.500, "price_max_eur": 30.500, "units_produced": 40000},
-"Honda - Civic e:HEV": {"price_min_eur": 27.500, "price_max_eur": 28.500, "units_produced": 50000},
-"Honda - CR-V e:HEV": {"price_min_eur": 36.500, "price_max_eur": 37.500, "units_produced": 30000},
-"Toyota - Corolla Trek": {"price_min_eur": 25.500, "price_max_eur": 26.500, "units_produced": 200000},
-"Toyota - RAV4 Plug-in": {"price_min_eur": 42.500, "price_max_eur": 43.500, "units_produced": 100000},
-"Ford - Model T": {"price_min_eur": 25.000, "price_max_eur": 30.000, "units_produced": 1500000},
-"Chevrolet - Bel Air 1957": {"price_min_eur": 60.000, "price_max_eur": 75.000, "units_produced": 700000},
-"Volkswagen - Beetle 1963": {"price_min_eur": 20.000, "price_max_eur": 25.000, "units_produced": 5000000},
-"Jaguar - E-Type 1961": {"price_min_eur": 120.000, "price_max_eur": 150.000, "units_produced": 72000},
-"Porsche - 356 1950": {"price_min_eur": 200.000, "price_max_eur": 250.000, "units_produced": 76400},
-"Mercedes - 300 SL Gullwing": {"price_min_eur": 800.000, "price_max_eur": 1.000.000, "units_produced": 1400},
-"Ferrari - 250 GTO": {"price_min_eur": 45.000.000, "price_max_eur": 50.000.000, "units_produced": 36},
-"Aston Martin - DB5 1964": {"price_min_eur": 1.500.000, "price_max_eur": 2.000.000, "units_produced": 1200},
-"Ford - Mustang 1965": {"price_min_eur": 60.000, "price_max_eur": 75.000, "units_produced": 500000},
-"Chevrolet - Corvette C1 1953": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 5000},
-"Alfa Romeo - Giulia 1962": {"price_min_eur": 50.000, "price_max_eur": 70.000, "units_produced": 120000},
-"BMW - 507 1956": {"price_min_eur": 1.200.000, "price_max_eur": 1.500.000, "units_produced": 252},
-"Ferrari - Dino 246 GT": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 3800},
-"Mercedes - 220 SE 1959": {"price_min_eur": 45.000, "price_max_eur": 60.000, "units_produced": 22000},
-"Volkswagen - Karmann Ghia 1960": {"price_min_eur": 30.000, "price_max_eur": 50.000, "units_produced": 400000},
-"Jaguar - XK120 1948": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 12000},
-"Rolls-Royce - Silver Cloud I": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 16000},
-"Pontiac - GTO 1964": {"price_min_eur": 60.000, "price_max_eur": 80.000, "units_produced": 35000},
-"Chevrolet - Camaro 1967": {"price_min_eur": 65.000, "price_max_eur": 85.000, "units_produced": 220000},
-"Dodge - Charger 1969": {"price_min_eur": 70.000, "price_max_eur": 90.000, "units_produced": 120000},
-"Ford - Thunderbird 1957": {"price_min_eur": 55.000, "price_max_eur": 70.000, "units_produced": 90000},
-"Porsche - 911 1964": {"price_min_eur": 200.000, "price_max_eur": 250.000, "units_produced": 22000},
-"Aston Martin - DB4 1958": {"price_min_eur": 900.000, "price_max_eur": 1.200.000, "units_produced": 1200},
-"Citroën - DS 19 1955": {"price_min_eur": 40.000, "price_max_eur": 55.000, "units_produced": 1400000},
-"Peugeot - 404 1960": {"price_min_eur": 20.000, "price_max_eur": 30.000, "units_produced": 1500000},
-"Fiat - 500 1957": {"price_min_eur": 30.000, "price_max_eur": 50.000, "units_produced": 1600000},
-"Fiat - 124 Spider 1966": {"price_min_eur": 40.000, "price_max_eur": 60.000, "units_produced": 80000},
-"Toyota - 2000GT 1967": {"price_min_eur": 1.200.000, "price_max_eur": 1.500.000, "units_produced": 351},
-"Nissan - Fairlady Z 1969": {"price_min_eur": 50.000, "price_max_eur": 80.000, "units_produced": 70000},
-"Mercedes - 540K 1936": {"price_min_eur": 2.500.000, "price_max_eur": 3.500.000, "units_produced": 420},
-"BMW - 2002 1968": {"price_min_eur": 45.000, "price_max_eur": 60.000, "units_produced": 80000},
-"Ford - GT40 1966": {"price_min_eur": 8.000.000, "price_max_eur": 10.000.000, "units_produced": 105},
-"Chevrolet - Bel Air 1955": {"price_min_eur": 55.000, "price_max_eur": 70.000, "units_produced": 90000},
-"Cadillac - Eldorado 1957": {"price_min_eur": 60.000, "price_max_eur": 80.000, "units_produced": 75000},
-"Ferrari - 275 GTB 1964": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 1000},
-"Aston Martin - DB6 1965": {"price_min_eur": 1.000.000, "price_max_eur": 1.200.000, "units_produced": 1500},
-"Jaguar - XJ6 Series 1": {"price_min_eur": 45.000, "price_max_eur": 60.000, "units_produced": 90000},
-"Rolls-Royce - Phantom V": {"price_min_eur": 700.000, "price_max_eur": 900.000, "units_produced": 516},
-"Alfa Romeo - Spider 1966": {"price_min_eur": 70.000, "price_max_eur": 90.000, "units_produced": 18000},
-"Chevrolet - Corvette C2 1963": {"price_min_eur": 120.000, "price_max_eur": 160.000, "units_produced": 22000},
-"Porsche - 911 Carrera RS 1973": {"price_min_eur": 800.000, "price_max_eur": 1.000.000, "units_produced": 1580},
-"Datsun - 240Z 1969": {"price_min_eur": 60.000, "price_max_eur": 80.000, "units_produced": 150000},
-"Mercedes - 190SL 1955": {"price_min_eur": 200.000, "price_max_eur": 250.000, "units_produced": 25000},
-"Ford - Cortina MK1": {"price_min_eur": 20.000, "price_max_eur": 30.000, "units_produced": 400000},
-"Opel - Kadett A": {"price_min_eur": 18.000, "price_max_eur": 25.000, "units_produced": 150000},
-"BMW - Isetta 1955": {"price_min_eur": 15.000, "price_max_eur": 25.000, "units_produced": 160000},
-"Renault - 4CV": {"price_min_eur": 12.000, "price_max_eur": 20.000, "units_produced": 3000000},
-"Peugeot - 203": {"price_min_eur": 10.000, "price_max_eur": 15.000, "units_produced": 400000},
-"Citroën - Traction Avant": {"price_min_eur": 25.000, "price_max_eur": 35.000, "units_produced": 76000},
-"Fiat - 600": {"price_min_eur": 12.000, "price_max_eur": 18.000, "units_produced": 2500000},
-"Mercedes - 170V": {"price_min_eur": 20.000, "price_max_eur": 30.000, "units_produced": 200000},
-"Jaguar - Mark 2": {"price_min_eur": 40.000, "price_max_eur": 55.000, "units_produced": 40000},
-"Ford - Thunderbird 1956": {"price_min_eur": 55.000, "price_max_eur": 70.000, "units_produced": 80000},
-"Austin - Mini Cooper 1965": {"price_min_eur": 25.000, "price_max_eur": 35.000, "units_produced": 400000},
-"Alfa Romeo - Montreal 1970": {"price_min_eur": 60.000, "price_max_eur": 80.000, "units_produced": 3900},
-"Ferrari - 365 GTB/4 Daytona": {"price_min_eur": 1.200.000, "price_max_eur": 1.500.000, "units_produced": 1400},
-"Chevrolet - Nova 1968": {"price_min_eur": 35.000, "price_max_eur": 50.000, "units_produced": 50000},
-"Ford - Capri 1969": {"price_min_eur": 30.000, "price_max_eur": 45.000, "units_produced": 100000},
-"Volkswagen - Type 2 T1": {"price_min_eur": 25.000, "price_max_eur": 40.000, "units_produced": 1200000},
-"Fiat - Dino 1967": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 1300},
-"BMW - 3.0 CSL": {"price_min_eur": 500.000, "price_max_eur": 700.000, "units_produced": 1500},
-"Jaguar - D-Type": {"price_min_eur": 3.500.000, "price_max_eur": 4.500.000, "units_produced": 70},
-"Ferrari - 512 BB": {"price_min_eur": 350.000, "price_max_eur": 450.000, "units_produced": 929},
-"Ferrari - Testarossa": {"price_min_eur": 300.000, "price_max_eur": 400.000, "units_produced": 7169},
-"Lamborghini - Miura": {"price_min_eur": 2.500.000, "price_max_eur": 3.000.000, "units_produced": 764},
-"Lamborghini - Countach": {"price_min_eur": 500.000, "price_max_eur": 650.000, "units_produced": 2000},
-"Porsche - 911 Turbo 930": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 21000},
-"Porsche - 911 SC": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 26000},
-"Aston Martin - V8 Vantage 1977": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 1000},
-"BMW - M1": {"price_min_eur": 500.000, "price_max_eur": 700.000, "units_produced": 453},
-"Chevrolet - Corvette C3 1968": {"price_min_eur": 90.000, "price_max_eur": 120.000, "units_produced": 560000},
-"Ford - Mustang Shelby GT350": {"price_min_eur": 250.000, "price_max_eur": 300.000, "units_produced": 5000},
-"Dodge - Charger R/T 1970": {"price_min_eur": 200.000, "price_max_eur": 250.000, "units_produced": 20000},
-"Pontiac - Firebird Trans Am 1977": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 50000},
-"Ferrari - 308 GTB": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 7500},
-"Lamborghini - Jalpa": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 4100},
-"Mercedes - 450 SL 1971": {"price_min_eur": 90.000, "price_max_eur": 120.000, "units_produced": 50000},
-"Mercedes - 500 SEC": {"price_min_eur": 100.000, "price_max_eur": 150.000, "units_produced": 35000},
-"Aston Martin - Lagonda 1976": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 600},
-"Alfa Romeo - Montreal 1970": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 3900},
-"Jaguar - XJ-S 1975": {"price_min_eur": 60.000, "price_max_eur": 90.000, "units_produced": 113000},
-"Ferrari - 400 GT": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 300},
-"BMW - 635 CSi": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 15000},
-"Porsche - 914 2.0": {"price_min_eur": 50.000, "price_max_eur": 80.000, "units_produced": 11839},
-"Chevrolet - Camaro Z28 1969": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 90000},
-"Dodge - Challenger 1970": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 42000},
-"Ford - Torino GT 1969": {"price_min_eur": 100.000, "price_max_eur": 150.000, "units_produced": 50000},
-"Cadillac - Series 62 1953": {"price_min_eur": 60.000, "price_max_eur": 90.000, "units_produced": 10000},
-"Buick - Riviera 1965": {"price_min_eur": 70.000, "price_max_eur": 100.000, "units_produced": 50000},
-"Chevrolet - Impala SS 1964": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 90000},
-"Pontiac - GTO Judge 1969": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 20000},
-"Ferrari - 250 GT Lusso": {"price_min_eur": 2.000.000, "price_max_eur": 2.500.000, "units_produced": 350},
-"Ferrari - 275 GTB4": {"price_min_eur": 1.800.000, "price_max_eur": 2.200.000, "units_produced": 330},
-"Lamborghini - Espada": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 1200},
-"Maserati - Ghibli 1967": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 1127},
-"Maserati - Indy": {"price_min_eur": 160.000, "price_max_eur": 220.000, "units_produced": 1100},
-"Aston Martin - V8 1972": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 1000},
-"Rolls-Royce - Silver Shadow": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 40000},
-"Mercedes - 600 Grosser": {"price_min_eur": 300.000, "price_max_eur": 400.000, "units_produced": 2500},
-"BMW - 503": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 412},
-"Porsche - 911 T 1968": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 8000},
-"Ferrari - 365 GT 2+2": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 800},
-"Alfa Romeo - 2000 Spider": {"price_min_eur": 60.000, "price_max_eur": 100.000, "units_produced": 1500},
-"Chevrolet - Corvette C1 1960": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 10000},
-"Ford - Mustang Fastback 1967": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 75000},
-"Dodge - Super Bee 1970": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 10000},
-"Cadillac - Fleetwood 1957": {"price_min_eur": 70.000, "price_max_eur": 100.000, "units_produced": 5000},
-"Lincoln - Continental 1961": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 3000},
-"Mercedes - 280SL Pagoda": {"price_min_eur": 350.000, "price_max_eur": 450.000, "units_produced": 24000},
-"Aston Martin - DB4 GT": {"price_min_eur": 3.000.000, "price_max_eur": 4.000.000, "units_produced": 75},
-"Ferrari - 250 LM": {"price_min_eur": 5.000.000, "price_max_eur": 6.500.000, "units_produced": 32},
-"Lamborghini - Miura SV": {"price_min_eur": 3.500.000, "price_max_eur": 5.000.000, "units_produced": 150},
-"Alfa Romeo - 6C 2500": {"price_min_eur": 500.000, "price_max_eur": 800.000, "units_produced": 200},
-"Jaguar - Mark IV": {"price_min_eur": 200.000, "price_max_eur": 350.000, "units_produced": 1000},
-"Ford - Model A": {"price_min_eur": 20.000, "price_max_eur": 40.000, "units_produced": 500000},
-"Chevrolet - Corvette C2 1962": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 15000},
-"BMW - 3.0 CSL Batmobile": {"price_min_eur": 900.000, "price_max_eur": 1.200.000, "units_produced": 167},
-"Aston Martin - DB9 Classic": {"price_min_eur": 300.000, "price_max_eur": 400.000, "units_produced": 800},
-"Ferrari - 250 GT California": {"price_min_eur": 10.000.000, "price_max_eur": 12.000.000, "units_produced": 50},
-"Lamborghini - 400 GT": {"price_min_eur": 400.000, "price_max_eur": 500.000, "units_produced": 200},
-"Porsche - 356 Speedster": {"price_min_eur": 350.000, "price_max_eur": 450.000, "units_produced": 2000},
-"Jaguar - XK150": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 9000},
-"Mercedes - 230SL 1963": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 15000},
-"BMW - 507 Roadster": {"price_min_eur": 1.000.000, "price_max_eur": 1.500.000, "units_produced": 252},
-"Chevrolet - Corvette C1 1962": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 10000},
-"Ford - Mustang Shelby GT500 1967": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 2000},
-"Dodge - Challenger R/T 1971": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 25000},
-"Pontiac - Firebird 1969": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 35000},
-"Ferrari - 275 GTB/4": {"price_min_eur": 2.500.000, "price_max_eur": 3.200.000, "units_produced": 330},
-"Lamborghini - Islero": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 225},
-"Maserati - Mistral": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 1250},
-"Aston Martin - DBS 1967": {"price_min_eur": 400.000, "price_max_eur": 600.000, "units_produced": 1500},
-"Alfa Romeo - Giulietta Sprint": {"price_min_eur": 60.000, "price_max_eur": 100.000, "units_produced": 100000},
-"BMW - 2002 Turbo": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 1675},
-"Chevrolet - Camaro Z28 1968": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 90000},
-"Ford - GT40 MkII": {"price_min_eur": 8.000.000, "price_max_eur": 12.000.000, "units_produced": 7},
-"Jaguar - XJ220 Classic": {"price_min_eur": 1.500.000, "price_max_eur": 2.000.000, "units_produced": 275},
-"Ferrari - 250 LM Spyder": {"price_min_eur": 5.500.000, "price_max_eur": 6.500.000, "units_produced": 32},
-"Lamborghini - Miura P400": {"price_min_eur": 2.500.000, "price_max_eur": 3.500.000, "units_produced": 764},
-"Porsche - 911 Carrera RS 2.7": {"price_min_eur": 800.000, "price_max_eur": 1.000.000, "units_produced": 1580},
-"Aston Martin - DB5 Classic": {"price_min_eur": 1.500.000, "price_max_eur": 2.000.000, "units_produced": 1200},
-"Mercedes - 300 SL Roadster": {"price_min_eur": 1.200.000, "price_max_eur": 1.500.000, "units_produced": 1858},
-"Alfa Romeo - 33 Stradale": {"price_min_eur": 14.000.000, "price_max_eur": 16.000.000, "units_produced": 18},
-"Chevrolet - Impala SS 1965": {"price_min_eur": 90.000, "price_max_eur": 120.000, "units_produced": 80000},
-"Ford - Mustang Boss 302": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 15000},
-"Pontiac - GTO 1965": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 35000},
-"Dodge - Dart GTS 1968": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 40000},
-"Ferrari - 365 GTC/4": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 500},
-"Jaguar - XK140": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 8900},
-"BMW - 507 Series II": {"price_min_eur": 1.000.000, "price_max_eur": 1.500.000, "units_produced": 252},
-"Chevrolet - Corvette Sting Ray 1963": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 21000},
-"Ford - Thunderbird 1966": {"price_min_eur": 70.000, "price_max_eur": 100.000, "units_produced": 80000},
-"Aston Martin - DB4 Series V": {"price_min_eur": 900.000, "price_max_eur": 1.200.000, "units_produced": 1000},
-"Lamborghini - 350 GT": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 120},
-"Porsche - 911 S 1968": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 12000},
-"Mercedes - 250 CE 1969": {"price_min_eur": 60.000, "price_max_eur": 90.000, "units_produced": 45000},
-"Ferrari - 365 GTB/4 Daytona Spider": {"price_min_eur": 1.300.000, "price_max_eur": 1.800.000, "units_produced": 128},
-"Alfa Romeo - 1900 Super Sprint": {"price_min_eur": 60.000, "price_max_eur": 90.000, "units_produced": 1000},
-"BMW - 3.0 CSL Lightweight": {"price_min_eur": 900.000, "price_max_eur": 1.200.000, "units_produced": 138},
-"Jaguar - XJS V12": {"price_min_eur": 60.000, "price_max_eur": 90.000, "units_produced": 50000},
-"Chevrolet - Camaro SS 1969": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 90000},
-"Dodge - Coronet R/T 1968": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 30000},
-"Ford - Falcon GT 1967": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 10000},
-"Pontiac - Bonneville 1965": {"price_min_eur": 50.000, "price_max_eur": 80.000, "units_produced": 40000},
-"Ferrari - 330 GT 2+2": {"price_min_eur": 400.000, "price_max_eur": 600.000, "units_produced": 900},
-"Lamborghini - Urraco": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 790},
-"Maserati - Sebring 1962": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 348},
-"Aston Martin - Vantage 1973": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 1000},
-"Mercedes - 300 SEL 6.3": {"price_min_eur": 100.000, "price_max_eur": 150.000, "units_produced": 6000},
-"BMW - 502 2.6": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 126},
-"Chevrolet - Corvette C3 Stingray 1970": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 45000},
-"Ford - Mustang Mach 1 1971": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 30000},
-"Jaguar - XK120 Roadster": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 12000},
-"Aston Martin - Lagonda Series 2": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 120},
-"Ferrari - 166 MM Barchetta": {"price_min_eur": 5.000.000, "price_max_eur": 7.000.000, "units_produced": 25},
-"Ferrari - 212 Inter": {"price_min_eur": 4.500.000, "price_max_eur": 6.000.000, "units_produced": 35},
-"Ferrari - 250 GT Boano": {"price_min_eur": 3.500.000, "price_max_eur": 5.000.000, "units_produced": 22},
-"Lamborghini - 350 GT": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 120},
-"Lamborghini - 400 GT 2+2": {"price_min_eur": 350.000, "price_max_eur": 450.000, "units_produced": 247},
-"Lamborghini - Islero S": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 100},
-"Porsche - 356 Pre-A": {"price_min_eur": 300.000, "price_max_eur": 400.000, "units_produced": 10000},
-"Porsche - 356 A": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 19000},
-"Porsche - 356 B": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 23000},
-"Porsche - 356 C": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 15000},
-"Aston Martin - DB6": {"price_min_eur": 500.000, "price_max_eur": 700.000, "units_produced": 1500},
-"Aston Martin - DBS Vantage": {"price_min_eur": 400.000, "price_max_eur": 600.000, "units_produced": 1000},
-"Aston Martin - DB7 Classic": {"price_min_eur": 250.000, "price_max_eur": 400.000, "units_produced": 5000},
-"Mercedes - 280 SE 3.5": {"price_min_eur": 150.000, "price_max_eur": 250.000, "units_produced": 8000},
-"Mercedes - 250 SL Roadster": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 5000},
-"Mercedes - 220 SE Coupe": {"price_min_eur": 100.000, "price_max_eur": 150.000, "units_produced": 4000},
-"BMW - 507 Roadster Series I": {"price_min_eur": 1.200.000, "price_max_eur": 1.800.000, "units_produced": 202},
-"BMW - 507 Roadster Series II": {"price_min_eur": 1.500.000, "price_max_eur": 2.000.000, "units_produced": 50},
-"BMW - 503 Coupe": {"price_min_eur": 150.000, "price_max_eur": 250.000, "units_produced": 400},
-"Jaguar - XK150 Drophead": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 3500},
-"Jaguar - XK150 Fixed Head": {"price_min_eur": 100.000, "price_max_eur": 150.000, "units_produced": 4000},
-"Jaguar - E-Type Series 1": {"price_min_eur": 500.000, "price_max_eur": 700.000, "units_produced": 7000},
-"Jaguar - E-Type Series 1.5": {"price_min_eur": 400.000, "price_max_eur": 600.000, "units_produced": 2500},
-"Jaguar - E-Type Series 2": {"price_min_eur": 350.000, "price_max_eur": 500.000, "units_produced": 5000},
-"Jaguar - E-Type Series 3 V12": {"price_min_eur": 300.000, "price_max_eur": 450.000, "units_produced": 1500},
-"Chevrolet - Corvette C1 Roadster": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 10000},
-"Chevrolet - Corvette C2 Sting Ray": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 21000},
-"Chevrolet - Corvette C3 1968": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 45000},
-"Chevrolet - Corvette C3 1969": {"price_min_eur": 130.000, "price_max_eur": 200.000, "units_produced": 47000},
-"Chevrolet - Camaro Z28 1969": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 90000},
-"Chevrolet - Camaro SS 1969": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 90000},
-"Dodge - Charger R/T 1969": {"price_min_eur": 200.000, "price_max_eur": 250.000, "units_produced": 20000},
-"Dodge - Challenger R/T 1970": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 25000},
-"Dodge - Super Bee 1970": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 10000},
-"Ford - Mustang Fastback 1967": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 75000},
-"Ford - Mustang Boss 302": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 15000},
-"Ford - GT40 MkI": {"price_min_eur": 6.000.000, "price_max_eur": 8.000.000, "units_produced": 7},
-"Ford - GT40 MkII": {"price_min_eur": 8.000.000, "price_max_eur": 12.000.000, "units_produced": 7},
-"Pontiac - Firebird Trans Am 1977": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 50000},
-"Pontiac - GTO 1965": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 35000},
-"Pontiac - Bonneville 1965": {"price_min_eur": 50.000, "price_max_eur": 80.000, "units_produced": 40000},
-"Cadillac - Series 62 1953": {"price_min_eur": 60.000, "price_max_eur": 90.000, "units_produced": 10000},
-"Cadillac - Fleetwood 1957": {"price_min_eur": 70.000, "price_max_eur": 100.000, "units_produced": 5000},
-"Lincoln - Continental 1961": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 3000},
-"Rolls-Royce - Silver Cloud II": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 3500},
-"Rolls-Royce - Silver Shadow": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 40000},
-"Rolls-Royce - Phantom V": {"price_min_eur": 500.000, "price_max_eur": 800.000, "units_produced": 173},
-"Maserati - Ghibli 1967": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 1127},
-"Maserati - Indy 1969": {"price_min_eur": 160.000, "price_max_eur": 220.000, "units_produced": 1100},
-"Maserati - Sebring 1962": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 348},
-"Maserati - Mistral 1963": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 1250},
-"Alfa Romeo - 6C 2500": {"price_min_eur": 500.000, "price_max_eur": 800.000, "units_produced": 200},
-"Alfa Romeo - 1900 Super Sprint": {"price_min_eur": 60.000, "price_max_eur": 90.000, "units_produced": 1000},
-"Alfa Romeo - Giulietta Sprint": {"price_min_eur": 60.000, "price_max_eur": 100.000, "units_produced": 100000},
-"Alfa Romeo - 33 Stradale": {"price_min_eur": 14.000.000, "price_max_eur": 16.000.000, "units_produced": 18},
-"Aston Martin - DB4 GT": {"price_min_eur": 2.500.000, "price_max_eur": 3.500.000, "units_produced": 75},
-"Aston Martin - V8 Vantage 1977": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 2000},
-"Aston Martin - Lagonda 1974": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 645},
-"Ferrari - 212 Export": {"price_min_eur": 3.500.000, "price_max_eur": 5.000.000, "units_produced": 40},
-"Ferrari - 250 GT LWB": {"price_min_eur": 4.500.000, "price_max_eur": 6.000.000, "units_produced": 150},
-"Ferrari - 250 GT SWB": {"price_min_eur": 6.000.000, "price_max_eur": 8.000.000, "units_produced": 176},
-"Ferrari - 250 GT Lusso": {"price_min_eur": 1.500.000, "price_max_eur": 2.000.000, "units_produced": 350},
-"Ferrari - 250 GTE": {"price_min_eur": 250.000, "price_max_eur": 400.000, "units_produced": 1000},
-"Ferrari - 330 GT 2+2": {"price_min_eur": 400.000, "price_max_eur": 600.000, "units_produced": 900},
-"Ferrari - 365 GTB/4 Daytona": {"price_min_eur": 1.200.000, "price_max_eur": 1.800.000, "units_produced": 128},
-"Lamborghini - Jarama": {"price_min_eur": 250.000, "price_max_eur": 350.000, "units_produced": 328},
-"Lamborghini - Espada": {"price_min_eur": 300.000, "price_max_eur": 400.000, "units_produced": 1200},
-"Lamborghini - Countach LP400": {"price_min_eur": 1.500.000, "price_max_eur": 2.000.000, "units_produced": 157},
-"Lamborghini - LP500 S": {"price_min_eur": 1.200.000, "price_max_eur": 1.800.000, "units_produced": 235},
-"Lamborghini - Silhouette": {"price_min_eur": 400.000, "price_max_eur": 600.000, "units_produced": 54},
-"Porsche - 911 T 1967": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 15000},
-"Porsche - 911 S 1969": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 12000},
-"Porsche - 911 E 1971": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 6000},
-"Porsche - 911 Carrera RS 2.7": {"price_min_eur": 800.000, "price_max_eur": 1.000.000, "units_produced": 1580},
-"Mercedes - 280 SE 3.5 Coupe": {"price_min_eur": 150.000, "price_max_eur": 250.000, "units_produced": 5000},
-"Mercedes - 300 SL Roadster": {"price_min_eur": 1.200.000, "price_max_eur": 1.500.000, "units_produced": 1858},
-"Mercedes - 600 Grosser": {"price_min_eur": 400.000, "price_max_eur": 600.000, "units_produced": 2000},
-"Mercedes - 250 CE 1969": {"price_min_eur": 60.000, "price_max_eur": 90.000, "units_produced": 45000},
-"BMW - 503 Cabriolet": {"price_min_eur": 150.000, "price_max_eur": 250.000, "units_produced": 350},
-"BMW - 507 Roadster": {"price_min_eur": 1.000.000, "price_max_eur": 1.500.000, "units_produced": 252},
-"BMW - 3.0 CSL": {"price_min_eur": 900.000, "price_max_eur": 1.200.000, "units_produced": 138},
-"Jaguar - XK120 Roadster": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 12000},
-"Jaguar - XK150 Fixed Head": {"price_min_eur": 100.000, "price_max_eur": 150.000, "units_produced": 4000},
-"Jaguar - E-Type Series 1.5": {"price_min_eur": 400.000, "price_max_eur": 600.000, "units_produced": 2500},
-"Jaguar - E-Type Series 3 V12": {"price_min_eur": 300.000, "price_max_eur": 450.000, "units_produced": 1500},
-"Chevrolet - Corvette C1 1962": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 10000},
-"Chevrolet - Corvette C2 1965": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 21000},
-"Chevrolet - Corvette C3 1968": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 45000},
-"Chevrolet - Camaro Z28 1969": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 90000},
-"Chevrolet - Camaro SS 1969": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 90000},
-"Dodge - Charger R/T 1969": {"price_min_eur": 200.000, "price_max_eur": 250.000, "units_produced": 20000},
-"Dodge - Challenger R/T 1970": {"price_min_eur": 180.000, "price_max_eur": 250.000, "units_produced": 25000},
-"Dodge - Super Bee 1970": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 10000},
-"Ford - Mustang Fastback 1967": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 75000},
-"Ford - Mustang Boss 302": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 15000},
-"Ford - GT40 MkI": {"price_min_eur": 6.000.000, "price_max_eur": 8.000.000, "units_produced": 7},
-"Ford - GT40 MkII": {"price_min_eur": 8.000.000, "price_max_eur": 12.000.000, "units_produced": 7},
-"Pontiac - Firebird Trans Am 1977": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 50000},
-"Pontiac - GTO 1965": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 35000},
-"Pontiac - Bonneville 1965": {"price_min_eur": 50.000, "price_max_eur": 80.000, "units_produced": 40000},
-"Cadillac - Series 62 1953": {"price_min_eur": 60.000, "price_max_eur": 90.000, "units_produced": 10000},
-"Cadillac - Fleetwood 1957": {"price_min_eur": 70.000, "price_max_eur": 100.000, "units_produced": 5000},
-"Lincoln - Continental 1961": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 3000},
-"Rolls-Royce - Silver Cloud II": {"price_min_eur": 120.000, "price_max_eur": 180.000, "units_produced": 3500},
-"Rolls-Royce - Silver Shadow": {"price_min_eur": 80.000, "price_max_eur": 120.000, "units_produced": 40000},
-"Rolls-Royce - Phantom V": {"price_min_eur": 500.000, "price_max_eur": 800.000, "units_produced": 173},
-"Maserati - Ghibli 1967": {"price_min_eur": 150.000, "price_max_eur": 200.000, "units_produced": 1127},
-"Maserati - Indy 1969": {"price_min_eur": 160.000, "price_max_eur": 220.000, "units_produced": 1100},
-"Maserati - Sebring 1962": {"price_min_eur": 150.000, "price_max_eur": 220.000, "units_produced": 348},
-"Maserati - Mistral 1963": {"price_min_eur": 200.000, "price_max_eur": 300.000, "units_produced": 1250},
-"Alfa Romeo - 6C 2500": {"price_min_eur": 500.000, "price_max_eur": 800.000, "units_produced": 200},
-"Alfa Romeo - 1900 Super Sprint": {"price_min_eur": 60.000, "price_max_eur": 90.000, "units_produced": 1000},
-"Alfa Romeo - Giulietta Sprint": {"price_min_eur": 60.000, "price_max_eur": 100.000, "units_produced": 100000},
-"Alfa Romeo - 33 Stradale": {"price_min_eur": 14.000.000, "price_max_eur": 16.000.000, "units_produced": 18}
-"Toyota - Corolla": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 50000000},
-"Volkswagen - Golf": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 37000000},
-"Ford - Fiesta": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 22000000},
-"Renault - Clio": {"price_min_eur": 19.000, "price_max_eur": 21.000, "units_produced": 16000000},
-"Peugeot - 208": {"price_min_eur": 18.500, "price_max_eur": 20.000, "units_produced": 12000000},
-"Seat - Ibiza": {"price_min_eur": 17.500, "price_max_eur": 19.500, "units_produced": 6000000},
-"Opel - Corsa": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 14000000},
-"Hyundai - i30": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 7000000},
-"Kia - Ceed": {"price_min_eur": 21.000, "price_max_eur": 23.000, "units_produced": 5000000},
-"Honda - Civic": {"price_min_eur": 27.000, "price_max_eur": 29.000, "units_produced": 27000000},
-"Nissan - Micra": {"price_min_eur": 17.000, "price_max_eur": 19.000, "units_produced": 6000000},
-"Nissan - Qashqai": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 5000000},
-"Dacia - Sandero": {"price_min_eur": 14.000, "price_max_eur": 16.000, "units_produced": 3500000},
-"Dacia - Duster": {"price_min_eur": 19.000, "price_max_eur": 21.000, "units_produced": 2500000},
-"Skoda - Octavia": {"price_min_eur": 27.000, "price_max_eur": 29.000, "units_produced": 7000000},
-"Skoda - Fabia": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 4500000},
-"Volkswagen - Polo": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 18000000},
-"Volkswagen - Passat": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 30000000},
-"Ford - Focus": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 16000000},
-"Ford - Mondeo": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 5000000},
-"Toyota - Yaris": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 10000000},
-"Toyota - RAV4": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 15000000},
-"Toyota - Prius": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 6000000},
-"BMW - Serie 3": {"price_min_eur": 45.000, "price_max_eur": 48.000, "units_produced": 16000000},
-"BMW - Serie 1": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 3000000},
-"Audi - A3": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 5000000},
-"Audi - A4": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 7000000},
-"Audi - Q3": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 2000000},
-"Mercedes - Clase A": {"price_min_eur": 34.000, "price_max_eur": 36.000, "units_produced": 3000000},
-"Mercedes - Clase C": {"price_min_eur": 48.000, "price_max_eur": 50.000, "units_produced": 10000000},
-"Hyundai - Tucson": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 7000000},
-"Kia - Sportage": {"price_min_eur": 31.000, "price_max_eur": 33.000, "units_produced": 6000000},
-"Mazda - 3": {"price_min_eur": 24.000, "price_max_eur": 26.000, "units_produced": 6000000},
-"Mazda - CX-5": {"price_min_eur": 33.000, "price_max_eur": 35.000, "units_produced": 4000000},
-"Subaru - Impreza": {"price_min_eur": 26.000, "price_max_eur": 28.000, "units_produced": 3000000},
-"Subaru - Forester": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 3500000},
-"Chevrolet - Cruze": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 3000000},
-"Chevrolet - Malibu": {"price_min_eur": 27.000, "price_max_eur": 29.000, "units_produced": 10000000},
-"Tesla - Model 3": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 2000000},
-"Tesla - Model Y": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 2500000},
-"Renault - Megane": {"price_min_eur": 24.000, "price_max_eur": 26.000, "units_produced": 10000000},
-"Renault - Captur": {"price_min_eur": 23.000, "price_max_eur": 25.000, "units_produced": 2000000},
-"Peugeot - 308": {"price_min_eur": 24.000, "price_max_eur": 26.000, "units_produced": 7000000},
-"Peugeot - 3008": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 2000000},
-"Citroën - C3": {"price_min_eur": 17.000, "price_max_eur": 19.000, "units_produced": 5000000},
-"Citroën - C4": {"price_min_eur": 23.000, "price_max_eur": 25.000, "units_produced": 3000000},
-"Fiat - 500": {"price_min_eur": 16.000, "price_max_eur": 18.000, "units_produced": 6000000},
-"Fiat - Panda": {"price_min_eur": 15.000, "price_max_eur": 17.000, "units_produced": 8000000},
-"Jeep - Wrangler": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 2000000},
-"Jeep - Compass": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 1500000},
-"Volvo - XC60": {"price_min_eur": 50.000, "price_max_eur": 52.000, "units_produced": 2500000},
-"Volvo - XC40": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 1000000},
-"Mitsubishi - Outlander": {"price_min_eur": 33.000, "price_max_eur": 35.000, "units_produced": 2500000},
-"Suzuki - Swift": {"price_min_eur": 17.000, "price_max_eur": 19.000, "units_produced": 6000000},
-"Suzuki - Vitara": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 3000000},
-"Seat - Leon": {"price_min_eur": 23.000, "price_max_eur": 25.000, "units_produced": 2300000},
-"Cupra - Formentor": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 300000},
-"Alfa Romeo - Giulia": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 200000},
-"Alfa Romeo - Stelvio": {"price_min_eur": 48.000, "price_max_eur": 50.000, "units_produced": 150000},
-"Mini - Cooper": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 5000000},
-"Mini - Countryman": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 800000},
-"Honda - CR-V": {"price_min_eur": 34.000, "price_max_eur": 36.000, "units_produced": 10000000},
-"Toyota - Land Cruiser": {"price_min_eur": 60.000, "price_max_eur": 62.000, "units_produced": 10000000},
-"Ford - Kuga": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 1500000},
-"Ford - Puma": {"price_min_eur": 24.000, "price_max_eur": 26.000, "units_produced": 500000},
-"Volkswagen - Tiguan": {"price_min_eur": 34.000, "price_max_eur": 36.000, "units_produced": 6000000},
-"Volkswagen - T-Roc": {"price_min_eur": 27.000, "price_max_eur": 29.000, "units_produced": 2000000},
-"Hyundai - i20": {"price_min_eur": 17.000, "price_max_eur": 19.000, "units_produced": 4000000},
-"Kia - Picanto": {"price_min_eur": 15.000, "price_max_eur": 17.000, "units_produced": 3000000},
-"Dacia - Jogger": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 200000},
-"Skoda - Kodiaq": {"price_min_eur": 36.000, "price_max_eur": 38.000, "units_produced": 800000},
-"Skoda - Superb": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 1500000}
-"Toyota - Auris": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 8000000},
-"Toyota - Avensis": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 4000000},
-"Volkswagen - Passat CC": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 1200000},
-"Volkswagen - Arteon": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 800000},
-"Ford - C-Max": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 2500000},
-"Ford - S-Max": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 1500000},
-"Renault - Scenic": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 3000000},
-"Renault - Kadjar": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 2000000},
-"Peugeot - 2008": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 3000000},
-"Peugeot - 5008": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 1500000},
-"Citroën - C5 Aircross": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 1000000},
-"Citroën - C5": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 1200000},
-"Fiat - Tipo": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 1500000},
-"Fiat - 500X": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 800000},
-"Jeep - Renegade": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 600000},
-"Jeep - Cherokee": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 400000},
-"Volvo - S60": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 1000000},
-"Volvo - V60": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 800000},
-"Mitsubishi - ASX": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 500000},
-"Mitsubishi - Eclipse Cross": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 400000},
-"Suzuki - Ignis": {"price_min_eur": 15.000, "price_max_eur": 17.000, "units_produced": 300000},
-"Suzuki - S-Cross": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 300000},
-"Seat - Arona": {"price_min_eur": 19.000, "price_max_eur": 21.000, "units_produced": 400000},
-"Seat - Ateca": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 350000},
-"Cupra - Leon": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 400000},
-"Alfa Romeo - Tonale": {"price_min_eur": 36.000, "price_max_eur": 38.000, "units_produced": 250000},
-"Mini - Clubman": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 400000},
-"Mini - Paceman": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 100000},
-"Honda - HR-V": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 600000},
-"Honda - Jazz": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 500000},
-"Toyota - C-HR": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 400000},
-"Toyota - Proace City": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 300000},
-"Volkswagen - T-Cross": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 500000},
-"Volkswagen - T6 Transporter": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 300000},
-"Ford - EcoSport": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 500000},
-"Ford - Transit Connect": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 200000},
-"Renault - Kangoo": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 400000},
-"Renault - Zoe": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 1000000},
-"Peugeot - Rifter": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 300000},
-"Peugeot - Partner": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 350000},
-"Citroën - Berlingo": {"price_min_eur": 21.000, "price_max_eur": 23.000, "units_produced": 400000},
-"Citroën - C3 Aircross": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 300000},
-"Fiat - 500L": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 400000},
-"Fiat - Tipo Station": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 300000},
-"Jeep - Compass 2022": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 200000},
-"Jeep - Renegade 2022": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 300000},
-"Volvo - V40": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 500000},
-"Volvo - XC90": {"price_min_eur": 60.000, "price_max_eur": 62.000, "units_produced": 350000},
-"Mitsubishi - L200": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 400000},
-"Suzuki - Ignis 2022": {"price_min_eur": 16.000, "price_max_eur": 18.000, "units_produced": 200000},
-"Suzuki - SX4 S-Cross": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 150000},
-"Seat - Ateca 2022": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 200000},
-"Seat - Arona 2022": {"price_min_eur": 19.000, "price_max_eur": 21.000, "units_produced": 300000},
-"Cupra - Formentor 2022": {"price_min_eur": 36.000, "price_max_eur": 38.000, "units_produced": 150000},
-"Alfa Romeo - Stelvio 2022": {"price_min_eur": 48.000, "price_max_eur": 50.000, "units_produced": 100000},
-"Mini - Countryman 2022": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 200000},
-"Honda - HR-V 2022": {"price_min_eur": 26.000, "price_max_eur": 28.000, "units_produced": 150000},
-"Honda - Civic 2022": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 400000},
-"Toyota - Corolla 2022": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 1000000},
-"Toyota - Yaris 2022": {"price_min_eur": 19.000, "price_max_eur": 21.000, "units_produced": 500000},
-"Volkswagen - Golf 2022": {"price_min_eur": 29.000, "price_max_eur": 31.000, "units_produced": 600000},
-"Volkswagen - Polo 2022": {"price_min_eur": 21.000, "price_max_eur": 23.000, "units_produced": 500000},
-"Ford - Focus 2022": {"price_min_eur": 26.000, "price_max_eur": 28.000, "units_produced": 400000},
-"Ford - Fiesta 2022": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 300000},
-"Renault - Clio 2022": {"price_min_eur": 19.000, "price_max_eur": 21.000, "units_produced": 400000},
-"Renault - Captur 2022": {"price_min_eur": 23.000, "price_max_eur": 25.000, "units_produced": 200000},
-"Peugeot - 208 2022": {"price_min_eur": 18.500, "price_max_eur": 20.500, "units_produced": 300000},
-"Peugeot - 2008 2022": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 200000},
-"Citroën - C3 2022": {"price_min_eur": 17.000, "price_max_eur": 19.000, "units_produced": 250000},
-"Citroën - C5 Aircross 2022": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 150000},
-"Fiat - 500 2022": {"price_min_eur": 16.000, "price_max_eur": 18.000, "units_produced": 300000},
-"Fiat - Panda 2022": {"price_min_eur": 15.000, "price_max_eur": 17.000, "units_produced": 400000}
-"Hyundai - Kona": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 500000},
-"Hyundai - Santa Fe": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 400000},
-"Kia - Stonic": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 300000},
-"Kia - Sorento": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 250000},
-"Nissan - Juke": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 400000},
-"Nissan - Leaf": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 350000},
-"Mazda - CX-30": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 400000},
-"Mazda - MX-30": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 200000},
-"Subaru - XV": {"price_min_eur": 26.000, "price_max_eur": 28.000, "units_produced": 250000},
-"Subaru - Legacy": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 150000},
-"Chevrolet - Trax": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 200000},
-"Chevrolet - Equinox": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 150000},
-"Tesla - Model S": {"price_min_eur": 80.000, "price_max_eur": 85.000, "units_produced": 500000},
-"Tesla - Model X": {"price_min_eur": 90.000, "price_max_eur": 95.000, "units_produced": 300000},
-"Renault - Talisman": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 200000},
-"Renault - Koleos": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 150000},
-"Peugeot - 508": {"price_min_eur": 34.000, "price_max_eur": 36.000, "units_produced": 250000},
-"Peugeot - 5008 2022": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 150000},
-"Citroën - C4 2022": {"price_min_eur": 23.000, "price_max_eur": 25.000, "units_produced": 250000},
-"Citroën - C5 X": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 100000},
-"Fiat - 500X 2022": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 200000},
-"Fiat - Tipo 2022": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 200000},
-"Jeep - Grand Cherokee": {"price_min_eur": 50.000, "price_max_eur": 52.000, "units_produced": 150000},
-"Jeep - Commander": {"price_min_eur": 55.000, "price_max_eur": 57.000, "units_produced": 100000},
-"Volvo - S90": {"price_min_eur": 55.000, "price_max_eur": 57.000, "units_produced": 150000},
-"Volvo - V90": {"price_min_eur": 57.000, "price_max_eur": 59.000, "units_produced": 100000},
-"Mitsubishi - Outlander PHEV": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 100000},
-"Suzuki - Vitara 2022": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 200000},
-"Seat - Tarraco": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 150000},
-"Seat - Alhambra": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 100000},
-"Cupra - Ateca": {"price_min_eur": 33.000, "price_max_eur": 35.000, "units_produced": 150000},
-"Alfa Romeo - Giulietta": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 200000},
-"Alfa Romeo - MiTo": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 150000},
-"Mini - One": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 200000},
-"Mini - Convertible": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 100000},
-"Honda - Insight": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 100000},
-"Honda - Accord": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 400000},
-"Toyota - Hilux": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 400000},
-"Toyota - Avanza": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 300000},
-"Volkswagen - Sharan": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 150000},
-"Volkswagen - Multivan": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 100000},
-"Ford - Ranger": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 200000},
-"Ford - Edge": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 100000},
-"Renault - Koleos 2022": {"price_min_eur": 36.000, "price_max_eur": 38.000, "units_produced": 100000},
-"Renault - Alaskan": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 50000},
-"Peugeot - Traveller": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 50000},
-"Peugeot - Expert": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 50000},
-"Citroën - SpaceTourer": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 50000},
-"Citroën - Jumpy": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 50000},
-"Fiat - Ducato": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 50000},
-"Fiat - Doblo": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 50000},
-"Jeep - Gladiator": {"price_min_eur": 55.000, "price_max_eur": 57.000, "units_produced": 25000},
-"Jeep - Commander 2022": {"price_min_eur": 57.000, "price_max_eur": 59.000, "units_produced": 20000},
-"Volvo - XC70": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 100000},
-"Volvo - XC90 2022": {"price_min_eur": 60.000, "price_max_eur": 62.000, "units_produced": 50000},
-"Mitsubishi - Outlander 2022": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 50000},
-"Suzuki - Baleno": {"price_min_eur": 15.000, "price_max_eur": 17.000, "units_produced": 200000},
-"Seat - Mii": {"price_min_eur": 14.000, "price_max_eur": 16.000, "units_produced": 200000},
-"Seat - Toledo": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 150000},
-"Cupra - Leon Sportstourer": {"price_min_eur": 33.000, "price_max_eur": 35.000, "units_produced": 100000},
-"Alfa Romeo - 4C": {"price_min_eur": 60.000, "price_max_eur": 62.000, "units_produced": 10000},
-"Mini - JCW": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 100000},
-"Honda - Pilot": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 150000},
-"Honda - Ridgeline": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 100000},
-"Toyota - Hilux 2022": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 100000},
-"Toyota - Proace Verso": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 50000},
-"Volkswagen - Caddy": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 100000},
-"Volkswagen - Caravelle": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 50000},
-"Ford - Transit": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 50000},
-"Ford - Tourneo Connect": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 50000},
-"Renault - Trafic": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 50000},
-"Renault - Master": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 50000},
-"Peugeot - Boxer": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 50000},
-"Peugeot - Expert 2022": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 50000},
-"Citroën - Jumper": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 50000},
-"Citroën - Jumpy 2022": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 50000},
-"Fiat - Scudo": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 50000},
-"Fiat - Talento": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 50000}
-"Toyota - Camry": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 1500000},
-"Toyota - Avalon": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 300000},
-"Honda - Fit": {"price_min_eur": 17.000, "price_max_eur": 19.000, "units_produced": 2500000},
-"Honda - Jazz": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 2000000},
-"Nissan - Altima": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 1200000},
-"Nissan - Maxima": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 400000},
-"Mazda - 2": {"price_min_eur": 15.000, "price_max_eur": 17.000, "units_produced": 1500000},
-"Mazda - 6": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 500000},
-"Subaru - BRZ": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 200000},
-"Subaru - Outback": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 300000},
-"Chevrolet - Spark": {"price_min_eur": 14.000, "price_max_eur": 16.000, "units_produced": 800000},
-"Chevrolet - Sonic": {"price_min_eur": 16.000, "price_max_eur": 18.000, "units_produced": 600000},
-"Ford - EcoSport": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 700000},
-"Ford - Flex": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 100000},
-"Hyundai - Santa Cruz": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 100000},
-"Hyundai - Palisade": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 120000},
-"Kia - Carnival": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 100000},
-"Kia - Seltos": {"price_min_eur": 23.000, "price_max_eur": 25.000, "units_produced": 150000},
-"Mitsubishi - Eclipse Cross": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 100000},
-"Mitsubishi - Lancer": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 200000},
-"Volkswagen - Arteon": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 100000},
-"Volkswagen - Passat CC": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 150000},
-"Volvo - S60": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 150000},
-"Volvo - V60": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 100000},
-"BMW - X1": {"price_min_eur": 33.000, "price_max_eur": 35.000, "units_produced": 500000},
-"BMW - X2": {"price_min_eur": 36.000, "price_max_eur": 38.000, "units_produced": 300000},
-"Audi - Q2": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 200000},
-"Audi - Q5": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 400000},
-"Mercedes - GLA": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 300000},
-"Mercedes - GLB": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 200000},
-"Jaguar - E-Pace": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 100000},
-"Jaguar - F-Pace": {"price_min_eur": 50.000, "price_max_eur": 52.000, "units_produced": 150000},
-"Land Rover - Discovery Sport": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 200000},
-"Land Rover - Defender 90": {"price_min_eur": 55.000, "price_max_eur": 57.000, "units_produced": 50000},
-"Alfa Romeo - Tonale": {"price_min_eur": 33.000, "price_max_eur": 35.000, "units_produced": 50000},
-"Alfa Romeo - Stelvio 2022": {"price_min_eur": 48.000, "price_max_eur": 50.000, "units_produced": 50000},
-"Fiat - Tipo SW": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 100000},
-"Fiat - 124 Spider": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 20000},
-"Mini - Paceman": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 50000},
-"Mini - Clubman": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 80000},
-"Honda - HR-V": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 300000},
-"Honda - Odyssey": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 100000},
-"Toyota - Sienna": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 150000},
-"Toyota - ProAce City": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 50000},
-"Ford - Fiesta ST": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 100000},
-"Ford - Focus ST": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 100000},
-"Ford - Mustang Mach-E": {"price_min_eur": 55.000, "price_max_eur": 57.000, "units_produced": 200000},
-"Chevrolet - Bolt": {"price_min_eur": 33.000, "price_max_eur": 35.000, "units_produced": 150000},
-"Chevrolet - Trailblazer": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 100000},
-"Hyundai - Ioniq 5": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 100000},
-"Hyundai - Ioniq 6": {"price_min_eur": 47.000, "price_max_eur": 49.000, "units_produced": 50000},
-"Kia - EV6": {"price_min_eur": 44.000, "price_max_eur": 46.000, "units_produced": 100000},
-"Kia - Soul EV": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 50000},
-"Nissan - Ariya": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 50000},
-"Nissan - Juke 2022": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 100000},
-"Mazda - CX-50": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 50000},
-"Subaru - Solterra": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 25000},
-"Jeep - Renegade": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 150000},
-"Jeep - Cherokee 2022": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 100000},
-"Volvo - XC20": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 25000},
-"Volvo - V40 2022": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 50000},
-"Toyota - Vios": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 1500000},
-"Toyota - Etios": {"price_min_eur": 15.000, "price_max_eur": 17.000, "units_produced": 1000000},
-"Honda - CR-Z": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 500000},
-"Honda - S2000": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 80000},
-"Nissan - 370Z": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 100000},
-"Nissan - 350Z": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 150000},
-"Mazda - RX-8": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 100000},
-"Mazda - CX-7": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 150000},
-"Subaru - Legacy Outback": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 150000},
-"Subaru - WRX STI": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 50000},
-"Chevrolet - Camaro": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 200000},
-"Chevrolet - Corvette": {"price_min_eur": 60.000, "price_max_eur": 65.000, "units_produced": 80000},
-"Ford - Focus RS": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 50000},
-"Ford - Mustang GT": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 150000},
-"Hyundai - i10": {"price_min_eur": 14.000, "price_max_eur": 16.000, "units_produced": 1500000},
-"Hyundai - i30 Fastback": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 500000},
-"Kia - Rio": {"price_min_eur": 16.000, "price_max_eur": 18.000, "units_produced": 1000000},
-"Kia - Forte": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 500000},
-"Mitsubishi - ASX": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 250000},
-"Mitsubishi - Pajero": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 100000},
-"Volkswagen - T-Cross": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 200000},
-"Volkswagen - T5": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 50000},
-"Volvo - V60 Cross Country": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 50000},
-"Volvo - XC90 Recharge": {"price_min_eur": 65.000, "price_max_eur": 67.000, "units_produced": 30000},
-"BMW - 218i": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 150000},
-"BMW - 220i": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 100000},
-"Audi - A1": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 200000},
-"Audi - A6": {"price_min_eur": 50.000, "price_max_eur": 52.000, "units_produced": 150000},
-"Mercedes - CLA": {"price_min_eur": 36.000, "price_max_eur": 38.000, "units_produced": 200000},
-"Mercedes - CLS": {"price_min_eur": 60.000, "price_max_eur": 62.000, "units_produced": 50000},
-"Jaguar - XE": {"price_min_eur": 38.000, "price_max_eur": 40.000, "units_produced": 100000},
-"Jaguar - XF": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 50000},
-"Land Rover - Range Rover Evoque": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 100000},
-"Land Rover - Range Rover Velar": {"price_min_eur": 55.000, "price_max_eur": 57.000, "units_produced": 50000},
-"Alfa Romeo - 159": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 100000},
-"Alfa Romeo - 166": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 50000},
-"Fiat - 500L": {"price_min_eur": 18.000, "price_max_eur": 20.000, "units_produced": 200000},
-"Fiat - 500X 2021": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 100000},
-"Mini - Paceman 2021": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 50000},
-"Mini - Convertible JCW": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 25000},
-"Honda - Prelude": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 50000},
-"Honda - Element": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 30000},
-"Toyota - Celica": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 50000},
-"Toyota - MR2": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 25000},
-"Ford - Bronco": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 50000},
-"Ford - Focus Electric": {"price_min_eur": 32.000, "price_max_eur": 34.000, "units_produced": 20000},
-"Chevrolet - Camaro ZL1": {"price_min_eur": 65.000, "price_max_eur": 67.000, "units_produced": 20000},
-"Chevrolet - Corvette C8": {"price_min_eur": 85.000, "price_max_eur": 90.000, "units_produced": 10000},
-"Hyundai - i40": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 50000},
-"Hyundai - Sonata": {"price_min_eur": 30.000, "price_max_eur": 32.000, "units_produced": 100000},
-"Kia - Optima": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 50000},
-"Kia - Cadenza": {"price_min_eur": 35.000, "price_max_eur": 37.000, "units_produced": 20000},
-"Nissan - Sentra": {"price_min_eur": 20.000, "price_max_eur": 22.000, "units_produced": 500000},
-"Nissan - Pathfinder": {"price_min_eur": 40.000, "price_max_eur": 42.000, "units_produced": 100000},
-"Mazda - CX-3": {"price_min_eur": 22.000, "price_max_eur": 24.000, "units_produced": 100000},
-"Subaru - Ascent": {"price_min_eur": 45.000, "price_max_eur": 47.000, "units_produced": 50000},
-"Jeep - Cherokee Trailhawk": {"price_min_eur": 42.000, "price_max_eur": 44.000, "units_produced": 25000},
-"Volvo - S40": {"price_min_eur": 25.000, "price_max_eur": 27.000, "units_produced": 50000},
-"Volvo - V50": {"price_min_eur": 28.000, "price_max_eur": 30.000, "units_produced": 50000},
+{
+    "nombre": "Toyota Camry",
+    "descripcion": "El Toyota Camry es una berlina de tamaño medio, confiable y eficiente, con motor de 2.5 L o 3.5 L según versión. Es uno de los modelos más vendidos globalmente, con buena economía de combustible y seguridad.",
+    "precio": "30.000 € - 36.000 €",
+    "unidades": "21.000.000",
+    "porcentaje": 15
+},
+
+{
+    "nombre": "Honda Accord",
+    "descripcion": "El Honda Accord es una berlina de tamaño medio, reconocida por su fiabilidad y confort. Disponible con motores de gasolina y híbridos, combina prestaciones y eficiencia.",
+    "precio": "31.000 € - 37.000 €",
+    "unidades": "18.000.000",
+    "porcentaje": 15
+},
+
+{
+    "nombre": "Volkswagen Jetta",
+    "descripcion": "El Volkswagen Jetta es un sedán compacto con buena eficiencia de combustible y tecnología moderna. Popular por su confort de conducción y durabilidad.",
+    "precio": "24.000 € - 29.000 €",
+    "unidades": "20.000.000",
+    "porcentaje": 15
+},
+
+{
+    "nombre": "Hyundai Elantra",
+    "descripcion": "El Hyundai Elantra es un compacto fiable y económico, disponible con motores de gasolina y versiones híbridas. Destaca por su seguridad y equipamiento.",
+    "precio": "22.000 € - 27.000 €",
+    "unidades": "14.000.000",
+    "porcentaje": 15
+},
+
+{
+    "nombre": "Kia Rio",
+    "descripcion": "El Kia Rio es un utilitario versátil y eficiente, con motores pequeños y buen equipamiento de serie. Popular en mercados urbanos por su tamaño compacto y economía.",
+    "precio": "15.000 € - 18.500 €",
+    "unidades": "4.000.000",
+    "porcentaje": 15
+},
+
+{
+    "nombre": "Ford Mustang",
+    "descripcion": "El Ford Mustang es un deportivo americano icónico con motor V8 opcional, desde 450 hasta 480 CV según versión. Destaca por diseño clásico y sonido característico.",
+    "precio": "45.000 € - 60.000 €",
+    "unidades": "10.000.000",
+    "porcentaje": 60
+},
+
+{
+    "nombre": "Chevrolet Camaro",
+    "descripcion": "El Chevrolet Camaro es un deportivo americano con motor V6 o V8, hasta 650 CV en versiones más potentes. Popular por su diseño agresivo y rendimiento en carretera.",
+    "precio": "42.000 € - 58.000 €",
+    "unidades": "5.000.000",
+    "porcentaje": 60
+},
+
+{
+    "nombre": "Dodge Charger",
+    "descripcion": "El Dodge Charger es un sedán deportivo de gran tamaño con motores V6 y V8, conocido por su potencia y presencia imponente en carretera.",
+    "precio": "48.000 € - 65.000 €",
+    "unidades": "3.000.000",
+    "porcentaje": 55
+},
+
+{
+    "nombre": "Dodge Challenger",
+    "descripcion": "El Dodge Challenger es un muscle car americano con motor V6 o V8, hasta 717 CV en versiones Hellcat. Con un estilo retro, es un icono de la cultura automovilística americana.",
+    "precio": "47.000 € - 64.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 70
+},
+
+{
+    "nombre": "BMW X5",
+    "descripcion": "El BMW X5 es un SUV de lujo mediano con motores de 3.0 L a 4.4 L, eficiente y potente. Destaca por su confort, tecnología avanzada y dinámica de conducción.",
+    "precio": "65.000 € - 80.000 €",
+    "unidades": "3.000.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "BMW X3",
+    "descripcion": "El BMW X3 es un SUV mediano premium, con motor 2.0 L o 3.0 L y buenas prestaciones. Muy valorado por confort y manejo equilibrado.",
+    "precio": "55.000 € - 68.000 €",
+    "unidades": "2.500.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Audi Q5",
+    "descripcion": "El Audi Q5 es un SUV premium compacto con motor 2.0 TFSI o 3.0 TDI, reconocido por calidad interior y conducción equilibrada.",
+    "precio": "55.000 € - 70.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Audi Q7",
+    "descripcion": "El Audi Q7 es un SUV grande premium con motores V6 y V8, con capacidad para 7 plazas y tecnología avanzada de asistencia al conductor.",
+    "precio": "70.000 € - 85.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 50
+},
+
+{
+    "nombre": "Mercedes GLC",
+    "descripcion": "El Mercedes GLC es un SUV premium mediano, con motores de 2.0 L y versiones híbridas, diseño elegante y gran confort de marcha.",
+    "precio": "55.000 € - 70.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Mercedes GLE",
+    "descripcion": "El Mercedes GLE es un SUV grande premium con motores de 3.0 L y 4.0 L, interior espacioso y tecnología de última generación.",
+    "precio": "75.000 € - 90.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 50
+},
+
+{
+    "nombre": "Volvo XC90",
+    "descripcion": "El Volvo XC90 es un SUV grande premium con motores híbridos y gasolina, 7 plazas y gran seguridad activa y pasiva.",
+    "precio": "70.000 € - 85.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Peugeot 2008",
+    "descripcion": "El Peugeot 2008 es un SUV urbano compacto con motores gasolina y diésel, eficiente y con buen equipamiento tecnológico.",
+    "precio": "22.000 € - 27.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Peugeot 5008",
+    "descripcion": "El Peugeot 5008 es un SUV mediano de 7 plazas, con motores eficientes y buena versatilidad, ideal para familias.",
+    "precio": "32.000 € - 38.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Renault Kadjar",
+    "descripcion": "El Renault Kadjar es un SUV compacto con motor 1.3 L o 1.5 L diésel, cómodo y eficiente para el día a día.",
+    "precio": "25.000 € - 30.000 €",
+    "unidades": "500.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Renault Koleos",
+    "descripcion": "El Renault Koleos es un SUV grande con motores de 1.6 L a 2.5 L, con buen espacio interior y confort de marcha.",
+    "precio": "33.000 € - 39.000 €",
+    "unidades": "300.000",
+    "porcentaje": 25
+}
+
+]
+cars = [
+
+{
+    "nombre": "Opel Astra",
+    "descripcion": "El Opel Astra es un compacto europeo con motores eficientes, buena tecnología y confort. Popular en flotas y uso diario.",
+    "precio": "22.000 € - 27.000 €",
+    "unidades": "15.000.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Opel Insignia",
+    "descripcion": "El Opel Insignia es una berlina mediana/grande, con motores 1.5 a 2.0 L, cómodo y con diseño moderno.",
+    "precio": "30.000 € - 36.000 €",
+    "unidades": "1.500.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Seat Ateca",
+    "descripcion": "El Seat Ateca es un SUV compacto, ágil en ciudad y estable en carretera, con motores gasolina y diésel.",
+    "precio": "25.000 € - 30.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Seat Arona",
+    "descripcion": "El Seat Arona es un SUV urbano compacto, económico y con diseño moderno, ideal para ciudad.",
+    "precio": "20.000 € - 24.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Skoda Kamiq",
+    "descripcion": "El Skoda Kamiq es un SUV urbano con buen espacio interior y motores eficientes, cómodo para el día a día.",
+    "precio": "21.000 € - 25.000 €",
+    "unidades": "800.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Skoda Scala",
+    "descripcion": "El Skoda Scala es un compacto versátil, con buena habitabilidad y motores eficientes, ideal para familias jóvenes.",
+    "precio": "20.000 € - 24.000 €",
+    "unidades": "500.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Fiat Tipo",
+    "descripcion": "El Fiat Tipo es un compacto económico y funcional, con motores pequeños y buen espacio interior.",
+    "precio": "18.000 € - 22.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 15
+},
+
+{
+    "nombre": "Fiat 500X",
+    "descripcion": "El Fiat 500X es un crossover urbano basado en el Fiat 500, con motores pequeños y diseño simpático y moderno.",
+    "precio": "22.000 € - 27.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Citroën C5 Aircross",
+    "descripcion": "El Citroën C5 Aircross es un SUV mediano, cómodo y con suspensión progresiva, ideal para viajes largos y familia.",
+    "precio": "30.000 € - 36.000 €",
+    "unidades": "500.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Citroën Berlingo",
+    "descripcion": "El Citroën Berlingo es un vehículo polivalente tipo MPV, con mucho espacio y funcionalidad para familias y profesionales.",
+    "precio": "23.000 € - 28.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Toyota C-HR",
+    "descripcion": "El Toyota C-HR es un SUV compacto híbrido, con diseño agresivo y eficiente consumo de combustible.",
+    "precio": "28.000 € - 33.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Toyota Hilux",
+    "descripcion": "La Toyota Hilux es una pickup resistente y duradera, usada tanto para trabajo como para aventura. Disponible en diésel y gasolina.",
+    "precio": "35.000 € - 42.000 €",
+    "unidades": "18.000.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Nissan X-Trail",
+    "descripcion": "El Nissan X-Trail es un SUV familiar mediano con 5 o 7 plazas, motores eficientes y buena capacidad de carga.",
+    "precio": "32.000 € - 38.000 €",
+    "unidades": "7.000.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Nissan Juke",
+    "descripcion": "El Nissan Juke es un SUV urbano compacto, ágil y eficiente, con un diseño distintivo.",
+    "precio": "21.000 € - 26.000 €",
+    "unidades": "1.500.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Honda HR-V",
+    "descripcion": "El Honda HR-V es un SUV compacto práctico y eficiente, con buena habitabilidad y motor económico.",
+    "precio": "26.000 € - 31.000 €",
+    "unidades": "3.000.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Honda Jazz",
+    "descripcion": "El Honda Jazz es un utilitario con gran espacio interior y motores eficientes, perfecto para ciudad y viajes cortos.",
+    "precio": "20.000 € - 24.000 €",
+    "unidades": "8.000.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Mazda CX-30",
+    "descripcion": "El Mazda CX-30 es un SUV compacto con diseño elegante, motor eficiente y buena dinámica de conducción.",
+    "precio": "26.000 € - 31.000 €",
+    "unidades": "500.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Mazda CX-60",
+    "descripcion": "El Mazda CX-60 es un SUV mediano premium con motor híbrido, buenas prestaciones y tecnología avanzada.",
+    "precio": "48.000 € - 55.000 €",
+    "unidades": "100.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Subaru XV",
+    "descripcion": "El Subaru XV es un SUV compacto con tracción total, ideal para off-road ligero y uso urbano.",
+    "precio": "28.000 € - 33.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Mitsubishi ASX",
+    "descripcion": "El Mitsubishi ASX es un SUV urbano compacto, económico y práctico, con buena relación calidad-precio.",
+    "precio": "22.000 € - 26.000 €",
+    "unidades": "1.300.000",
+    "porcentaje": 20
+}
+
+]
+cars += [
+
+{
+    "nombre": "Chevrolet Silverado",
+    "descripcion": "La Chevrolet Silverado es una pickup americana grande, potente y versátil, con motores V6 y V8 y gran capacidad de carga.",
+    "precio": "45.000 € - 60.000 €",
+    "unidades": "12.000.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Ford F-150",
+    "descripcion": "La Ford F-150 es la pickup más vendida en EE. UU., con motores V6 y V8, gran robustez y capacidad de remolque.",
+    "precio": "50.000 € - 65.000 €",
+    "unidades": "40.000.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Ram 1500",
+    "descripcion": "La Ram 1500 es una pickup americana premium, potente y cómoda, con motores V6 y V8 y suspensión avanzada.",
+    "precio": "52.000 € - 68.000 €",
+    "unidades": "5.000.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Jeep Grand Cherokee",
+    "descripcion": "El Jeep Grand Cherokee es un SUV grande con capacidades off-road, lujo y motores V6/V8, ideal para todo terreno.",
+    "precio": "60.000 € - 75.000 €",
+    "unidades": "7.000.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Tesla Model S",
+    "descripcion": "El Tesla Model S es un sedán eléctrico de alta gama, rápido y tecnológico, con hasta 1.020 CV en versiones Plaid.",
+    "precio": "90.000 € - 110.000 €",
+    "unidades": "500.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Tesla Model X",
+    "descripcion": "El Tesla Model X es un SUV eléctrico de lujo, con puertas Falcon Wing y gran autonomía, perfecto para familias tecnológicas.",
+    "precio": "95.000 € - 115.000 €",
+    "unidades": "400.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Tesla Model 2",
+    "descripcion": "El Tesla Model 2 es un vehículo eléctrico compacto de nueva generación, planeado para producción masiva.",
+    "precio": "25.000 € - 30.000 €",
+    "unidades": "0",
+    "porcentaje": 0
+},
+
+{
+    "nombre": "Volkswagen ID.3",
+    "descripcion": "El Volkswagen ID.3 es un hatchback eléctrico compacto, eficiente y pensado para movilidad urbana sostenible.",
+    "precio": "30.000 € - 36.000 €",
+    "unidades": "600.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Volkswagen ID.4",
+    "descripcion": "El Volkswagen ID.4 es un SUV eléctrico mediano, con buena autonomía y tecnología moderna para familias.",
+    "precio": "35.000 € - 42.000 €",
+    "unidades": "800.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Hyundai Kona",
+    "descripcion": "El Hyundai Kona es un SUV urbano compacto, eficiente y ágil, disponible en versiones gasolina, diésel y eléctrica.",
+    "precio": "23.000 € - 28.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Kia Niro",
+    "descripcion": "El Kia Niro es un crossover híbrido y eléctrico, práctico y eficiente, con buen espacio interior y tecnología moderna.",
+    "precio": "29.000 € - 34.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Volvo S60",
+    "descripcion": "El Volvo S60 es una berlina premium, segura y elegante, con motores híbridos y diésel, ideal para conducción cómoda y segura.",
+    "precio": "42.000 € - 50.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 30
+},
+
+{
+    "nombre": "Volvo V60",
+    "descripcion": "El Volvo V60 es un familiar premium, seguro y práctico, con versiones híbridas y diésel de bajo consumo.",
+    "precio": "44.000 € - 52.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 30
+},
+
+{
+    "nombre": "Alfa Romeo Tonale",
+    "descripcion": "El Alfa Romeo Tonale es un SUV compacto deportivo, con diseño italiano elegante, motores híbridos y buen comportamiento dinámico.",
+    "precio": "38.000 € - 45.000 €",
+    "unidades": "100.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Mini Clubman",
+    "descripcion": "El Mini Clubman es un compacto premium con diseño distintivo, puertas traseras tipo 'barn door' y motores turbo eficientes.",
+    "precio": "30.000 € - 36.000 €",
+    "unidades": "500.000",
+    "porcentaje": 25
+},
+
+{
+    "nombre": "Mini Paceman",
+    "descripcion": "El Mini Paceman es un crossover compacto de estilo coupé, derivado del Mini Countryman, con buen comportamiento urbano.",
+    "precio": "28.000 € - 33.000 €",
+    "unidades": "200.000",
+    "porcentaje": 20
+},
+
+{
+    "nombre": "Jaguar XF",
+    "descripcion": "El Jaguar XF es una berlina de lujo británica, elegante y deportiva, con motores gasolina y diésel, y buena dinámica de conducción.",
+    "precio": "55.000 € - 65.000 €",
+    "unidades": "500.000",
+    "porcentaje": 30
+},
+
+{
+    "nombre": "Jaguar F-Pace",
+    "descripcion": "El Jaguar F-Pace es un SUV premium deportivo, con motores potentes y diseño elegante, ideal para conducción dinámica y cómoda.",
+    "precio": "60.000 € - 75.000 €",
+    "unidades": "400.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Land Rover Discovery",
+    "descripcion": "El Land Rover Discovery es un SUV grande de lujo, con capacidades off-road excepcionales y gran espacio interior.",
+    "precio": "75.000 € - 90.000 €",
+    "unidades": "1.200.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Land Rover Defender",
+    "descripcion": "El Land Rover Defender es un SUV todoterreno icónico, robusto y con historia, disponible en versiones de lujo y off-road.",
+    "precio": "65.000 € - 85.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 35
+}
+
+]
+cars += [
+
+{
+    "nombre": "Toyota Supra",
+    "descripcion": "El Toyota Supra es un coupé deportivo japonés, conocido por su motor potente y ligereza, ideal para conducción deportiva.",
+    "precio": "55.000 € - 65.000 €",
+    "unidades": "200.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Nissan 370Z",
+    "descripcion": "El Nissan 370Z es un coupé deportivo con motor V6, diseño clásico y gran comportamiento en curvas, sucesor de la saga Z.",
+    "precio": "40.000 € - 50.000 €",
+    "unidades": "160.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Mazda MX-5",
+    "descripcion": "El Mazda MX-5 es un roadster ligero, ágil y divertido, con motor delantero y tracción trasera, icono de los deportivos asequibles.",
+    "precio": "30.000 € - 36.000 €",
+    "unidades": "1.100.000",
+    "porcentaje": 45
+},
+
+{
+    "nombre": "Subaru BRZ",
+    "descripcion": "El Subaru BRZ es un coupé deportivo con motor bóxer, tracción trasera y enfoque en el placer de conducción, hermano del Toyota GT86.",
+    "precio": "32.000 € - 38.000 €",
+    "unidades": "200.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Toyota GT86",
+    "descripcion": "El Toyota GT86 es un coupé deportivo ligero y equilibrado, con motor bóxer y tracción trasera, diseñado para conductores entusiastas.",
+    "precio": "30.000 € - 36.000 €",
+    "unidades": "200.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "BMW Z4",
+    "descripcion": "El BMW Z4 es un roadster alemán, elegante y deportivo, con motores turbo de 4 y 6 cilindros, ideal para conducir al aire libre.",
+    "precio": "52.000 € - 62.000 €",
+    "unidades": "150.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Audi TT",
+    "descripcion": "El Audi TT es un coupé compacto deportivo, con diseño icónico, motor turbo y tracción quattro opcional, equilibrado y ágil.",
+    "precio": "45.000 € - 55.000 €",
+    "unidades": "650.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Mercedes SLK",
+    "descripcion": "El Mercedes SLK es un roadster compacto con techo retráctil, motor potente y confort premium, ideal para disfrutar la conducción.",
+    "precio": "50.000 € - 60.000 €",
+    "unidades": "700.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Porsche Macan",
+    "descripcion": "El Porsche Macan es un SUV compacto premium, con excelente dinámica y motores potentes, combinación de deportividad y versatilidad.",
+    "precio": "65.000 € - 80.000 €",
+    "unidades": "800.000",
+    "porcentaje": 45
+},
+
+{
+    "nombre": "Porsche Cayenne",
+    "descripcion": "El Porsche Cayenne es un SUV de lujo con altas prestaciones, motores potentes y enfoque en el dinamismo, uno de los más vendidos de Porsche.",
+    "precio": "85.000 € - 110.000 €",
+    "unidades": "1.000.000",
+    "porcentaje": 50
+},
+
+{
+    "nombre": "Lexus IS",
+    "descripcion": "El Lexus IS es una berlina premium japonesa, con motores V6 y híbridos, confortable y fiable, con diseño elegante y deportivo.",
+    "precio": "42.000 € - 50.000 €",
+    "unidades": "1.300.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Lexus RX",
+    "descripcion": "El Lexus RX es un SUV de lujo híbrido y gasolina, conocido por su confort, fiabilidad y diseño elegante, muy popular en el segmento premium.",
+    "precio": "65.000 € - 80.000 €",
+    "unidades": "3.000.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Infiniti Q50",
+    "descripcion": "El Infiniti Q50 es una berlina deportiva japonesa con motores potentes, diseño elegante y conducción dinámica, orientado al mercado premium.",
+    "precio": "40.000 € - 48.000 €",
+    "unidades": "500.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Genesis G70",
+    "descripcion": "El Genesis G70 es una berlina surcoreana premium, con diseño elegante, motores potentes y enfoque en la dinámica de conducción.",
+    "precio": "42.000 € - 50.000 €",
+    "unidades": "100.000",
+    "porcentaje": 30
+},
+
+{
+    "nombre": "Genesis GV70",
+    "descripcion": "El Genesis GV70 es un SUV premium surcoreano, con diseño atractivo, motores turbo y alto nivel de equipamiento de confort y seguridad.",
+    "precio": "50.000 € - 60.000 €",
+    "unidades": "150.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Chevrolet Tahoe",
+    "descripcion": "El Chevrolet Tahoe es un SUV americano grande y potente, con motores V8, ideal para familias y conducción en carretera y todo terreno.",
+    "precio": "65.000 € - 80.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Ford Explorer",
+    "descripcion": "El Ford Explorer es un SUV mediano grande, con motores V6 y buena capacidad de carga, ideal para familias y aventuras de carretera.",
+    "precio": "55.000 € - 65.000 €",
+    "unidades": "8.000.000",
+    "porcentaje": 40
+},
+
+{
+    "nombre": "Honda Pilot",
+    "descripcion": "El Honda Pilot es un SUV grande, fiable y cómodo, con espacio para siete pasajeros y motores V6 eficientes.",
+    "precio": "50.000 € - 60.000 €",
+    "unidades": "2.000.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Toyota Highlander",
+    "descripcion": "El Toyota Highlander es un SUV mediano-grande, confortable y seguro, con motores híbridos y de gasolina, popular entre familias.",
+    "precio": "52.000 € - 62.000 €",
+    "unidades": "3.000.000",
+    "porcentaje": 35
+},
+
+{
+    "nombre": "Mitsubishi Pajero",
+    "descripcion": "El Mitsubishi Pajero es un SUV todoterreno icónico, con gran capacidad off-road, motores V6 y confort en rutas largas.",
+    "precio": "40.000 € - 50.000 €",
+    "unidades": "3.000.000",
+    "porcentaje": 35
+}
+
+]
+
+cars += [
+
+{
+    "nombre": "Ferrari 488 GTB",
+    "descripcion": "El Ferrari 488 GTB es un superdeportivo berlinetta con motor V8 biturbo de 670 CV, sucesor del 458 Italia, ágil y con gran aerodinámica.",
+    "precio": "220.000 € - 260.000 €",
+    "unidades": "3.500",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Ferrari F8 Tributo",
+    "descripcion": "El Ferrari F8 Tributo es un V8 central trasero con 720 CV, homenaje al motor V8 de Ferrari, con aceleración impresionante y diseño moderno.",
+    "precio": "280.000 € - 330.000 €",
+    "unidades": "2.500",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Ferrari 458 Italia",
+    "descripcion": "El Ferrari 458 Italia es un coupé superdeportivo V8 atmosférico con 570 CV, famoso por su sonido del motor y comportamiento preciso en curvas.",
+    "precio": "200.000 € - 240.000 €",
+    "unidades": "15.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Ferrari 296 GTB",
+    "descripcion": "El Ferrari 296 GTB es un híbrido enchufable V6 con 830 CV combinados, orientado a máxima eficiencia y prestaciones de un superdeportivo moderno.",
+    "precio": "320.000 € - 370.000 €",
+    "unidades": "3.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Ferrari Roma",
+    "descripcion": "El Ferrari Roma es un coupé GT elegante con motor V8 de 620 CV, diseñado para combinar lujo, confort y altas prestaciones en carretera.",
+    "precio": "240.000 € - 290.000 €",
+    "unidades": "5.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Lamborghini Huracan",
+    "descripcion": "El Lamborghini Huracan es un superdeportivo V10 de 610-640 CV, con tracción total y aceleración explosiva, icono moderno de la marca italiana.",
+    "precio": "230.000 € - 300.000 €",
+    "unidades": "20.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Lamborghini Aventador",
+    "descripcion": "El Lamborghini Aventador es un superdeportivo V12 con 700 CV, carrocería llamativa y comportamiento extremo, un clásico moderno de la marca.",
+    "precio": "350.000 € - 450.000 €",
+    "unidades": "11.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Lamborghini Gallardo",
+    "descripcion": "El Lamborghini Gallardo es un V10 con 500-570 CV, compacto y deportivo, uno de los superdeportivos más vendidos de Lamborghini.",
+    "precio": "140.000 € - 180.000 €",
+    "unidades": "14.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Lamborghini Revuelto",
+    "descripcion": "El Lamborghini Revuelto es un V12 híbrido con 1.030 CV, sucesor del Aventador, combina potencia brutal con tecnología híbrida de última generación.",
+    "precio": "500.000 € - 600.000 €",
+    "unidades": "1.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Lamborghini Murcielago",
+    "descripcion": "El Lamborghini Murcielago es un coupé V12 de 580-670 CV, con puertas de tijera y diseño icónico, uno de los superdeportivos más reconocibles.",
+    "precio": "300.000 € - 380.000 €",
+    "unidades": "4.099",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Porsche 911 Carrera",
+    "descripcion": "El Porsche 911 Carrera es un icónico deportivo alemán, motor trasero bóxer, 385-450 CV, ágil y equilibrado para conducción diaria y circuito.",
+    "precio": "120.000 € - 150.000 €",
+    "unidades": "1.200.000",
+    "porcentaje": 70
+},
+
+{
+    "nombre": "Porsche 911 Turbo",
+    "descripcion": "El Porsche 911 Turbo es un coupé de altas prestaciones, motor bóxer biturbo de 580-650 CV, aceleración fulgurante y tracción integral.",
+    "precio": "190.000 € - 230.000 €",
+    "unidades": "200.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Porsche 718 Cayman",
+    "descripcion": "El Porsche 718 Cayman es un coupé deportivo con motor central, 300-400 CV, excelente equilibrio y dinámica, ideal para carretera y circuito.",
+    "precio": "70.000 € - 90.000 €",
+    "unidades": "300.000",
+    "porcentaje": 60
+},
+
+{
+    "nombre": "Porsche 718 Boxster",
+    "descripcion": "El Porsche 718 Boxster es un roadster con motor central de 300-365 CV, tracción trasera, manejo preciso y divertido, versión descapotable del Cayman.",
+    "precio": "68.000 € - 85.000 €",
+    "unidades": "250.000",
+    "porcentaje": 60
+},
+
+{
+    "nombre": "Porsche 918 Spyder",
+    "descripcion": "El Porsche 918 Spyder es un híbrido de edición limitada con 887 CV, tecnología híbrida avanzada y prestaciones de hiperdeportivo.",
+    "precio": "1.500.000 € - 1.800.000 €",
+    "unidades": "918",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "McLaren 570S",
+    "descripcion": "El McLaren 570S es un coupé deportivo británico con motor V8 biturbo de 570 CV, aerodinámica activa y gran rendimiento en circuito y carretera.",
+    "precio": "160.000 € - 200.000 €",
+    "unidades": "3.500",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "McLaren 720S",
+    "descripcion": "El McLaren 720S es un superdeportivo V8 biturbo de 720 CV, con chasis monocasco de fibra de carbono y aceleración brutal, éxito moderno de la marca.",
+    "precio": "240.000 € - 290.000 €",
+    "unidades": "4.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "McLaren 765LT",
+    "descripcion": "El McLaren 765LT es un superdeportivo ligero y extremo con 765 CV, enfoque track-oriented y aerodinámica avanzada.",
+    "precio": "350.000 € - 420.000 €",
+    "unidades": "765",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "McLaren P1",
+    "descripcion": "El McLaren P1 es un hiperdeportivo híbrido con 916 CV, aerodinámica activa y edición limitada de 375 unidades, icono de la marca británica.",
+    "precio": "1.800.000 € - 2.200.000 €",
+    "unidades": "375",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "McLaren Artura",
+    "descripcion": "El McLaren Artura es un híbrido enchufable V6 de 680 CV, orientado a eficiencia y rendimiento, primer híbrido de producción en serie de McLaren.",
+    "precio": "230.000 € - 270.000 €",
+    "unidades": "2.000",
+    "porcentaje": 85
+}
+
+]
+cars += [
+
+{
+    "nombre": "Aston Martin Vantage",
+    "descripcion": "El Aston Martin Vantage es un coupé deportivo británico con motor V8 de 510 CV, diseño elegante y rendimiento ágil en carretera y circuito.",
+    "precio": "150.000 € - 180.000 €",
+    "unidades": "10.000",
+    "porcentaje": 75
+},
+
+{
+    "nombre": "Aston Martin DB11",
+    "descripcion": "El Aston Martin DB11 es un GT con motor V12 de 608 CV, combina lujo y deportividad con tecnología avanzada de chasis y confort.",
+    "precio": "170.000 € - 210.000 €",
+    "unidades": "5.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Aston Martin DBS Superleggera",
+    "descripcion": "El DBS Superleggera es un coupé GT de alto rendimiento con motor V12 de 725 CV, diseño aerodinámico extremo y edición limitada.",
+    "precio": "250.000 € - 300.000 €",
+    "unidades": "2.500",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Aston Martin One-77",
+    "descripcion": "El One-77 es un hiperdeportivo británico exclusivo con motor V12 de 750 CV, solo 77 unidades fabricadas, icono de lujo y potencia.",
+    "precio": "2.500.000 € - 3.200.000 €",
+    "unidades": "77",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Aston Martin Valkyrie",
+    "descripcion": "El Aston Martin Valkyrie es un hiperdeportivo híbrido con 1.160 CV, aerodinámica de F1, edición limitada de 150 unidades y tecnología extrema.",
+    "precio": "3.000.000 € - 3.500.000 €",
+    "unidades": "150",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Bugatti Veyron",
+    "descripcion": "El Bugatti Veyron es un hiperdeportivo W16 de 1.001 CV, capaz de superar los 400 km/h, icono de velocidad y lujo de principios del siglo XXI.",
+    "precio": "1.500.000 € - 2.000.000 €",
+    "unidades": "450",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Bugatti Chiron",
+    "descripcion": "El Bugatti Chiron es un hiperdeportivo de 1.500 CV, sucesor del Veyron, con tecnología de vanguardia y prestaciones extremas.",
+    "precio": "2.500.000 € - 3.500.000 €",
+    "unidades": "500",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Bugatti Divo",
+    "descripcion": "El Bugatti Divo es un hiperdeportivo exclusivo de 1.500 CV, centrado en la aerodinámica y agilidad, solo 40 unidades fabricadas.",
+    "precio": "6.000.000 € - 7.000.000 €",
+    "unidades": "40",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Bugatti Mistral",
+    "descripcion": "El Bugatti Mistral es un roadster de edición limitada con 1.600 CV, aerodinámica extrema y solo 99 unidades fabricadas.",
+    "precio": "5.000.000 € - 6.000.000 €",
+    "unidades": "99",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Bugatti Centodieci",
+    "descripcion": "El Bugatti Centodieci es un homenaje al EB110, con 1.600 CV y diseño exclusivo, limitado a solo 10 unidades.",
+    "precio": "8.000.000 € - 9.000.000 €",
+    "unidades": "10",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Koenigsegg Agera RS",
+    "descripcion": "El Koenigsegg Agera RS es un hiperdeportivo sueco con motor V8 biturbo de 1.160 CV, récord de velocidad y solo 25 unidades fabricadas.",
+    "precio": "3.000.000 € - 3.500.000 €",
+    "unidades": "25",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Koenigsegg Jesko",
+    "descripcion": "El Koenigsegg Jesko es un hiperdeportivo de 1.600 CV, diseñado para circuito y carretera, edición limitada de 125 unidades.",
+    "precio": "3.500.000 € - 4.000.000 €",
+    "unidades": "125",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Koenigsegg Regera",
+    "descripcion": "El Koenigsegg Regera es un híbrido de lujo con 1.500 CV, transmisión directa y solo 80 unidades producidas.",
+    "precio": "3.000.000 € - 3.500.000 €",
+    "unidades": "80",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Pagani Zonda",
+    "descripcion": "El Pagani Zonda es un superdeportivo italiano de edición limitada con motor V12 de 700-800 CV, diseño artesanal y solo 140 unidades.",
+    "precio": "5.000.000 € - 7.000.000 €",
+    "unidades": "140",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Pagani Huayra",
+    "descripcion": "El Pagani Huayra es un superdeportivo V12 biturbo con 730 CV, aerodinámica activa y solo 280 unidades fabricadas.",
+    "precio": "2.500.000 € - 3.500.000 €",
+    "unidades": "280",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Nissan GT-R R35",
+    "descripcion": "El Nissan GT-R R35 es un deportivo japonés con motor V6 biturbo de 570 CV, tracción integral y aceleración explosiva, conocido como 'Godzilla'.",
+    "precio": "100.000 € - 130.000 €",
+    "unidades": "40.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Toyota GR Supra",
+    "descripcion": "El Toyota GR Supra es un deportivo japonés con motor 6 cilindros turbo de 340 CV, heredero del mito Supra, con manejo ágil y moderno.",
+    "precio": "55.000 € - 65.000 €",
+    "unidades": "50.000",
+    "porcentaje": 75
+},
+
+{
+    "nombre": "Ford GT (2017)",
+    "descripcion": "El Ford GT 2017 es un hiperdeportivo estadounidense con motor V6 EcoBoost de 647 CV, aerodinámica extrema y edición limitada de 1.350 unidades.",
+    "precio": "600.000 € - 800.000 €",
+    "unidades": "1.350",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Chevrolet Corvette C8",
+    "descripcion": "El Chevrolet Corvette C8 es un deportivo con motor V8 central de 495 CV, primer Corvette con motor central en producción masiva, gran equilibrio y manejo.",
+    "precio": "90.000 € - 120.000 €",
+    "unidades": "80.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Dodge Viper",
+    "descripcion": "El Dodge Viper es un clásico estadounidense V10 de 645 CV, característico por su potencia brutal y diseño agresivo, 31.000 unidades producidas.",
+    "precio": "120.000 € - 180.000 €",
+    "unidades": "31.000",
+    "porcentaje": 85
+}
+
+]
+cars += [
+
+{
+    "nombre": "BMW M3",
+    "descripcion": "El BMW M3 es un deportivo alemán icónico con motor de 6 cilindros en línea de 510 CV, agilidad excepcional y gran historia en competición.",
+    "precio": "85.000 € - 100.000 €",
+    "unidades": "300.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "BMW M4",
+    "descripcion": "El BMW M4 es la versión coupé del M3, con motor de 480-510 CV, dinámica deportiva y elegancia moderna.",
+    "precio": "90.000 € - 110.000 €",
+    "unidades": "200.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Audi R8",
+    "descripcion": "El Audi R8 es un superdeportivo con motor V10 de 562-610 CV, tracción integral Quattro y diseño inspirado en los coches de competición de Audi.",
+    "precio": "150.000 € - 190.000 €",
+    "unidades": "45.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Mercedes AMG GT",
+    "descripcion": "El AMG GT es un deportivo alemán con motor V8 de 476-639 CV, combinación de lujo, rendimiento y tecnología de pista.",
+    "precio": "140.000 € - 180.000 €",
+    "unidades": "30.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Mercedes SLS AMG",
+    "descripcion": "El SLS AMG es un coupé de lujo con puertas de ala de gaviota, motor V8 de 571 CV y un diseño que recuerda al clásico 300SL.",
+    "precio": "200.000 € - 250.000 €",
+    "unidades": "10.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Alpine A110",
+    "descripcion": "El Alpine A110 es un ligero deportivo francés con motor de 1.8L turbo de 252 CV, manejo ágil y espíritu clásico Alpine.",
+    "precio": "65.000 € - 80.000 €",
+    "unidades": "15.000",
+    "porcentaje": 75
+},
+
+{
+    "nombre": "Lotus Elise",
+    "descripcion": "El Lotus Elise es un roadster ligero británico con motor de 134-220 CV, enfoque total en la conducción dinámica y eficiencia en curvas.",
+    "precio": "45.000 € - 60.000 €",
+    "unidades": "35.000",
+    "porcentaje": 70
+},
+
+{
+    "nombre": "Lotus Exige",
+    "descripcion": "El Lotus Exige es un deportivo extremo con motor 4 cilindros sobrealimentado, 340-430 CV y chasis diseñado para circuito.",
+    "precio": "60.000 € - 75.000 €",
+    "unidades": "10.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Lotus Evora",
+    "descripcion": "El Lotus Evora es un GT ligero británico con motor V6 de 400 CV, cómodo para carretera y ágil en curvas.",
+    "precio": "70.000 € - 85.000 €",
+    "unidades": "6.000",
+    "porcentaje": 75
+},
+
+{
+    "nombre": "Lotus Emira",
+    "descripcion": "El Lotus Emira es el último deportivo británico con motor V6 turbo de 400 CV, combinando estilo moderno y rendimiento clásico.",
+    "precio": "85.000 € - 100.000 €",
+    "unidades": "5.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Maserati MC20",
+    "descripcion": "El Maserati MC20 es un superdeportivo italiano con motor V6 biturbo de 630 CV, aerodinámica avanzada y edición limitada.",
+    "precio": "250.000 € - 300.000 €",
+    "unidades": "3.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Maserati GranTurismo",
+    "descripcion": "El GranTurismo es un coupé italiano de lujo con motor V8 de 460 CV, diseño elegante y conducción cómoda para GT.",
+    "precio": "120.000 € - 150.000 €",
+    "unidades": "40.000",
+    "porcentaje": 75
+},
+
+{
+    "nombre": "Jaguar F-Type",
+    "descripcion": "El Jaguar F-Type es un deportivo británico con motor V6/V8 de 340-575 CV, diseño atractivo y sonido de escape característico.",
+    "precio": "85.000 € - 110.000 €",
+    "unidades": "70.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Chevrolet Corvette C7",
+    "descripcion": "El Corvette C7 es un deportivo estadounidense con motor V8 de 455-650 CV, manejo equilibrado y aerodinámica moderna.",
+    "precio": "70.000 € - 95.000 €",
+    "unidades": "190.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Ford Shelby GT500",
+    "descripcion": "El Shelby GT500 es un muscle car estadounidense con motor V8 de 760 CV, aceleración brutal y estética clásica americana.",
+    "precio": "95.000 € - 120.000 €",
+    "unidades": "5.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Ferrari 488 GTB",
+    "descripcion": "El Ferrari 488 GTB es un superdeportivo italiano con motor V8 turbo de 670 CV, diseño aerodinámico y respuesta instantánea en pista.",
+    "precio": "220.000 € - 260.000 €",
+    "unidades": "3.500",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Ferrari F8 Tributo",
+    "descripcion": "El Ferrari F8 Tributo es un V8 de 720 CV, sucesor del 488, con mejoras en aerodinámica y tecnología de motor.",
+    "precio": "280.000 € - 330.000 €",
+    "unidades": "2.500",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Ferrari 458 Italia",
+    "descripcion": "El Ferrari 458 Italia es un coupé V8 de 570 CV, referente en conducción deportiva y diseño italiano.",
+    "precio": "200.000 € - 240.000 €",
+    "unidades": "15.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Ferrari 296 GTB",
+    "descripcion": "El Ferrari 296 GTB es un híbrido V6 turbo de 830 CV, innovador en tecnología y rendimiento, con conducción dinámica extrema.",
+    "precio": "320.000 € - 370.000 €",
+    "unidades": "3.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Ferrari Roma",
+    "descripcion": "El Ferrari Roma es un GT italiano de 620 CV, diseño elegante, gran confort y deportividad equilibrada para carretera.",
+    "precio": "240.000 € - 290.000 €",
+    "unidades": "5.000",
+    "porcentaje": 85
+}
+
+]
+cars += [
+
+{
+    "nombre": "Lamborghini Huracan",
+    "descripcion": "El Lamborghini Huracan es un superdeportivo italiano con motor V10 de 610-640 CV, diseño agresivo y rendimiento extremo en carretera y circuito.",
+    "precio": "230.000 € - 300.000 €",
+    "unidades": "20.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Lamborghini Aventador",
+    "descripcion": "El Aventador es un V12 de 690-770 CV, icono de Lamborghini con aerodinámica avanzada y aceleración brutal.",
+    "precio": "350.000 € - 450.000 €",
+    "unidades": "11.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Lamborghini Gallardo",
+    "descripcion": "El Gallardo es un V10 de 500-570 CV, primer superdeportivo de gran éxito de Lamborghini y base de futuras generaciones.",
+    "precio": "140.000 € - 180.000 €",
+    "unidades": "14.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Lamborghini Revuelto",
+    "descripcion": "El Revuelto es el último V12 híbrido de Lamborghini, con 830 CV, tecnología avanzada y edición limitada a 1.000 unidades.",
+    "precio": "500.000 € - 600.000 €",
+    "unidades": "1.000",
+    "porcentaje": 98
+},
+
+{
+    "nombre": "Lamborghini Murciélago",
+    "descripcion": "El Murciélago es un V12 de 580-670 CV, uno de los superdeportivos más icónicos de Lamborghini entre 2001 y 2010.",
+    "precio": "300.000 € - 380.000 €",
+    "unidades": "4.099",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Porsche 911 Carrera",
+    "descripcion": "El 911 Carrera es un deportivo alemán con motor bóxer 6 cilindros de 385-450 CV, equilibrio perfecto entre lujo y rendimiento.",
+    "precio": "120.000 € - 150.000 €",
+    "unidades": "1.200.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Porsche 911 Turbo",
+    "descripcion": "El 911 Turbo es la versión más potente y rápida del 911, con motor 6 cilindros turbo de 580-650 CV y tracción integral.",
+    "precio": "190.000 € - 230.000 €",
+    "unidades": "200.000",
+    "porcentaje": 92
+},
+
+{
+    "nombre": "Porsche 718 Cayman",
+    "descripcion": "El 718 Cayman es un coupé de motor central con 300-400 CV, enfoque en conducción deportiva y agilidad extrema.",
+    "precio": "70.000 € - 90.000 €",
+    "unidades": "300.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Porsche 718 Boxster",
+    "descripcion": "El 718 Boxster es la versión descapotable del Cayman, con motor central y dinámica deportiva similar, de 300-400 CV.",
+    "precio": "68.000 € - 85.000 €",
+    "unidades": "250.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Porsche 918 Spyder",
+    "descripcion": "El 918 Spyder es un superdeportivo híbrido con 887 CV, edición limitada a 918 unidades y tecnología derivada de la Fórmula 1.",
+    "precio": "1.500.000 € - 1.800.000 €",
+    "unidades": "918",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "McLaren 570S",
+    "descripcion": "El McLaren 570S es un deportivo británico con motor V8 de 570 CV, ligero y con enfoque en conducción ágil y precisa.",
+    "precio": "160.000 € - 200.000 €",
+    "unidades": "3.500",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "McLaren 720S",
+    "descripcion": "El 720S es un superdeportivo británico con V8 biturbo de 720 CV, diseño futurista y tecnología de pista aplicada a carretera.",
+    "precio": "240.000 € - 290.000 €",
+    "unidades": "4.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "McLaren 765LT",
+    "descripcion": "El 765LT es una versión extrema del 720S con 765 CV, reducción de peso y prestaciones máximas para circuito y carretera.",
+    "precio": "350.000 € - 420.000 €",
+    "unidades": "765",
+    "porcentaje": 98
+},
+
+{
+    "nombre": "McLaren P1",
+    "descripcion": "El P1 es un híbrido V8 de 903 CV, superdeportivo icónico con tecnología avanzada y edición limitada a 375 unidades.",
+    "precio": "1.800.000 € - 2.200.000 €",
+    "unidades": "375",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "McLaren Artura",
+    "descripcion": "El Artura es un híbrido V6 de 671 CV, primer modelo híbrido de McLaren, combinación de eficiencia y rendimiento extremo.",
+    "precio": "230.000 € - 270.000 €",
+    "unidades": "2.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Aston Martin Vantage",
+    "descripcion": "El Vantage es un deportivo británico con motor V8 de 510 CV, diseño elegante y enfoque en conducción deportiva pura.",
+    "precio": "150.000 € - 180.000 €",
+    "unidades": "10.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Aston Martin DB11",
+    "descripcion": "El DB11 es un GT de lujo con motor V8/V12 de 503-639 CV, confort y deportividad combinados con estilo británico.",
+    "precio": "170.000 € - 210.000 €",
+    "unidades": "5.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Aston Martin DBS Superleggera",
+    "descripcion": "El DBS Superleggera es un GT de alto rendimiento con V12 de 725 CV, velocidad extrema y lujo refinado.",
+    "precio": "250.000 € - 300.000 €",
+    "unidades": "2.500",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Aston Martin One-77",
+    "descripcion": "El One-77 es un superdeportivo británico exclusivo, con motor V12 de 750 CV y solo 77 unidades fabricadas.",
+    "precio": "2.500.000 € - 3.200.000 €",
+    "unidades": "77",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Aston Martin Valkyrie",
+    "descripcion": "El Valkyrie es un hypercar híbrido de 1.160 CV, desarrollo conjunto con Red Bull Racing y edición limitada a 150 unidades.",
+    "precio": "3.000.000 € - 3.500.000 €",
+    "unidades": "150",
+    "porcentaje": 100
+}
+
+]
+cars += [
+
+{
+    "nombre": "Bugatti Veyron",
+    "descripcion": "El Veyron es un superdeportivo francés con motor W16 de 1.001 CV, velocidad máxima de más de 400 km/h y edición limitada.",
+    "precio": "1.500.000 € - 2.000.000 €",
+    "unidades": "450",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Bugatti Chiron",
+    "descripcion": "El Chiron es el sucesor del Veyron, con 1.479 CV y diseño extremadamente aerodinámico, edición limitada a 500 unidades.",
+    "precio": "2.500.000 € - 3.500.000 €",
+    "unidades": "500",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Bugatti Divo",
+    "descripcion": "El Divo es un hypercar de 1.479 CV enfocado en curvas y aerodinámica, extremadamente raro con solo 40 unidades.",
+    "precio": "6.000.000 € - 7.000.000 €",
+    "unidades": "40",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Bugatti Mistral",
+    "descripcion": "El Mistral es el último modelo de Bugatti, edición limitada a 99 unidades, con motor W16 de 1.600 CV y diseño exclusivo.",
+    "precio": "5.000.000 € - 6.000.000 €",
+    "unidades": "99",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Bugatti Centodieci",
+    "descripcion": "El Centodieci rinde homenaje al EB110, solo 10 unidades fabricadas y motor W16 de 1.600 CV, pura exclusividad.",
+    "precio": "8.000.000 € - 9.000.000 €",
+    "unidades": "10",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Koenigsegg Agera RS",
+    "descripcion": "El Agera RS es un hypercar sueco con motor V8 biturbo de 1.160 CV, velocidad extrema y solo 25 unidades producidas.",
+    "precio": "3.000.000 € - 3.500.000 €",
+    "unidades": "25",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Koenigsegg Jesko",
+    "descripcion": "El Jesko es un hypercar híbrido de 1.280 CV, tecnología de competición y edición limitada a 125 unidades.",
+    "precio": "3.500.000 € - 4.000.000 €",
+    "unidades": "125",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Koenigsegg Regera",
+    "descripcion": "El Regera es un híbrido de lujo de 1.500 CV, transmisión directa y 80 unidades, combinación de potencia y exclusividad.",
+    "precio": "3.000.000 € - 3.500.000 €",
+    "unidades": "80",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Pagani Zonda",
+    "descripcion": "El Zonda es un superdeportivo italiano con motor V12 de 600-750 CV, carrocería artesanal y edición limitada a 140 unidades.",
+    "precio": "5.000.000 € - 7.000.000 €",
+    "unidades": "140",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Pagani Huayra",
+    "descripcion": "El Huayra es un hypercar con motor V12 biturbo de 720-850 CV, diseño exclusivo y solo 280 unidades fabricadas.",
+    "precio": "2.500.000 € - 3.500.000 €",
+    "unidades": "280",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Nissan GT-R R35",
+    "descripcion": "El GT-R R35 es un deportivo japonés de 570-600 CV, famoso por su aceleración brutal y tecnología de tracción integral.",
+    "precio": "100.000 € - 130.000 €",
+    "unidades": "40.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Toyota GR Supra",
+    "descripcion": "La GR Supra es un deportivo japonés con motor 6 cilindros de 340-382 CV, enfoque en conducción ágil y diseño agresivo.",
+    "precio": "55.000 € - 65.000 €",
+    "unidades": "50.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Ford GT (2017)",
+    "descripcion": "El Ford GT es un superdeportivo americano con motor V6 biturbo de 647 CV, aerodinámica inspirada en Le Mans y edición limitada.",
+    "precio": "600.000 € - 800.000 €",
+    "unidades": "1.350",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Chevrolet Corvette C8",
+    "descripcion": "El Corvette C8 es un deportivo americano con motor central V8 de 495 CV, diseño renovado y rendimiento sobresaliente.",
+    "precio": "90.000 € - 120.000 €",
+    "unidades": "80.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Dodge Viper",
+    "descripcion": "El Viper es un icónico deportivo americano con motor V10 de 645 CV, sonido inconfundible y edición limitada a 31.000 unidades.",
+    "precio": "120.000 € - 180.000 €",
+    "unidades": "31.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "BMW M3",
+    "descripcion": "El M3 es un deportivo alemán con motor 6 cilindros de 480-510 CV, referencia en tracción trasera y agilidad en carretera.",
+    "precio": "85.000 € - 100.000 €",
+    "unidades": "300.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "BMW M4",
+    "descripcion": "El M4 es la versión coupé del M3, con motor 6 cilindros de 480-510 CV y enfoque en deportividad y lujo combinados.",
+    "precio": "90.000 € - 110.000 €",
+    "unidades": "200.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Audi R8",
+    "descripcion": "El R8 es un superdeportivo alemán con motor V10 de 570-620 CV, tracción integral y diseño icónico Audi Sport.",
+    "precio": "150.000 € - 190.000 €",
+    "unidades": "45.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Mercedes AMG GT",
+    "descripcion": "El AMG GT es un coupé alemán con motor V8 biturbo de 476-585 CV, equilibrio entre lujo y rendimiento en carretera.",
+    "precio": "140.000 € - 180.000 €",
+    "unidades": "30.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Mercedes SLS AMG",
+    "descripcion": "El SLS AMG es un icónico coupé alemán con motor V8 de 571 CV, puertas alas de gaviota y prestaciones extremas.",
+    "precio": "200.000 € - 250.000 €",
+    "unidades": "10.000",
+    "porcentaje": 95
+}
+
+]
+
+cars += [
+
+{
+    "nombre": "Alpine A110",
+    "descripcion": "Deportivo ligero francés, 1.8 litros turbo, 252 CV y enfoque en agilidad y placer de conducción.",
+    "precio": "65.000 € - 80.000 €",
+    "unidades": "15.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Lotus Elise",
+    "descripcion": "Clásico deportivo británico, ligero y ágil, motor 1.8-1.6L, ideal para circuitos y carreteras sinuosas.",
+    "precio": "45.000 € - 60.000 €",
+    "unidades": "35.000",
+    "porcentaje": 80
+},
+
+{
+    "nombre": "Lotus Exige",
+    "descripcion": "Versión más potente del Elise, enfoque track-day con 400 CV, muy limitado y exclusivo.",
+    "precio": "60.000 € - 75.000 €",
+    "unidades": "10.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Lotus Evora",
+    "descripcion": "Coupé deportivo británico, motor V6 de 400 CV, mezcla de confort y prestaciones deportivas.",
+    "precio": "70.000 € - 85.000 €",
+    "unidades": "6.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Lotus Emira",
+    "descripcion": "Último deportivo de Lotus, motor V6 o 4 cilindros turbo de 400-410 CV, edición limitada.",
+    "precio": "85.000 € - 100.000 €",
+    "unidades": "5.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Maserati MC20",
+    "descripcion": "Superdeportivo italiano con motor V6 biturbo de 630 CV, diseño aerodinámico y edición limitada.",
+    "precio": "250.000 € - 300.000 €",
+    "unidades": "3.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Maserati GranTurismo",
+    "descripcion": "GT italiano con motor V8 de 460 CV, lujo y confort combinados con deportividad clásica.",
+    "precio": "120.000 € - 150.000 €",
+    "unidades": "40.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Jaguar F-Type",
+    "descripcion": "Coupé y roadster británico, motor V6/V8, entre 300-575 CV, diseño elegante y prestaciones dinámicas.",
+    "precio": "85.000 € - 110.000 €",
+    "unidades": "70.000",
+    "porcentaje": 85
+},
+
+{
+    "nombre": "Chevrolet Corvette C7",
+    "descripcion": "Deportivo americano con motor V8 de 455-650 CV, tracción trasera y sonido inconfundible.",
+    "precio": "70.000 € - 95.000 €",
+    "unidades": "190.000",
+    "porcentaje": 90
+},
+
+{
+    "nombre": "Ford Shelby GT500",
+    "descripcion": "Muscle car americano con motor V8 de 760 CV, prestaciones extremas y estética icónica.",
+    "precio": "95.000 € - 120.000 €",
+    "unidades": "5.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Ferrari Monza SP2",
+    "descripcion": "Edición limitada Ferrari, 810 CV, diseño speedster y solo 499 unidades producidas.",
+    "precio": "1.800.000 € - 2.200.000 €",
+    "unidades": "499",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Ferrari 296 GTB",
+    "descripcion": "Híbrido enchufable V6 de 830 CV, superdeportivo moderno con diseño aerodinámico y prestaciones extremas.",
+    "precio": "320.000 € - 370.000 €",
+    "unidades": "3.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Ferrari 488 Pista",
+    "descripcion": "Versión track-focused del 488, motor V8 biturbo de 720 CV, aerodinámica extrema y edición limitada.",
+    "precio": "350.000 € - 400.000 €",
+    "unidades": "3.000",
+    "porcentaje": 95
+},
+
+{
+    "nombre": "Ferrari SF90 Stradale",
+    "descripcion": "Híbrido enchufable de 1.000 CV, superdeportivo de vanguardia con tecnología de Fórmula 1 aplicada.",
+    "precio": "450.000 € - 500.000 €",
+    "unidades": "500",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Ferrari LaFerrari Aperta",
+    "descripcion": "Híbrido enchufable abierto, motor V12 + eléctrico de 950 CV, edición limitada a 210 unidades.",
+    "precio": "2.200.000 € - 2.500.000 €",
+    "unidades": "210",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Lamborghini Aventador SVJ",
+    "descripcion": "Superdeportivo italiano, motor V12 de 770 CV, edición limitada y aerodinámica optimizada para circuito.",
+    "precio": "500.000 € - 600.000 €",
+    "unidades": "900",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Lamborghini Sian FKP 37",
+    "descripcion": "Híbrido supercar de 819 CV, producción limitada a 63 unidades, primer Lamborghini híbrido con tecnología supercondensador.",
+    "precio": "3.000.000 € - 3.500.000 €",
+    "unidades": "63",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Lamborghini Countach LPI 800-4",
+    "descripcion": "Renacimiento del icónico Countach, V12 híbrido de 814 CV, edición limitada a 112 unidades.",
+    "precio": "2.000.000 € - 2.500.000 €",
+    "unidades": "112",
+    "porcentaje": 100
+},
+
+{
+    "nombre": "Lamborghini Veneno",
+    "descripcion": "Hypercar extremo, motor V12 de 750 CV, diseño futurista y solo 14 unidades fabricadas.",
+    "precio": "3.500.000 € - 4.500.000 €",
+    "unidades": "14",
+    "porcentaje": 100
+}
+
+]
+
