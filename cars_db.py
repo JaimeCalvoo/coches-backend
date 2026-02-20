@@ -1821,3 +1821,202 @@ cars += [
     "description": "Gran turismo coreano con motor V6 y enfoque más premium.",
     "rarity_percent": 99.333
 },
+"Ferrari - Roma": {
+    "price_min_eur": 220000,
+    "price_max_eur": 260000,
+    "units_produced": 5000,
+    "description": "Gran turismo moderno con diseño elegante y motor V8 biturbo delantero.",
+    "rarity_percent": 99.583
+},
+
+"Ferrari - F8 Tributo": {
+    "price_min_eur": 280000,
+    "price_max_eur": 330000,
+    "units_produced": 3500,
+    "description": "Evolución extrema del V8 central de Ferrari, enfoque total en rendimiento.",
+    "rarity_percent": 99.708
+},
+
+"Ferrari - Portofino": {
+    "price_min_eur": 200000,
+    "price_max_eur": 240000,
+    "units_produced": 6000,
+    "description": "Convertible V8 pensado para combinar lujo, comodidad y deportividad.",
+    "rarity_percent": 99.500
+},
+
+"Lamborghini - Urus": {
+    "price_min_eur": 220000,
+    "price_max_eur": 280000,
+    "units_produced": 25000,
+    "description": "SUV de altas prestaciones que combina practicidad con ADN Lamborghini.",
+    "rarity_percent": 97.917
+},
+
+"Porsche - Taycan Turbo S": {
+    "price_min_eur": 190000,
+    "price_max_eur": 220000,
+    "units_produced": 20000,
+    "description": "Berlina eléctrica deportiva con aceleración instantánea y gran tecnología.",
+    "rarity_percent": 98.333
+},
+
+"Audi - RS6 Avant": {
+    "price_min_eur": 140000,
+    "price_max_eur": 170000,
+    "units_produced": 25000,
+    "description": "Familiar deportivo con motor V8 biturbo y enorme versatilidad.",
+    "rarity_percent": 97.917
+},
+
+"BMW - M5 Competition": {
+    "price_min_eur": 150000,
+    "price_max_eur": 180000,
+    "units_produced": 30000,
+    "description": "Berlina ejecutiva con prestaciones de superdeportivo y tracción total.",
+    "rarity_percent": 97.500
+},
+
+"Mercedes - AMG E63 S": {
+    "price_min_eur": 150000,
+    "price_max_eur": 180000,
+    "units_produced": 20000,
+    "description": "Berlina deportiva con V8 biturbo y gran capacidad de aceleración.",
+    "rarity_percent": 98.333
+},
+
+"Nissan - 370Z": {
+    "price_min_eur": 35000,
+    "price_max_eur": 45000,
+    "units_produced": 150000,
+    "description": "Deportivo japonés clásico con motor V6 atmosférico y tracción trasera.",
+    "rarity_percent": 87.500
+},
+
+"Toyota - GR Yaris": {
+    "price_min_eur": 40000,
+    "price_max_eur": 50000,
+    "units_produced": 25000,
+    "description": "Compacto radical desarrollado para homologación de rally.",
+    "rarity_percent": 97.917
+},
+
+"Hyundai - i30 N": {
+    "price_min_eur": 35000,
+    "price_max_eur": 45000,
+    "units_produced": 30000,
+    "description": "Hot hatch coreano con excelente relación entre precio y rendimiento.",
+    "rarity_percent": 97.500
+},
+
+"Kia - Stinger GT": {
+    "price_min_eur": 50000,
+    "price_max_eur": 60000,
+    "units_produced": 20000,
+    "description": "Gran turismo coreano con motor V6 biturbo y enfoque confortable.",
+    "rarity_percent": 98.333
+},
+
+"Alfa Romeo - Giulia Quadrifoglio": {
+    "price_min_eur": 90000,
+    "price_max_eur": 110000,
+    "units_produced": 10000,
+    "description": "Berlina italiana con motor V6 biturbo derivado de Ferrari.",
+    "rarity_percent": 99.167
+},
+
+"Alfa Romeo - 4C": {
+    "price_min_eur": 70000,
+    "price_max_eur": 90000,
+    "units_produced": 9000,
+    "description": "Deportivo ligero de motor central con chasis de fibra de carbono.",
+    "rarity_percent": 99.250
+},
+
+"Chevrolet - Camaro ZL1": {
+    "price_min_eur": 80000,
+    "price_max_eur": 100000,
+    "units_produced": 15000,
+    "description": "Muscle car potente con enfoque tanto en drag como en circuito.",
+    "rarity_percent": 98.750
+},
+
+"Ford - Mustang GT": {
+    "price_min_eur": 45000,
+    "price_max_eur": 60000,
+    "units_produced": 200000,
+    "description": "Icono americano con motor V8 atmosférico y diseño clásico.",
+    "rarity_percent": 83.333
+},
+
+"Ford - Mustang Shelby GT350": {
+    "price_min_eur": 70000,
+    "price_max_eur": 90000,
+    "units_produced": 5000,
+    "description": "Versión más enfocada a circuito con motor V8 de altas revoluciones.",
+    "rarity_percent": 99.583
+},
+
+"Jaguar - Project 8": {
+    "price_min_eur": 180000,
+    "price_max_eur": 220000,
+    "units_produced": 300,
+    "description": "Edición ultra limitada y radical basada en el XE, pensada para circuito.",
+    "rarity_percent": 99.975
+},
+
+"Mercedes - AMG GT Black Series": {
+    "price_min_eur": 350000,
+    "price_max_eur": 400000,
+    "units_produced": 1700,
+    "description": "Versión más extrema del AMG GT con aerodinámica y potencia máximas.",
+    "rarity_percent": 99.858
+},
+
+"Porsche - 911 GT3 RS": {
+    "price_min_eur": 250000,
+    "price_max_eur": 320000,
+    "units_produced": 5000,
+    "description": "Variante más radical del 911 orientada al uso intensivo en circuito.",
+    "rarity_percent": 99.583
+},
+
+"Porsche - 911 GT2 RS": {
+    "price_min_eur": 350000,
+    "price_max_eur": 450000,
+    "units_produced": 1000,
+    "description": "El 911 más potente, tracción trasera y enfoque extremo.",
+    "rarity_percent": 99.917
+},
+
+"Lexus - LFA": {
+    "price_min_eur": 500000,
+    "price_max_eur": 700000,
+    "units_produced": 500,
+    "description": "Superdeportivo japonés con motor V10 atmosférico y sonido icónico.",
+    "rarity_percent": 99.958
+},
+
+"BMW - i8": {
+    "price_min_eur": 120000,
+    "price_max_eur": 150000,
+    "units_produced": 20000,
+    "description": "Deportivo híbrido con diseño futurista y chasis de fibra de carbono.",
+    "rarity_percent": 98.333
+},
+
+"Audi - TT RS": {
+    "price_min_eur": 70000,
+    "price_max_eur": 85000,
+    "units_produced": 15000,
+    "description": "Coupé compacto con motor cinco cilindros turbo y gran tracción.",
+    "rarity_percent": 98.750
+},
+
+"Toyota - Land Cruiser GR Sport": {
+    "price_min_eur": 90000,
+    "price_max_eur": 110000,
+    "units_produced": 10000,
+    "description": "Todoterreno robusto con preparación deportiva y gran fiabilidad.",
+    "rarity_percent": 99.167
+},
