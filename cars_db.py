@@ -1622,4 +1622,202 @@ cars += [
 }
 
 ]
+"Aston Martin - DBS GT Zagato": {
+    "price_min_eur": 2000000,
+    "price_max_eur": 2500000,
+    "units_produced": 19,
+    "description": "Edición ultra exclusiva creada junto a Zagato, combinando lujo británico con diseño italiano.",
+    "rarity_percent": 99.998
+},
 
+"McLaren - Speedtail": {
+    "price_min_eur": 2000000,
+    "price_max_eur": 2500000,
+    "units_produced": 106,
+    "description": "Hyper-GT híbrido de tres plazas, uno de los McLaren más rápidos jamás fabricados.",
+    "rarity_percent": 99.991
+},
+
+"McLaren - 720S Spider": {
+    "price_min_eur": 300000,
+    "price_max_eur": 350000,
+    "units_produced": 2000,
+    "description": "Versión descapotable del 720S, combinando altísimas prestaciones con conducción a cielo abierto.",
+    "rarity_percent": 99.833
+},
+
+"McLaren - Elva": {
+    "price_min_eur": 1700000,
+    "price_max_eur": 2000000,
+    "units_produced": 149,
+    "description": "Speedster extremo sin parabrisas inspirado en los McLaren de competición clásicos.",
+    "rarity_percent": 99.988
+},
+
+"Porsche - 911 GT2 RS": {
+    "price_min_eur": 400000,
+    "price_max_eur": 450000,
+    "units_produced": 500,
+    "description": "La versión más radical y potente del 911 con motor trasero biturbo.",
+    "rarity_percent": 99.958
+},
+
+"Porsche - 911 GT3 RS": {
+    "price_min_eur": 250000,
+    "price_max_eur": 300000,
+    "units_produced": 1000,
+    "description": "Enfocado en circuito, con aerodinámica extrema y motor atmosférico de alto régimen.",
+    "rarity_percent": 99.917
+},
+
+"Porsche - 911 Speedster": {
+    "price_min_eur": 300000,
+    "price_max_eur": 350000,
+    "units_produced": 1250,
+    "description": "Edición especial descapotable que rinde homenaje a los Speedster clásicos.",
+    "rarity_percent": 99.896
+},
+
+"Porsche - 911 Turbo S Exclusive": {
+    "price_min_eur": 220000,
+    "price_max_eur": 260000,
+    "units_produced": 500,
+    "description": "Serie limitada del Turbo S con acabados exclusivos y mayor lujo.",
+    "rarity_percent": 99.958
+},
+
+"Ford - Mustang GT": {
+    "price_min_eur": 55000,
+    "price_max_eur": 65000,
+    "units_produced": 250000,
+    "description": "Muscle car americano icónico con motor V8 y gran presencia.",
+    "rarity_percent": 79.167
+},
+
+"Chevrolet - Camaro SS": {
+    "price_min_eur": 50000,
+    "price_max_eur": 60000,
+    "units_produced": 200000,
+    "description": "Rival directo del Mustang, con potente V8 y diseño agresivo.",
+    "rarity_percent": 83.333
+},
+
+"Dodge - Challenger R/T": {
+    "price_min_eur": 48000,
+    "price_max_eur": 58000,
+    "units_produced": 180000,
+    "description": "Muscle car clásico de gran tamaño con enfoque en potencia bruta.",
+    "rarity_percent": 85.000
+},
+
+"Nissan - 370Z": {
+    "price_min_eur": 38000,
+    "price_max_eur": 45000,
+    "units_produced": 150000,
+    "description": "Deportivo japonés compacto con motor V6 atmosférico.",
+    "rarity_percent": 87.500
+},
+
+"Toyota - Supra GR": {
+    "price_min_eur": 55000,
+    "price_max_eur": 65000,
+    "units_produced": 20000,
+    "description": "Nueva generación del Supra desarrollada junto a BMW, enfoque deportivo moderno.",
+    "rarity_percent": 98.333
+},
+
+"Mazda - MX-5": {
+    "price_min_eur": 30000,
+    "price_max_eur": 35000,
+    "units_produced": 100000,
+    "description": "Roadster ligero y ágil, referencia en diversión a bajo peso.",
+    "rarity_percent": 91.667
+},
+
+"BMW - Z4": {
+    "price_min_eur": 45000,
+    "price_max_eur": 55000,
+    "units_produced": 50000,
+    "description": "Roadster alemán de enfoque premium compartiendo base con el Supra.",
+    "rarity_percent": 95.833
+},
+
+"Audi - TT": {
+    "price_min_eur": 40000,
+    "price_max_eur": 50000,
+    "units_produced": 60000,
+    "description": "Coupé compacto con diseño icónico y tracción quattro en versiones superiores.",
+    "rarity_percent": 95.000
+},
+
+"Mercedes - AMG A 45": {
+    "price_min_eur": 60000,
+    "price_max_eur": 70000,
+    "units_produced": 25000,
+    "description": "Compacto radical con uno de los 4 cilindros más potentes del mercado.",
+    "rarity_percent": 97.917
+},
+
+"Mercedes - AMG CLA 45": {
+    "price_min_eur": 63000,
+    "price_max_eur": 73000,
+    "units_produced": 22000,
+    "description": "Versión deportiva del CLA con gran potencia y estética agresiva.",
+    "rarity_percent": 98.167
+},
+
+"Audi - RS3": {
+    "price_min_eur": 55000,
+    "price_max_eur": 65000,
+    "units_produced": 30000,
+    "description": "Compacto deportivo con motor 5 cilindros turbo y tracción quattro.",
+    "rarity_percent": 97.500
+},
+
+"Audi - RS4 Avant": {
+    "price_min_eur": 70000,
+    "price_max_eur": 80000,
+    "units_produced": 12000,
+    "description": "Familiar de altas prestaciones combinando practicidad y potencia.",
+    "rarity_percent": 99.000
+},
+
+"BMW - M2": {
+    "price_min_eur": 60000,
+    "price_max_eur": 70000,
+    "units_produced": 18000,
+    "description": "El M más compacto y purista, tracción trasera y enfoque deportivo.",
+    "rarity_percent": 98.500
+},
+
+"Alfa Romeo - 4C": {
+    "price_min_eur": 65000,
+    "price_max_eur": 75000,
+    "units_produced": 3500,
+    "description": "Deportivo ligero con chasis monocasco de carbono y carácter italiano.",
+    "rarity_percent": 99.708
+},
+
+"Toyota - GT86": {
+    "price_min_eur": 35000,
+    "price_max_eur": 40000,
+    "units_produced": 50000,
+    "description": "Coupé ligero de tracción trasera enfocado en el equilibrio y la diversión.",
+    "rarity_percent": 95.833
+},
+
+"Hyundai - i30 N": {
+    "price_min_eur": 35000,
+    "price_max_eur": 40000,
+    "units_produced": 15000,
+    "description": "Compacto deportivo coreano con excelente relación calidad-precio.",
+    "rarity_percent": 98.750
+},
+
+"Kia - Stinger": {
+    "price_min_eur": 45000,
+    "price_max_eur": 55000,
+    "units_produced": 8000,
+    "description": "Gran turismo coreano con motor V6 y enfoque más premium.",
+    "rarity_percent": 99.333
+},
