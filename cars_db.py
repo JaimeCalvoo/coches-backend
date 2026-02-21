@@ -2020,3 +2020,101 @@ cars += [
     "description": "Todoterreno robusto con preparación deportiva y gran fiabilidad.",
     "rarity_percent": 99.167
 },
+" Cupra - Formentor VZ5": {"price_min_eur": 65000, "price_max_eur": 75000, "units_produced": 7000, "description": "Edición limitada con motor cinco cilindros 2.5 TSI de origen Audi y tracción total, convirtiéndose en el Cupra más exclusivo de producción regular.", "rarity_percentage": 28.76},
+
+"Renault - Clio RS Trophy": {"price_min_eur": 28000, "price_max_eur": 32000, "units_produced": 12000, "description": "Versión más radical del Clio RS con chasis Trophy, suspensión endurecida y enfoque claramente orientado a circuito dentro del segmento utilitario deportivo.", "rarity_percentage": 24.44},
+
+"Peugeot - 208 GT": {"price_min_eur": 24000, "price_max_eur": 28000, "units_produced": 18000, "description": "Acabado deportivo intermedio del 208 con estética GT, motor turbo eficiente y configuración dinámica más firme que las versiones estándar.", "rarity_percentage": 21.14},
+
+"Volkswagen - Polo GTI": {"price_min_eur": 30000, "price_max_eur": 35000, "units_produced": 25000, "description": "Hot hatch compacto con motor 2.0 TSI y ADN GTI, destacando por su equilibrio entre uso diario y prestaciones deportivas.", "rarity_percentage": 18.51},
+
+"Honda - Civic Type R FK8": {"price_min_eur": 38000, "price_max_eur": 45000, "units_produced": 40000, "description": "Generación FK8 del Type R con aerodinámica extrema y tracción delantera récord en Nürburgring para su categoría.", "rarity_percentage": 14.74},
+
+"Toyota - GR Yaris": {"price_min_eur": 35000, "price_max_eur": 42000, "units_produced": 25000, "description": "Homologación de rally con sistema GR-FOUR de tracción total y motor tricilíndrico turbo de alto rendimiento desarrollado por Gazoo Racing.", "rarity_percentage": 18.51},
+
+"Hyundai - Elantra N": {"price_min_eur": 36000, "price_max_eur": 42000, "units_produced": 15000, "description": "Sedán deportivo de la división N con diferencial electrónico y sonido activo, diseñado para competir con compactos europeos de alto rendimiento.", "rarity_percentage": 22.63},
+
+"Kia - Ceed GT": {"price_min_eur": 30000, "price_max_eur": 34000, "units_produced": 12000, "description": "Compacto deportivo con motor 1.6 turbo y puesta a punto específica para ofrecer sensaciones dinámicas accesibles dentro de la gama Kia.", "rarity_percentage": 24.44},
+
+"Ford - Puma ST": {"price_min_eur": 32000, "price_max_eur": 37000, "units_produced": 20000, "description": "SUV pequeño con ADN ST, motor 1.5 EcoBoost y comportamiento ágil poco habitual en su segmento.", "rarity_percentage": 20.32},
+
+"BMW - M135i xDrive": {"price_min_eur": 48000, "price_max_eur": 55000, "units_produced": 30000, "description": "Compacto premium con tracción total xDrive y motor turbo de cuatro cilindros, tope deportivo de la Serie 1 moderna.", "rarity_percentage": 17.06},
+
+"Audi - S3": {"price_min_eur": 50000, "price_max_eur": 58000, "units_produced": 35000, "description": "Versión S del A3 con tracción quattro y equilibrio entre confort premium y rendimiento deportivo utilizable a diario.", "rarity_percentage": 15.80},
+
+"Mercedes - AMG C63 Black Series": {"price_min_eur": 180000, "price_max_eur": 220000, "units_produced": 800, "description": "Edición extrema del C63 con ensanchamiento de carrocería y V8 atmosférico preparado para uso intensivo en circuito.", "rarity_percentage": 46.22},
+
+"Subaru - BRZ tS": {"price_min_eur": 38000, "price_max_eur": 43000, "units_produced": 3000, "description": "Edición tS con mejoras en frenos y suspensión que refuerzan el carácter purista de tracción trasera del BRZ.", "rarity_percentage": 35.57},
+
+"Nissan - 400Z": {"price_min_eur": 45000, "price_max_eur": 55000, "units_produced": 10000, "description": "Sucesor moderno del 370Z con motor V6 biturbo y diseño retro inspirado en los Z clásicos.", "rarity_percentage": 25.88},
+
+"Chevrolet - Corvette Z06 C8": {"price_min_eur": 120000, "price_max_eur": 150000, "units_produced": 15000, "description": "Versión Z06 del Corvette C8 con motor V8 atmosférico de cigüeñal plano y enfoque claramente orientado a pista.", "rarity_percentage": 22.63},
+
+"Porsche - 911 GT3": {"price_min_eur": 180000, "price_max_eur": 220000, "units_produced": 20000, "description": "Icono atmosférico de altas revoluciones dentro de la familia 911, desarrollado con experiencia directa en competición.", "rarity_percentage": 20.32},
+
+"Ferrari - 812 Superfast": {"price_min_eur": 320000, "price_max_eur": 380000, "units_produced": 16000, "description": "Gran turismo V12 delantero con una de las potencias atmosféricas más altas jamás ofrecidas por Ferrari en producción regular.", "rarity_percentage": 22.11},
+
+"Lamborghini - Huracan STO": {"price_min_eur": 350000, "price_max_eur": 420000, "units_produced": 2000, "description": "Versión Super Trofeo Omologata inspirada en competición, con aerodinámica activa y reducción significativa de peso.", "rarity_percentage": 38.84},
+
+"McLaren - 600LT": {"price_min_eur": 220000, "price_max_eur": 260000, "units_produced": 4000, "description": "Modelo Longtail centrado en ligereza y rendimiento, con escape superior y configuración optimizada para circuito.", "rarity_percentage": 33.25},
+
+"Aston Martin - DBX707": {"price_min_eur": 240000, "price_max_eur": 280000, "units_produced": 5000, "description": "SUV de altas prestaciones con motor V8 biturbo de 707 CV, posicionándose como uno de los más potentes de su categoría.", "rarity_percentage": 31.47},
+
+"Bentley - Continental GT Speed": {"price_min_eur": 280000, "price_max_eur": 320000, "units_produced": 8000, "description": "Gran turismo de lujo con motor W12 y enfoque en altas velocidades manteniendo refinamiento extremo.", "rarity_percentage": 27.70},
+
+"Rolls-Royce - Wraith Black Badge": {"price_min_eur": 320000, "price_max_eur": 380000, "units_produced": 5000, "description": "Coupé de lujo con tratamiento Black Badge que aporta carácter más deportivo y estética oscurecida exclusiva.", "rarity_percentage": 31.47},
+
+"Audi - RS6 Avant": {"price_min_eur": 130000, "price_max_eur": 160000, "units_produced": 20000, "description": "Familiar de altas prestaciones con motor V8 biturbo y capacidad para combinar uso familiar con rendimiento de superdeportivo.", "rarity_percentage": 20.32},
+
+"BMW - M5 CS": {"price_min_eur": 180000, "price_max_eur": 220000, "units_produced": 1000, "description": "Edición especial del M5 con reducción de peso y aumento de potencia, considerada la más radical de la generación F90.", "rarity_percentage": 44.40},
+
+"Mercedes - AMG E63 S": {"price_min_eur": 160000, "price_max_eur": 190000, "units_produced": 15000, "description": "Berlina ejecutiva con motor V8 biturbo y sistema 4MATIC+ que permite reparto variable de par, equilibrando lujo y prestaciones extremas.", "rarity_percentage": 22.63},
+"Alfa Romeo - 4C Launch Edition": {"price_min_eur": 75000, "price_max_eur": 90000, "units_produced": 1000, "description": "Serie especial de lanzamiento del 4C con numeración individual y ajustes específicos de suspensión que marcaron el regreso de Alfa Romeo a los deportivos ligeros.", "rarity_percentage": 44.40},
+
+"Lotus - Exige Cup 430": {"price_min_eur": 120000, "price_max_eur": 140000, "units_produced": 100, "description": "Versión más extrema del Exige homologada para carretera, con carga aerodinámica récord en la marca y producción muy limitada.", "rarity_percentage": 63.92},
+
+"Mazda - MX-5 30th Anniversary": {"price_min_eur": 35000, "price_max_eur": 42000, "units_produced": 3000, "description": "Edición conmemorativa por los 30 años del MX-5, reconocible por su color Racing Orange y producción global limitada.", "rarity_percentage": 35.57},
+
+"Jaguar - F-Type Project 7": {"price_min_eur": 180000, "price_max_eur": 220000, "units_produced": 250, "description": "Speedster inspirado en el D-Type clásico, con V8 sobrealimentado y solo 250 unidades fabricadas artesanalmente.", "rarity_percentage": 57.52},
+
+"Dodge - Viper ACR Extreme": {"price_min_eur": 160000, "price_max_eur": 200000, "units_produced": 600, "description": "Edición enfocada a batir récords en circuito, con aerodinámica radical y uno de los V10 atmosféricos más potentes de producción.", "rarity_percentage": 49.15},
+
+"Pagani - Huayra Roadster": {"price_min_eur": 2300000, "price_max_eur": 2600000, "units_produced": 100, "description": "Hiperdeportivo descapotable construido en fibra de carbono-carbotanium con motor V12 AMG y producción extremadamente limitada.", "rarity_percentage": 63.92},
+
+"Koenigsegg - Jesko": {"price_min_eur": 3000000, "price_max_eur": 3500000, "units_produced": 125, "description": "Hipercoche sueco con motor V8 biturbo capaz de superar los 1600 CV en versión Absolut, diseñado para romper récords de velocidad.", "rarity_percentage": 60.86},
+
+"Bugatti - Chiron Super Sport 300+": {"price_min_eur": 3500000, "price_max_eur": 4000000, "units_produced": 30, "description": "Edición limitada creada tras superar las 300 mph, con carrocería alargada optimizada para alta velocidad.", "rarity_percentage": 73.71},
+
+"Rimac - Nevera": {"price_min_eur": 2000000, "price_max_eur": 2300000, "units_produced": 150, "description": "Hiperdeportivo eléctrico croata con cuatro motores independientes y aceleración récord dentro del mundo eléctrico.", "rarity_percentage": 59.01},
+
+"Gordon Murray - T.50": {"price_min_eur": 2500000, "price_max_eur": 3000000, "units_produced": 100, "description": "Superdeportivo ligero con ventilador aerodinámico trasero y motor V12 atmosférico de altas revoluciones diseñado por el creador del McLaren F1.", "rarity_percentage": 63.92},
+
+"Toyota - Corolla E210": {"price_min_eur": 20000, "price_max_eur": 30000, "units_produced": 40000000, "description": "Generación moderna del modelo más vendido del mundo, producido globalmente en múltiples plantas y configuraciones.", "rarity_percentage": 0.00},
+
+"Volkswagen - Golf VIII": {"price_min_eur": 22000, "price_max_eur": 35000, "units_produced": 10000000, "description": "Octava generación del Golf con digitalización completa del interior y producción masiva en Europa.", "rarity_percentage": 0.00},
+
+"Ford - F-150": {"price_min_eur": 30000, "price_max_eur": 70000, "units_produced": 35000000, "description": "Pickup más vendida en Estados Unidos durante décadas, con múltiples versiones y enorme volumen de fabricación.", "rarity_percentage": 0.00},
+
+"Chevrolet - Silverado": {"price_min_eur": 32000, "price_max_eur": 65000, "units_produced": 25000000, "description": "Pickup de gran tamaño orientada al mercado norteamericano con producción acumulada multimillonaria.", "rarity_percentage": 0.00},
+
+"Honda - Civic": {"price_min_eur": 22000, "price_max_eur": 32000, "units_produced": 27000000, "description": "Compacto global de larga trayectoria, conocido por fiabilidad y producción masiva a lo largo de múltiples generaciones.", "rarity_percentage": 0.00},
+
+"BMW - 320d E90": {"price_min_eur": 35000, "price_max_eur": 45000, "units_produced": 5000000, "description": "Versión diésel más popular de la Serie 3 E90, ampliamente distribuida en Europa por su equilibrio entre prestaciones y consumo.", "rarity_percentage": 0.00},
+
+"Audi - A4 B8": {"price_min_eur": 30000, "price_max_eur": 45000, "units_produced": 6000000, "description": "Generación B8 del A4 con amplia producción mundial y múltiples variantes mecánicas.", "rarity_percentage": 0.00},
+
+"Mercedes - C-Class W205": {"price_min_eur": 32000, "price_max_eur": 50000, "units_produced": 2500000, "description": "Berlina premium de volumen alto dentro de Mercedes, producida globalmente durante varios años.", "rarity_percentage": 0.00},
+
+"Hyundai - Tucson": {"price_min_eur": 25000, "price_max_eur": 35000, "units_produced": 7000000, "description": "SUV compacto global con fuerte presencia en Europa y América, producido en grandes volúmenes.", "rarity_percentage": 0.00},
+
+"Kia - Sportage": {"price_min_eur": 24000, "price_max_eur": 34000, "units_produced": 6000000, "description": "SUV compacto superventas dentro de la gama Kia con producción internacional masiva.", "rarity_percentage": 0.00},
+
+"Tesla - Model 3": {"price_min_eur": 40000, "price_max_eur": 60000, "units_produced": 5000000, "description": "Sedán eléctrico de producción masiva que popularizó la movilidad eléctrica a gran escala.", "rarity_percentage": 0.00},
+
+"Nissan - Qashqai": {"price_min_eur": 23000, "price_max_eur": 33000, "units_produced": 5000000, "description": "Crossover compacto pionero en Europa que alcanzó cifras de producción multimillonarias.", "rarity_percentage": 0.00},
+
+"Toyota - RAV4": {"price_min_eur": 30000, "price_max_eur": 40000, "units_produced": 15000000, "description": "SUV global híbrido y gasolina que se convirtió en uno de los más vendidos del mundo.", "rarity_percentage": 0.00},
+
+"Peugeot - 3008": {"price_min_eur": 28000, "price_max_eur": 38000, "units_produced": 2000000, "description": "SUV compacto europeo con gran éxito comercial en su segunda generación.", "rarity_percentage": 0.00},
+
+"Renault - Megane IV": {"price_min_eur": 22000, "price_max_eur": 32000, "units_produced": 2000000, "description": "Cuarta generación del compacto francés con amplia distribución en el mercado europeo.", "rarity_percentage": 0.00},
